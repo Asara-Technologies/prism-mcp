@@ -30,13 +30,36 @@
 
 ---
 
+## Engineers move faster. Everyone else stops waiting.<br/>*That's PrismMCP.*
+
+Twenty years building games, from large studios to solo projects, from early
+incubation to live ops. I know what we do day to day, and I built PrismMCP
+with that in mind. How quickly we can understand a feature, debug an issue,
+test, make a build, and get back to work matters as much as our ability to
+make content. Maybe more. PrismMCP has both sides covered.
+
+Engineer, designer, artist, producer. Whatever your role, PrismMCP bridges
+the engineering gap that usually slows everyone else down.
+
+I use PrismMCP personally and iterate on it daily, the same way we all
+iterate on our games. If there's a workflow it doesn't cover, a bug, or a
+plugin you need supported, let me know. I'll stand it up quickly, or get
+back to you with a timeline. My whole career has been building
+force-multiplying workflows. I'm truly excited to help with yours.
+
+**Roger**, Asara Technologies
+
+---
+
 ## Direct AI access across the Unreal Editor
 
-PrismMCP exposes the Unreal Editor to AI agents through the Model Context Protocol. Author, edit, and ship from inside the editor.
+PrismMCP ships in two SKUs.
 
-Lite covers the gameplay-authoring core. Professional adds the production toolchain — Materials, UI, Animation, Cinematics, Build, Profile, and the rest of the editor surface.
+**Lite — gameplay authoring.** Level actors, Blueprints (scaffolding *and* full graph editing), components, content browser, selection, console, PIE. The surface you live in day to day. Sold on Fab.
 
-> **Only in Professional:** Materials · UMG bindings & animations · Animation & Rigging · Cinematics · Build & Ship · Profiling · Automation tests · Data · World Partition · Source Control · Native type reflection · Editor lifecycle · Live Coding
+**Professional — the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. Sold direct from Asara.
+
+Full split below.
 
 ### Capability matrix
 
@@ -281,27 +304,6 @@ flowchart LR
 ```
 
 Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatible agent.
-
----
-
-## Engineers move faster. Everyone else stops waiting.<br/>*That's PrismMCP.*
-
-Twenty years building games, from large studios to solo projects, from early
-incubation to live ops. I know what we do day to day, and I built PrismMCP
-with that in mind. How quickly we can understand a feature, debug an issue,
-test, make a build, and get back to work matters as much as our ability to
-make content. Maybe more. PrismMCP has both sides covered.
-
-Engineer, designer, artist, producer. Whatever your role, PrismMCP bridges
-the engineering gap that usually slows everyone else down.
-
-I use PrismMCP personally and iterate on it daily, the same way we all
-iterate on our games. If there's a workflow it doesn't cover, a bug, or a
-plugin you need supported, let me know. I'll stand it up quickly, or get
-back to you with a timeline. My whole career has been building
-force-multiplying workflows. I'm truly excited to help with yours.
-
-**Roger**, Asara Technologies
 
 ---
 
