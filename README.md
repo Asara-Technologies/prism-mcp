@@ -55,9 +55,9 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 ## PrismMCP ships in two SKUs
 
-**Lite — gameplay authoring.** Level actors, Blueprints (full authoring surface), components, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
+**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), components, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
 
-**Professional — the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
+**Professional: the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
 
 Full split below.
 
@@ -66,229 +66,229 @@ Full split below.
 
 ### Capability matrix
 
-| | Lite | Professional |
-|:---|:---:|:---:|
-| Level actors — spawn/transform/delete, outliner, tags | ✓ | ✓ |
-| Blueprint scaffolding — class, variables, CDO defaults, function calls | ✓ | ✓ |
-| **Blueprint graph editing** — 72 node types, transactional rollback | ✓ | ✓ |
-| Components / SCS authoring on actors and BPs | ✓ | ✓ |
-| Selection state — get/set, by class/tag | ✓ | ✓ |
-| Content Browser — folders, asset organization, moves | ✓ | ✓ |
-| Console + CVars | ✓ | ✓ |
-| Output Log + Message Log read | ✓ | ✓ |
-| PIE start/stop | ✓ | ✓ |
-| **Materials** — instances + graph editing + layers + parameter collections | — | ✓ |
-| **UMG** — widget tree authoring + bindings + animations + Editor Utility Widgets | — | ✓ |
-| **Animation & Rigging** — AnimBP, montages, Control Rig, IK Rig, IK Retargeter | — | ✓ |
-| **Cinematics** — LevelSequence, keyframes, MRQ rendering | — | ✓ |
-| **Build & Ship** — cook, package, archive, deploy, launch | — | ✓ |
-| **Profiling** — frame stats, Trace, Insights | — | ✓ |
-| **Automation tests** | — | ✓ |
-| **Enhanced Input** authoring · Game Features | — | ✓ |
-| **Gameplay Tags** — hierarchy, project CRUD, container matching, queries | — | ✓ |
-| **Gameplay Ability System** *(via Blueprint surface; deeper authoring planned)* | — | ✓ |
-| **Data** — DataTables, DataAssets, Type System | — | ✓ |
-| **World Partition** · OFPA · DataLayers · streaming · level composition | — | ✓ |
-| **Source Control** — provider status, read commands, write commands | — | ✓ |
-| **Native type reflection** · K2Node discriminators · Asset Registry | — | ✓ |
-| **Editor lifecycle** — save_all, shutdown, project metadata | — | ✓ |
-| **Live Coding control** | — | ✓ |
+| Capability | Coverage | Lite | Professional |
+|:---|:---|:---:|:---:|
+| **Level actors** | Spawn, transform, delete; outliner; tags | ✓ | ✓ |
+| **Blueprint scaffolding** | Class, variables, CDO defaults, function calls | ✓ | ✓ |
+| **Blueprint graph editing** | 72 node types, transactional rollback | ✓ | ✓ |
+| **Components / SCS** | Authoring on actors and Blueprints | ✓ | ✓ |
+| **Selection state** | Get and set; by class or tag | ✓ | ✓ |
+| **Content Browser** | Folders, asset organization, moves | ✓ | ✓ |
+| **Console + CVars** | Read state, set CVars | ✓ | ✓ |
+| **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
+| **PIE** | Start, stop | ✓ | ✓ |
+| **Materials** | Instances, graph editing, layers, parameter collections | — | ✓ |
+| **UMG** | Widget tree, bindings, animations, Editor Utility Widgets | — | ✓ |
+| **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter | — | ✓ |
+| **Cinematics** | LevelSequence, keyframes, MRQ rendering | — | ✓ |
+| **Build & Ship** | Cook, package, archive, deploy, launch | — | ✓ |
+| **Profiling** | Frame stats, Trace, Insights | — | ✓ |
+| **Automation tests** | Discover, run async, poll progress and results | — | ✓ |
+| **Enhanced Input + Game Features** | Input Actions, Mapping Contexts, modifiers, triggers; plugin lifecycle | — | ✓ |
+| **Gameplay Tags** | Hierarchy, project CRUD, container matching, queries | — | ✓ |
+| **Gameplay Ability System** | Via Blueprint surface (deeper authoring planned) | — | ✓ |
+| **Data** | DataTables, DataAssets, Type System | — | ✓ |
+| **World Partition** | OFPA, DataLayers, streaming, level composition | — | ✓ |
+| **Source Control** | Provider status, read commands, write commands | — | ✓ |
+| **Native type reflection** | K2Node discriminators; Asset Registry queries | — | ✓ |
+| **Editor lifecycle** | save_all, shutdown, project metadata | — | ✓ |
+| **Live Coding** | Compile trigger, structured error capture | — | ✓ |
 
 ### Surface in detail
 
 <details>
-<summary><strong>Blueprints — full surface</strong></summary>
+<summary><strong>Blueprints: full surface</strong></summary>
 
-| Surface | Lite | Professional |
-|---|:---:|:---:|
-| Class authoring — create class, set CDO defaults, compile | ✓ | ✓ |
-| Variables — full UPROPERTY flag and metadata control | ✓ | ✓ |
-| Call existing functions on placed BP actors | ✓ | ✓ |
-| Components — add, remove, reparent, transforms, attachment | ✓ | ✓ |
-| Graph reading — 4 detail levels for token-cost control | ✓ | ✓ |
-| Graph authoring — 72 node types, inline wiring, transactional rollback | ✓ | ✓ |
-| Auto-layout, comments, reroute knots, stale-reference scan | ✓ | ✓ |
-| Function authoring (signatures, params, returns, pure/const flags) | ✓ | ✓ |
-| Dispatchers, delegates, interfaces with stub graph generation | ✓ | ✓ |
-
-</details>
-
-<details>
-<summary><strong>Levels & World — full surface</strong></summary>
-
-| Surface | Lite | Professional |
-|---|:---:|:---:|
-| Spawn / move / delete actors, transforms, tags | ✓ | ✓ |
-| Outliner queries, folder CRUD, selection state | ✓ | ✓ |
-| Instance variable editing, attach/detach, instance components | ✓ | ✓ |
-| Basic sub-level loads | ✓ | ✓ |
-| **World Partition** — actor load, pin, dirty-actor protection | — | ✓ |
-| **DataLayers** — list, read/write membership, runtime state | — | ✓ |
-| Level composition — sub-levels, streaming, level instances at scale | — | ✓ |
-| Batch operation execution — multi-op transactions | — | ✓ |
+| Capability | Coverage | Lite | Professional |
+|:---|:---|:---:|:---:|
+| **Class authoring** | Create class, set CDO defaults, compile | ✓ | ✓ |
+| **Variables** | Full UPROPERTY flag and metadata control | ✓ | ✓ |
+| **Function calls on placed actors** | Call existing functions on placed BP actors | ✓ | ✓ |
+| **Components** | Add, remove, reparent, transforms, attachment | ✓ | ✓ |
+| **Graph reading** | 4 detail levels for token-cost control | ✓ | ✓ |
+| **Graph authoring** | 72 node types, inline wiring, transactional rollback | ✓ | ✓ |
+| **Graph tooling** | Auto-layout, comments, reroute knots, stale-reference scan | ✓ | ✓ |
+| **Function authoring** | Signatures, params, returns, pure/const flags | ✓ | ✓ |
+| **Dispatchers, delegates, interfaces** | With stub graph generation | ✓ | ✓ |
 
 </details>
 
 <details>
-<summary><strong>Editor Surface — Lite + Professional</strong></summary>
+<summary><strong>Levels and World: full surface</strong></summary>
 
-| Surface | Lite | Professional |
-|---|:---:|:---:|
-| Console + CVars — read state, set CVars | ✓ | ✓ |
-| Output Log + Message Log read | ✓ | ✓ |
-| Selection state — get/set selected actors, select by class/tag | ✓ | ✓ |
-| Content Browser — folders, asset organization, moves with proper UE references | ✓ | ✓ |
-| PIE start/stop | ✓ | ✓ |
-| **Editor lifecycle** — save_all, shutdown_editor, project metadata | — | ✓ |
-| **Live Coding control** | — | ✓ |
-| **Undo / redo** with structured history queries | — | ✓ |
+| Capability | Coverage | Lite | Professional |
+|:---|:---|:---:|:---:|
+| **Actor lifecycle** | Spawn, move, delete; transforms; tags | ✓ | ✓ |
+| **Outliner** | Queries, folder CRUD, selection state | ✓ | ✓ |
+| **Instance editing** | Variable editing, attach/detach, instance components | ✓ | ✓ |
+| **Sub-levels** | Basic sub-level loads | ✓ | ✓ |
+| **World Partition** | Actor load, pin, dirty-actor protection | — | ✓ |
+| **DataLayers** | List, read/write membership, runtime state | — | ✓ |
+| **Level composition** | Sub-levels, streaming, level instances at scale | — | ✓ |
+| **Batch operations** | Multi-op transactions | — | ✓ |
 
 </details>
 
 <details>
-<summary><strong>Materials — Professional only</strong></summary>
+<summary><strong>Editor surface: Lite and Professional</strong></summary>
+
+| Capability | Coverage | Lite | Professional |
+|:---|:---|:---:|:---:|
+| **Console + CVars** | Read state, set CVars | ✓ | ✓ |
+| **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
+| **Selection state** | Get/set selected actors; select by class or tag | ✓ | ✓ |
+| **Content Browser** | Folders, asset organization, moves with proper UE references | ✓ | ✓ |
+| **PIE** | Start, stop | ✓ | ✓ |
+| **Editor lifecycle** | save_all, shutdown_editor, project metadata | — | ✓ |
+| **Live Coding control** | Compile trigger, structured error capture | — | ✓ |
+| **Undo / redo** | Structured history queries | — | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Materials: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
-| Surface | Professional |
-|---|:---:|
-| Material assets — create, recompile, auto-layout expressions | ✓ |
-| Expression graph — read (3 detail levels), search by type/parameter/value | ✓ |
-| Expression authoring — registered discriminators + `Custom` escape hatch | ✓ |
-| Parameter authoring — scalar, vector, texture, static switch | ✓ |
-| Material instances (MIC) — create, reparent, override walk | ✓ |
-| Static switches — set + list | ✓ |
-| Material layers — assign layer functions + blends, full layer-stack read | ✓ |
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Material assets** | Create, recompile, auto-layout expressions | ✓ |
+| **Expression graph** | Read at 3 detail levels; search by type, parameter, or value | ✓ |
+| **Expression authoring** | Registered discriminators plus `Custom` escape hatch | ✓ |
+| **Parameter authoring** | Scalar, vector, texture, static switch | ✓ |
+| **Material instances (MIC)** | Create, reparent, override walk | ✓ |
+| **Static switches** | Set, list | ✓ |
+| **Material layers** | Assign layer functions and blends; full layer-stack read | ✓ |
 
 </details>
 
 <details>
-<summary><strong>UMG — Professional only</strong></summary>
+<summary><strong>UMG: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
-| Surface | Professional |
-|---|:---:|
-| Widget discovery — list loaded UWidget classes, class inspection | ✓ |
-| Widget tree authoring — build/replace from recursive JSON hierarchy | ✓ |
-| Property bindings — UMG native editor binding table CRUD | ✓ |
-| Event bindings — bind widget multicast delegates | ✓ |
-| Widget animations — track add, keyframe edit, animation modify/list | ✓ |
-| Editor Utility Widgets (EUW) and Blueprints (EUB) — create, spawn as tab, run | ✓ |
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Widget discovery** | List loaded UWidget classes; class inspection | ✓ |
+| **Widget tree authoring** | Build or replace from recursive JSON hierarchy | ✓ |
+| **Property bindings** | UMG native editor binding table CRUD | ✓ |
+| **Event bindings** | Bind widget multicast delegates | ✓ |
+| **Widget animations** | Track add, keyframe edit, animation modify and list | ✓ |
+| **Editor Utility Widgets (EUW) and Blueprints (EUB)** | Create, spawn as tab, run | ✓ |
 
 </details>
 
 <details>
-<summary><strong>Animation & Rigging — Professional only</strong></summary>
+<summary><strong>Animation and Rigging: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
-| Surface | Professional |
-|---|:---:|
-| AnimGraph authoring via Blueprint stack — slot, blend, additive, state machine | ✓ |
-| Animation Montages — section CRUD, notify add/remove, float-curve key edits | ✓ |
-| Skeleton & SkeletalMesh inspection — bones, sockets, curves, morph targets | ✓ |
-| Control Rig — Blueprint create, RigVM graph read/write, hierarchy edits, VM compile | ✓ |
-| IK Rig — solver stack (Limb, FullBodyIK, BodyMover, Pole, SetTransform, StretchLimb), goals, retarget chains | ✓ |
-| IK Retargeter — asset CRUD, rig binding, chain mapping, auto-map, pose edits | ✓ |
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **AnimGraph authoring** | Via Blueprint stack: slot, blend, additive, state machine | ✓ |
+| **Animation Montages** | Section CRUD, notify add/remove, float-curve key edits | ✓ |
+| **Skeleton and SkeletalMesh inspection** | Bones, sockets, curves, morph targets | ✓ |
+| **Control Rig** | Blueprint create, RigVM graph read/write, hierarchy edits, VM compile | ✓ |
+| **IK Rig** | Solver stack (Limb, FullBodyIK, BodyMover, Pole, SetTransform, StretchLimb); goals; retarget chains | ✓ |
+| **IK Retargeter** | Asset CRUD, rig binding, chain mapping, auto-map, pose edits | ✓ |
 
 </details>
 
 <details>
-<summary><strong>Cinematics — Professional only</strong></summary>
+<summary><strong>Cinematics: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
-| Surface | Professional |
-|---|:---:|
-| LevelSequence lifecycle — create, open in editor, get metadata | ✓ |
-| Bindings — list, add/remove possessable, set display names | ✓ |
-| Tracks & sections — typed tracks, section frame ranges, event endpoints | ✓ |
-| Keyframes — get/set values, per-key interpolation, tangent handles, batch add | ✓ |
-| Composition — subsequence list/walk, camera-cut shots, shot camera binding | ✓ |
-| Playback & rendering — playback control, MoviePipeline render queue + status | ✓ |
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **LevelSequence lifecycle** | Create, open in editor, get metadata | ✓ |
+| **Bindings** | List, add/remove possessable, set display names | ✓ |
+| **Tracks and sections** | Typed tracks, section frame ranges, event endpoints | ✓ |
+| **Keyframes** | Get/set values, per-key interpolation, tangent handles, batch add | ✓ |
+| **Composition** | Subsequence list/walk, camera-cut shots, shot camera binding | ✓ |
+| **Playback and rendering** | Playback control; MoviePipeline render queue and status | ✓ |
 
 </details>
 
 <details>
-<summary><strong>Build & Ship — Professional only</strong></summary>
+<summary><strong>Build and Ship: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
-| Surface | Professional |
-|---|:---:|
-| Build discovery — platforms, devices, build targets, project build metadata | ✓ |
-| Build sessions — shared session manager, progress, current step, log tail | ✓ |
-| Map builds — geometry, lighting, navigation, HLODs, texture/virtual texture streaming | ✓ |
-| Cook, package, archive — RunUAT BuildCookRun sessions | ✓ |
-| Deploy & launch — to discovered target devices, launch-after-deploy | ✓ |
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Build discovery** | Platforms, devices, build targets, project build metadata | ✓ |
+| **Build sessions** | Shared session manager, progress, current step, log tail | ✓ |
+| **Map builds** | Geometry, lighting, navigation, HLODs, texture and virtual texture streaming | ✓ |
+| **Cook, package, archive** | RunUAT BuildCookRun sessions | ✓ |
+| **Deploy and launch** | To discovered target devices; launch-after-deploy | ✓ |
 
 </details>
 
 <details>
-<summary><strong>Profiling & Automation — Professional only</strong></summary>
+<summary><strong>Profiling and Automation: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
-| Surface | Professional |
-|---|:---:|
-| Frame stats — captures and queries | ✓ |
-| Trace sessions — start, stop, channel control | ✓ |
-| Insights integration — read trace data, query event streams | ✓ |
-| Automation tests — list tests, start async session, poll progress + results | ✓ |
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Frame stats** | Captures and queries | ✓ |
+| **Trace sessions** | Start, stop, channel control | ✓ |
+| **Insights integration** | Read trace data; query event streams | ✓ |
+| **Automation tests** | List tests, start async session, poll progress and results | ✓ |
 
 </details>
 
 <details>
-<summary><strong>Input & Gameplay — Professional only</strong></summary>
+<summary><strong>Input and Gameplay: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
-| Surface | Professional |
-|---|:---:|
-| Enhanced Input — Input Actions, Input Mapping Contexts, modifier/trigger config | ✓ |
-| Gameplay Tags — tag editing, ini-table CRUD, hierarchy management | ✓ |
-| Game Features / Modular Gameplay — plugin lifecycle, feature state | ✓ |
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Enhanced Input** | Input Actions, Input Mapping Contexts, modifier and trigger config | ✓ |
+| **Gameplay Tags** | Tag editing, ini-table CRUD, hierarchy management | ✓ |
+| **Game Features / Modular Gameplay** | Plugin lifecycle, feature state | ✓ |
 
 </details>
 
 <details>
-<summary><strong>Data — Professional only</strong></summary>
+<summary><strong>Data: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
-| Surface | Professional |
-|---|:---:|
-| DataTable — row CRUD, struct schema lookup, batch updates | ✓ |
-| DataAsset — CRUD, property edit, subclass listing | ✓ |
-| Type System — UDS / User Defined Enum / Struct create + modify + get | ✓ |
-| Generic asset creation — factory-backed `create_asset` | ✓ |
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **DataTable** | Row CRUD, struct schema lookup, batch updates | ✓ |
+| **DataAsset** | CRUD, property edit, subclass listing | ✓ |
+| **Type System** | UDS / User Defined Enum / Struct create, modify, get | ✓ |
+| **Generic asset creation** | Factory-backed `create_asset` | ✓ |
 
 </details>
 
 <details>
-<summary><strong>Source Control — Professional only</strong></summary>
+<summary><strong>Source Control: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
-| Surface | Professional |
-|---|:---:|
-| Provider status — connected provider, branch/workspace info | ✓ |
-| Read commands — file state, write-readiness, prepare-for-edit | ✓ |
-| Write commands — checkout, revert, submit (narrow, transaction-safe) | ✓ |
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Provider status** | Connected provider; branch and workspace info | ✓ |
+| **Read commands** | File state, write-readiness, prepare-for-edit | ✓ |
+| **Write commands** | Checkout, revert, submit (narrow, transaction-safe) | ✓ |
 
 </details>
 
 <details>
-<summary><strong>Authoring Discovery — Professional only</strong></summary>
+<summary><strong>Authoring discovery: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
-| Surface | Professional |
-|---|:---:|
-| Native type reflection — search C++ classes/structs/enums, inspect UClass/UScriptStruct/UEnum | ✓ |
-| K2Node discriminators — discoverable K2Node types for graph authoring | ✓ |
-| Asset Registry queries — asset search, metadata, package dependencies, reverse refs | ✓ |
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Native type reflection** | Search C++ classes, structs, enums; inspect UClass, UScriptStruct, UEnum | ✓ |
+| **K2Node discriminators** | Discoverable K2Node types for graph authoring | ✓ |
+| **Asset Registry queries** | Asset search, metadata, package dependencies, reverse references | ✓ |
 
 </details>
 
@@ -296,22 +296,22 @@ Full split below.
 
 ## On the roadmap
 
-The matrix above is today's shipped surface. Here's what's planned next. Order, scope, and timing are not committed — items move based on customer demand, engine changes, and effort.
+The matrix above is today's shipped surface. Here's what's planned next. Order, scope, and timing are not committed; items move based on customer demand, engine changes, and effort.
 
 **Authoring expansions**
 
-- **Behavior Trees / Blackboard / EQS** — tree authoring, BB schema, EQS option/test editing
-- **StateTree** — state hierarchy, evaluators, tasks, conditions, transitions
-- **Niagara** — system/emitter lifecycle, parameter access, limited graph mutation
-- **Audio** — Sound Cue graph, SoundClass/SoundMix, MetaSound asset + graph
-- **Material Parameter Collections** — global parameter broadcast
-- **Gameplay Ability System depth** — dedicated attribute / derivation / execution-calc tooling beyond today's Blueprint surface
+- **Behavior Trees / Blackboard / EQS.** Tree authoring, BB schema, EQS option/test editing.
+- **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
+- **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
+- **Audio.** Sound Cue graph, SoundClass/SoundMix, MetaSound asset and graph.
+- **Material Parameter Collections.** Global parameter broadcast.
+- **Gameplay Ability System depth.** Dedicated attribute, derivation, and execution-calc tooling beyond today's Blueprint surface.
 
 **Workflow expansions**
 
-- **Editor tab & dock layout** — sense and manipulate layout, save/restore named workspaces
-- **Source Control expansion** — submit, branch, sync, merge orchestration on top of today's read + checkout surface
-- **Cross-platform builds** — Mac / Linux build axis
+- **Editor tab and dock layout.** Sense and manipulate layout; save and restore named workspaces.
+- **Source Control expansion.** Submit, branch, sync, merge orchestration on top of today's read and checkout surface.
+- **Cross-platform builds.** Mac and Linux build axis.
 
 <sub>*All planned surface ships to Professional. Lite scope is locked at the gameplay-authoring core.*</sub>
 
@@ -334,17 +334,17 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 
 ## Pricing
 
-### Direct from Asara — annual license (no auto-renewal)
+### Direct from Asara: annual license, no auto-renewal
 
 | | Professional — Personal | Professional — Developer | Studio |
 |:---|:---:|:---:|:---:|
 | **Price** | **$99** per user / year | **$199** per user / year<br/><sub>5+ users $149 · 25+ $99 · 50+ Contact</sub> | **Contact** |
-| **Eligibility** | Under $100K USD revenue | $100K+ USD revenue | Negotiated |
-| **Coverage** | Full Pro surface | Full Pro surface | Pro + full source |
-| **Machine activations per user** | 2 | 5 | Negotiated |
-| **Term** | 12 months, no auto-renewal | 12 months, no auto-renewal | Negotiated |
-| **Support** | Direct email + priority triage | Direct email + priority triage | Dedicated time, private channel, custom feature work |
-| **License** | Custom Asara EULA | Custom Asara EULA | Custom Asara EULA + Source License Addendum |
+| **Eligibility** | Under $100K USD revenue | $100K+ USD revenue | Custom |
+| **Coverage** | Full Pro surface | Full Pro surface | Pro plus full source |
+| **Machine activations per user** | 2 | 5 | Custom |
+| **Term** | 12 months, no auto-renewal | 12 months, no auto-renewal | Custom |
+| **Support** | Direct email, priority triage | Direct email, priority triage | Dedicated time, private channel, custom feature work |
+| **License** | Custom Asara EULA | Custom Asara EULA | Custom Asara EULA plus Source License Addendum |
 
 <div align="center">
 
@@ -354,7 +354,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 
 </div>
 
-### On Fab — one-time purchase
+### On Fab: one-time purchase
 
 | | Lite — Personal | Lite — Developer |
 |:---|:---:|:---:|
@@ -372,28 +372,28 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 </div>
 
 > [!NOTE]
-> **Direct licenses are annual — no auto-renewal.** Your license is valid for 12 months from activation. You always get the latest version while your license is active. To keep using PrismMCP after the term ends, buy a new license. A short offline grace window covers the gap so a forgotten or in-flight purchase doesn't lock you out the moment the term flips. We send one reminder email 30 days before the term ends. *Lite (Fab) purchases are one-time and version-frozen — no expiration.*
+> **Direct licenses are annual, no auto-renewal.** Your license is valid for 12 months from activation. You always get the latest version while your license is active. To keep using PrismMCP after the term ends, buy a new license. A short offline grace window covers the gap so a forgotten or in-flight purchase doesn't lock you out the moment the term flips. We send one reminder email 30 days before the term ends. *Lite (Fab) purchases are one-time and version-frozen, with no expiration.*
 
 ### Pricing FAQ
 
 <details>
 <summary><strong>What's the difference between Lite and Professional?</strong></summary>
 
-Lite (Fab) covers the gameplay-authoring core — actors, Blueprints (including graph editing), components, basic editor surface, content browser. Professional (Direct) adds the production toolchain — Materials, UMG, Animation, Cinematics, Build & Ship, Profiling, Automation, Data, Source Control, the rest. Roughly 70 commands vs the full ~440.
+Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing), components, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Materials, UMG, Animation, Cinematics, Build & Ship, Profiling, Automation, Data, Source Control, and the rest. Roughly 70 commands vs the full ~440.
 
 </details>
 
 <details>
 <summary><strong>Why is Direct annual instead of one-time like Fab?</strong></summary>
 
-Direct customers get continuous updates, priority support, and DRM that ties licenses to your machines so we can keep the tool secure and aligned with our roadmap. The annual model reflects what you're actually getting — a working tool, not a snapshot. No auto-renewal: when the 12 months end, buy again if you want another year. We send a single reminder email 30 days before the term ends so you can decide on your own schedule.
+Direct customers get continuous updates, priority support, and DRM that ties licenses to your machines so we can keep the tool secure and aligned with our roadmap. The annual model reflects what you're actually getting: a working tool, not a snapshot. No auto-renewal. When the 12 months end, buy again if you want another year. We send a single reminder email 30 days before the term ends so you can decide on your own schedule.
 
 </details>
 
 <details>
 <summary><strong>Can I move my license to a new machine? <em>(Direct only)</em></strong></summary>
 
-Each license has a fixed number of machine activations per user (Professional — Personal: 2, Professional — Developer: 5). Deactivating one machine frees a slot. Lost laptop, dead drive, hardware swap — email me and I'll release the activation manually.
+Each license has a fixed number of machine activations per user (Professional — Personal: 2, Professional — Developer: 5). Deactivating one machine frees a slot. Lost laptop, dead drive, hardware swap: email me and I'll release the activation manually.
 
 </details>
 
@@ -414,7 +414,7 @@ PrismMCP works offline. Your license re-verifies in the background per the activ
 <details>
 <summary><strong>What if my revenue grows past $100K mid-year?</strong></summary>
 
-Eligibility is checked at each purchase — same convention as Fab. If you cross $100K during your 12-month term, finish out the term on Personal; the next time you buy, move to Developer. We don't audit. Buyer attestation is the contract.
+Eligibility is checked at each purchase, same convention as Fab. If you cross $100K during your 12-month term, finish out the term on Personal; the next time you buy, move to Developer. We don't audit. Buyer attestation is the contract.
 
 </details>
 

@@ -1,7 +1,7 @@
 # PrismMCP Refund Policy
 
 PrismMCP refunds work differently depending on where you bought.
-Both paths are intentionally generous — we want you happy with the
+Both paths are intentionally generous. We want you happy with the
 tool, not stuck with a license you regret.
 
 ---
@@ -16,7 +16,7 @@ Lite buyers go through Epic Fab's standard refund process at fab.com.
 - Initiate the refund from your Fab purchase history
 
 If your Fab refund request is declined for a reason that wasn't your
-fault, email support@asaratechnologies.com — we'll work with you.
+fault, email support@asaratechnologies.com and we'll work with you.
 
 > The full Fab refund policy is at fab.com/help/refund-policy. Fab's
 > policy may change unilaterally; the link above is always
@@ -34,7 +34,7 @@ people are happy to keep paying for.
 The fine print:
 
 - 30-day window starts from your **first license activation** (not
-  date of purchase) — so the clock doesn't run while your license is
+  date of purchase), so the clock doesn't run while your license is
   sitting unused.
 - 60-day hard cap from purchase. Beyond 60 days, refunds are at
   Asara's discretion.
@@ -56,7 +56,7 @@ The fine print:
 
 **What if my 12 months are ending soon and I don't want to keep using PrismMCP?**
 You don't need a refund. Direct licenses end automatically at the
-12-month mark — no auto-renewal, no charge. If you don't buy again,
+12-month mark. No auto-renewal, no charge. If you don't buy again,
 the license simply stops working after the offline grace window. We
 send one reminder email 30 days before the term ends.
 
@@ -65,7 +65,7 @@ Email me. We'll either fix it inside the 30-day window or extend the
 window so you get a fair evaluation.
 
 **What if my activation key was wrong / never delivered / corrupted?**
-Email me. That's a separate issue from a refund — we'll resolve it
+Email me. That's a separate issue from a refund. We'll resolve it
 without consuming any refund window.
 
 ---
