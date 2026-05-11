@@ -54,10 +54,11 @@ The fine print:
 
 ## Common questions
 
-**Can I get a refund if my Annual Term is ending soon and I don't want to renew?**
-You don't need to. Direct licenses are annual leases — if you don't
-renew, the license simply ends after the offline grace window. No
-refund needed because you're not paying for next year.
+**What if my 12 months are ending soon and I don't want to keep using PrismMCP?**
+You don't need a refund. Direct licenses end automatically at the
+12-month mark — no auto-renewal, no charge. If you don't buy again,
+the license simply stops working after the offline grace window. We
+send one reminder email 30 days before the term ends.
 
 **What if the license server has issues during my trial period?**
 Email me. We'll either fix it inside the 30-day window or extend the

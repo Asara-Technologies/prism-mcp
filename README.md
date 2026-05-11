@@ -334,7 +334,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 
 ## Pricing
 
-### Direct from Asara — annual lease
+### Direct from Asara — annual license (no auto-renewal)
 
 | | Professional — Personal | Professional — Developer | Studio |
 |:---|:---:|:---:|:---:|
@@ -342,7 +342,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 | **Eligibility** | Under $100K USD revenue | $100K+ USD revenue | Negotiated |
 | **Coverage** | Full Pro surface | Full Pro surface | Pro + full source |
 | **Machine activations per user** | 2 | 5 | Negotiated |
-| **Term** | Annual lease | Annual lease | Negotiated |
+| **Term** | 12 months, no auto-renewal | 12 months, no auto-renewal | Negotiated |
 | **Support** | Direct email + priority triage | Direct email + priority triage | Dedicated time, private channel, custom feature work |
 | **License** | Custom Asara EULA | Custom Asara EULA | Custom Asara EULA + Source License Addendum |
 
@@ -372,7 +372,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 </div>
 
 > [!NOTE]
-> **Direct licenses are annual.** Your license is valid for one year and renews at the same price. If you stop renewing, access ends after a short offline grace window. You always get the latest version while your license is active. *Lite (Fab) purchases are one-time and version-frozen — no renewal, no expiration.*
+> **Direct licenses are annual — no auto-renewal.** Your license is valid for 12 months from activation. You always get the latest version while your license is active. To keep using PrismMCP after the term ends, buy a new license. A short offline grace window covers the gap so a forgotten or in-flight purchase doesn't lock you out the moment the term flips. We send one reminder email 30 days before the term ends. *Lite (Fab) purchases are one-time and version-frozen — no expiration.*
 
 ### Pricing FAQ
 
@@ -386,7 +386,7 @@ Lite (Fab) covers the gameplay-authoring core — actors, Blueprints (including 
 <details>
 <summary><strong>Why is Direct annual instead of one-time like Fab?</strong></summary>
 
-Direct customers get continuous updates, priority support, and DRM that ties licenses to your machines so we can keep the tool secure and aligned with our roadmap. The annual lease reflects what you're actually getting — a working tool, not a snapshot.
+Direct customers get continuous updates, priority support, and DRM that ties licenses to your machines so we can keep the tool secure and aligned with our roadmap. The annual model reflects what you're actually getting — a working tool, not a snapshot. No auto-renewal: when the 12 months end, buy again if you want another year. We send a single reminder email 30 days before the term ends so you can decide on your own schedule.
 
 </details>
 
@@ -414,7 +414,7 @@ PrismMCP works offline. Your license re-verifies in the background per the activ
 <details>
 <summary><strong>What if my revenue grows past $100K mid-year?</strong></summary>
 
-Eligibility is checked at purchase and renewal — same convention as Fab. If you cross $100K during your license term, finish out the term on Personal; at renewal, move to Developer. We don't audit. Buyer attestation is the contract.
+Eligibility is checked at each purchase — same convention as Fab. If you cross $100K during your 12-month term, finish out the term on Personal; the next time you buy, move to Developer. We don't audit. Buyer attestation is the contract.
 
 </details>
 
