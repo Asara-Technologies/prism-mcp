@@ -38,9 +38,9 @@ The fine print:
   sitting unused.
 - 60-day hard cap from purchase. Beyond 60 days, refunds are at
   Asara's discretion.
-- Bulk Professional — Developer purchases (5+ seats): same 30-day
-  no-questions terms. If only some seats end up unused you can
-  request a partial refund for the unused seats.
+- Bulk Professional — Developer purchases (5+ users): same 30-day
+  no-questions terms. If only some user licenses end up unused you
+  can request a partial refund for the unused ones.
 - Studio tier: refunds are defined in your contract. If your contract
   is silent on refunds, requests are case-by-case at Asara's
   discretion.
