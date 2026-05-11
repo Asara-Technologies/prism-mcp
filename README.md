@@ -12,7 +12,7 @@
 
 <sub><strong>ASARA PRISMMCP</strong></sub>
 
-# Direct access to Unreal Engine.<br/>A professional force multiplier.
+# Direct AI access to Unreal Engine.<br/>A professional force multiplier.
 
 **Plumbing handled. Ship more game.**
 
@@ -25,6 +25,8 @@
 [buy]: #pricing
 [fab]: #
 [demo]: #
+[fab-product]: #
+[direct-product]: #
 
 </div>
 
@@ -51,15 +53,16 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 ---
 
-## Direct AI access across the Unreal Editor
+## PrismMCP ships in two SKUs
 
-PrismMCP ships in two SKUs.
+**Lite — gameplay authoring.** Level actors, Blueprints (full authoring surface), components, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
 
-**Lite — gameplay authoring.** Level actors, Blueprints (scaffolding *and* full graph editing), components, content browser, selection, console, PIE. The surface you live in day to day. Sold on Fab.
-
-**Professional — the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. Sold direct from Asara.
+**Professional — the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
 
 Full split below.
+
+> [!NOTE]
+> **Full undo and redo on every write.** Every PrismMCP command participates in UE's transaction system. Hit Ctrl+Z to back out a change, or have your AI agent call `undo` and read `get_undo_history` programmatically to roll back cleanly. Inline graph-wiring failures roll back automatically before they corrupt the graph.
 
 ### Capability matrix
 
@@ -81,13 +84,15 @@ Full split below.
 | **Build & Ship** — cook, package, archive, deploy, launch | — | ✓ |
 | **Profiling** — frame stats, Trace, Insights | — | ✓ |
 | **Automation tests** | — | ✓ |
-| **Enhanced Input** authoring · Gameplay Tags · Game Features | — | ✓ |
+| **Enhanced Input** authoring · Game Features | — | ✓ |
+| **Gameplay Tags** — hierarchy, project CRUD, container matching, queries | — | ✓ |
+| **Gameplay Ability System** *(via Blueprint surface; deeper authoring planned)* | — | ✓ |
 | **Data** — DataTables, DataAssets, Type System | — | ✓ |
 | **World Partition** · OFPA · DataLayers · streaming · level composition | — | ✓ |
 | **Source Control** — provider status, read commands, write commands | — | ✓ |
 | **Native type reflection** · K2Node discriminators · Asset Registry | — | ✓ |
 | **Editor lifecycle** — save_all, shutdown, project metadata | — | ✓ |
-| **Live Coding compile trigger** | — | ✓ |
+| **Live Coding control** | — | ✓ |
 
 ### Surface in detail
 
@@ -103,8 +108,8 @@ Full split below.
 | Graph reading — 4 detail levels for token-cost control | ✓ | ✓ |
 | Graph authoring — 72 node types, inline wiring, transactional rollback | ✓ | ✓ |
 | Auto-layout, comments, reroute knots, stale-reference scan | ✓ | ✓ |
-| Function authoring (signatures, params, returns, pure/const flags) | — | ✓ |
-| Dispatchers, delegates, interfaces with stub graph generation | — | ✓ |
+| Function authoring (signatures, params, returns, pure/const flags) | ✓ | ✓ |
+| Dispatchers, delegates, interfaces with stub graph generation | ✓ | ✓ |
 
 </details>
 
@@ -120,7 +125,23 @@ Full split below.
 | **World Partition** — actor load, pin, dirty-actor protection | — | ✓ |
 | **DataLayers** — list, read/write membership, runtime state | — | ✓ |
 | Level composition — sub-levels, streaming, level instances at scale | — | ✓ |
-| `execute_batch` multi-op transactions | — | ✓ |
+| Batch operation execution — multi-op transactions | — | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Editor Surface — Lite + Professional</strong></summary>
+
+| Surface | Lite | Professional |
+|---|:---:|:---:|
+| Console + CVars — read state, set CVars | ✓ | ✓ |
+| Output Log + Message Log read | ✓ | ✓ |
+| Selection state — get/set selected actors, select by class/tag | ✓ | ✓ |
+| Content Browser — folders, asset organization, moves with proper UE references | ✓ | ✓ |
+| PIE start/stop | ✓ | ✓ |
+| **Editor lifecycle** — save_all, shutdown_editor, project metadata | — | ✓ |
+| **Live Coding control** | — | ✓ |
+| **Undo / redo** with structured history queries | — | ✓ |
 
 </details>
 
@@ -271,24 +292,28 @@ Full split below.
 
 </details>
 
-<details>
-<summary><strong>Editor Surface (Lite + Professional)</strong></summary>
+---
 
-| Surface | Lite | Professional |
-|---|:---:|:---:|
-| Console + CVars — read state, set CVars | ✓ | ✓ |
-| Output Log + Message Log read | ✓ | ✓ |
-| Selection state — get/set selected actors, select by class/tag | ✓ | ✓ |
-| Content Browser — folders, asset organization, moves with proper UE references | ✓ | ✓ |
-| PIE start/stop | ✓ | ✓ |
-| **Editor lifecycle** — save_all, shutdown_editor, project metadata | — | ✓ |
-| **Live Coding compile trigger** | — | ✓ |
-| **Undo / redo** with structured history queries | — | ✓ |
+## On the roadmap
 
-</details>
+The matrix above is today's shipped surface. Here's what's planned next. Order, scope, and timing are not committed — items move based on customer demand, engine changes, and effort.
 
-> [!NOTE]
-> **Full undo and redo on every write.** Every PrismMCP command participates in UE's transaction system. Hit Ctrl+Z to back out a change, or have your AI agent call `undo` and read `get_undo_history` programmatically to roll back cleanly. Inline graph-wiring failures roll back automatically before they corrupt the graph.
+**Authoring expansions**
+
+- **Behavior Trees / Blackboard / EQS** — tree authoring, BB schema, EQS option/test editing
+- **StateTree** — state hierarchy, evaluators, tasks, conditions, transitions
+- **Niagara** — system/emitter lifecycle, parameter access, limited graph mutation
+- **Audio** — Sound Cue graph, SoundClass/SoundMix, MetaSound asset + graph
+- **Material Parameter Collections** — global parameter broadcast
+- **Gameplay Ability System depth** — dedicated attribute / derivation / execution-calc tooling beyond today's Blueprint surface
+
+**Workflow expansions**
+
+- **Editor tab & dock layout** — sense and manipulate layout, save/restore named workspaces
+- **Source Control expansion** — submit, branch, sync, merge orchestration on top of today's read + checkout surface
+- **Cross-platform builds** — Mac / Linux build axis
+
+<sub>*All planned surface ships to Professional. Lite scope is locked at the gameplay-authoring core.*</sub>
 
 ---
 
@@ -309,74 +334,40 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 
 ## Pricing
 
-<table>
-<tr>
-<td align="center" colspan="3"><strong>Direct from Asara</strong></td>
-<td align="center" colspan="2"><strong>On Fab</strong></td>
-</tr>
-<tr>
-<th>Professional<br/>— Personal</th>
-<th>Professional<br/>— Developer</th>
-<th>Studio</th>
-<th>Lite<br/>— Personal</th>
-<th>Lite<br/>— Developer</th>
-</tr>
-<tr>
-<td align="center"><strong>$99</strong>/seat/year</td>
-<td align="center"><strong>$199</strong>/seat/year<br/><sub>5+ $149 · 25+ $99 · 50+ contact</sub></td>
-<td align="center"><strong>Contact</strong></td>
-<td align="center"><strong>$20</strong>/seat</td>
-<td align="center"><strong>$69</strong>/seat</td>
-</tr>
-<tr>
-<td><sub>Under $100K USD revenue</sub></td>
-<td><sub>$100K+ USD revenue</sub></td>
-<td><sub>Negotiated</sub></td>
-<td><sub>Under $100K USD revenue · Covers individual students and personal learning</sub></td>
-<td><sub>$100K+ USD revenue</sub></td>
-</tr>
-<tr>
-<td>Full Pro surface</td>
-<td>Full Pro surface</td>
-<td>Pro + full source</td>
-<td>Gameplay-authoring core (~70 cmds)</td>
-<td>Same scope</td>
-</tr>
-<tr>
-<td>2 machines</td>
-<td>5 machines</td>
-<td>Negotiated</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Annual lease</td>
-<td>Annual lease</td>
-<td>Negotiated</td>
-<td>One-time purchase</td>
-<td>One-time purchase</td>
-</tr>
-<tr>
-<td>Direct email + priority triage</td>
-<td>Direct email + priority triage</td>
-<td>Dedicated time, private channel, custom feature work</td>
-<td>Fab community + public Asara issues</td>
-<td>Fab community + public Asara issues</td>
-</tr>
-<tr>
-<td>Custom Asara EULA</td>
-<td>Custom Asara EULA</td>
-<td>Custom Asara EULA + Source License Addendum</td>
-<td>Fab Standard License (Epic)</td>
-<td>Fab Standard License (Epic)</td>
-</tr>
-</table>
+### Direct from Asara — annual lease
+
+| | Professional — Personal | Professional — Developer | Studio |
+|:---|:---:|:---:|:---:|
+| **Price** | **$99** per user / year | **$199** per user / year<br/><sub>5+ users $149 · 25+ $99 · 50+ Contact</sub> | **Contact** |
+| **Eligibility** | Under $100K USD revenue | $100K+ USD revenue | Negotiated |
+| **Coverage** | Full Pro surface | Full Pro surface | Pro + full source |
+| **Machine activations per user** | 2 | 5 | Negotiated |
+| **Term** | Annual lease | Annual lease | Negotiated |
+| **Support** | Direct email + priority triage | Direct email + priority triage | Dedicated time, private channel, custom feature work |
+| **License** | Custom Asara EULA | Custom Asara EULA | Custom Asara EULA + Source License Addendum |
 
 <div align="center">
 
-[**Get Professional**][buy] &nbsp;·&nbsp; [Try on Fab][fab] &nbsp;·&nbsp; [Read the EULA][eula]
+[**Get Professional**][direct-product] &nbsp;·&nbsp; [Read the EULA][eula]
 
 [eula]: #
+
+</div>
+
+### On Fab — one-time purchase
+
+| | Lite — Personal | Lite — Developer |
+|:---|:---:|:---:|
+| **Price** | **$20** per user | **$69** per user |
+| **Eligibility** | Under $100K USD revenue · Individual students and personal learning | $100K+ USD revenue |
+| **Coverage** | Gameplay-authoring core | Same scope as Personal |
+| **Term** | One-time, version-frozen | One-time, version-frozen |
+| **Support** | Fab community + public Asara issues | Fab community + public Asara issues |
+| **License** | Fab Standard License (Epic) | Fab Standard License (Epic) |
+
+<div align="center">
+
+[**Try on Fab**][fab-product]
 
 </div>
 
@@ -402,7 +393,7 @@ Direct customers get continuous updates, priority support, and DRM that ties lic
 <details>
 <summary><strong>Can I move my license to a new machine? <em>(Direct only)</em></strong></summary>
 
-Each license has a fixed number of machine activations (Professional — Personal: 2, Professional — Developer: 5 per seat). Deactivating one machine frees a slot. Lost laptop, dead drive, hardware swap — email me and I'll release the activation manually.
+Each license has a fixed number of machine activations per user (Professional — Personal: 2, Professional — Developer: 5). Deactivating one machine frees a slot. Lost laptop, dead drive, hardware swap — email me and I'll release the activation manually.
 
 </details>
 
