@@ -76,6 +76,7 @@ Full split below.
 | **Content Browser** | Folders, asset organization, moves | ✓ | ✓ |
 | **Console + CVars** | Read state, set CVars | ✓ | ✓ |
 | **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
+| **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
 | **PIE** | Start, stop | ✓ | ✓ |
 | **Blackboard authoring** | Assets, parent chains, 12 native key types, reverse users | ✓ | ✓ |
 | **Materials** | Instances, graph editing, layers, parameter collections | — | ✓ |
@@ -137,6 +138,7 @@ Full split below.
 |:---|:---|:---:|:---:|
 | **Console + CVars** | Read state, set CVars | ✓ | ✓ |
 | **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
+| **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
 | **Selection state** | Get/set selected actors; select by class or tag | ✓ | ✓ |
 | **Content Browser** | Folders, asset organization, moves with proper UE references | ✓ | ✓ |
 | **PIE** | Start, stop | ✓ | ✓ |
@@ -304,6 +306,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 
 - **Behavior Trees / EQS.** Tree authoring and EQS option/test editing. Blackboard schema authoring is now shipped in Lite and Professional.
 - **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
+- **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
 - **Audio.** Sound Cue graph, SoundClass/SoundMix, MetaSound asset and graph.
 - **Gameplay Ability System depth.** Dedicated attribute, derivation, and execution-calc tooling beyond today's Blueprint surface.
@@ -311,10 +314,12 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 **Workflow expansions**
 
 - **Editor tab and dock layout.** Sense and manipulate layout; save and restore named workspaces.
+- **Blueprint live debugging.** Breakpoints, stepping, watches, call stack snapshots, and debug-filter control.
+- **Cross-system debugger coverage.** Control Rig, StateTree, and Behavior Tree runtime/debug surfaces after the shared debugging contract lands.
 - **Source Control expansion.** Submit, branch, sync, merge orchestration on top of today's read and checkout surface.
 - **Cross-platform builds.** Mac and Linux build axis.
 
-<sub>*All planned surface ships to Professional. Lite scope is locked at the gameplay-authoring core.*</sub>
+<sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU, including Behavior Tree, StateTree, Smart Objects, and Blueprint debugging surfaces when shipped.*</sub>
 
 ---
 
