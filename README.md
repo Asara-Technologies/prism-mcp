@@ -160,6 +160,7 @@ Full split below.
 | **Material instances (MIC)** | Create, reparent, override walk | ✓ |
 | **Static switches** | Set, list | ✓ |
 | **Material layers** | Assign layer functions and blends; full layer-stack read | ✓ |
+| **Material parameter collections (MPC)** | Create, scalar/vector authoring with type inference, info readback | ✓ |
 
 </details>
 
@@ -305,7 +306,6 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 - **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
 - **Audio.** Sound Cue graph, SoundClass/SoundMix, MetaSound asset and graph.
-- **Material Parameter Collections.** Global parameter broadcast.
 - **Gameplay Ability System depth.** Dedicated attribute, derivation, and execution-calc tooling beyond today's Blueprint surface.
 
 **Workflow expansions**
