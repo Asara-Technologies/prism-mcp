@@ -306,7 +306,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 
 **Authoring expansions**
 
-- **Behavior Trees / EQS.** Graph-node reparenting, layout/update, and EQS option/test editing. Blackboard schema authoring and early Behavior Tree shell/composite/task/decorator/service/validation/subnode-management/property/graph-node authoring are now shipped in Lite and Professional.
+- **Behavior Trees / EQS.** Subtree references and EQS option/test editing. Blackboard schema authoring and early Behavior Tree shell/composite/task/decorator/service/validation/subnode-management/property/graph-node/update authoring are now shipped in Lite and Professional.
 - **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
 - **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
