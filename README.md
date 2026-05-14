@@ -55,7 +55,7 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 ## PrismMCP ships in two SKUs
 
-**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, Blackboard, Behavior Tree, and EQS option/test/property/update authoring, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
+**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, Blackboard, Behavior Tree, and EQS option/test/property/update/BP-base generator+context authoring, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
 
 **Professional: the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
 
@@ -79,7 +79,7 @@ Full split below.
 | **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
 | **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
 | **PIE** | Start, stop | ✓ | ✓ |
-| **AI behavior authoring** | Blackboards, Behavior Tree shells/bindings/nodes/validation/properties, subtree references, BP-base helpers, and EQS asset shells/classes/options/tests/validation/properties/update | ✓ | ✓ |
+| **AI behavior authoring** | Blackboards, Behavior Tree shells/bindings/nodes/validation/properties, subtree references, BP-base helpers, and EQS asset shells/classes/options/tests/validation/properties/update/BP-base generator+context helpers | ✓ | ✓ |
 | **Materials** | Instances, graph editing, layers, parameter collections | — | ✓ |
 | **UMG** | Widget tree, bindings, animations, Editor Utility Widgets | — | ✓ |
 | **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter | — | ✓ |
@@ -306,7 +306,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 
 **Authoring expansions**
 
-- **Behavior Trees / EQS.** EQS BP-base helpers. Blackboard schema authoring, Behavior Tree shell/composite/task/decorator/service/validation/subnode-management/property/graph-node/update/subtree-reference/BP-base-helper authoring, and EQS asset-shell/class-discovery/option/test-list/validation/property/update coverage are now shipped in Lite and Professional.
+- **Behavior Trees / EQS.** Blackboard schema authoring, Behavior Tree shell/composite/task/decorator/service/validation/subnode-management/property/graph-node/update/subtree-reference/BP-base-helper authoring, and EQS asset-shell/class-discovery/option/test-list/validation/property/update/generator-context-BP-base coverage are now shipped in Lite and Professional. UE 5.7 does not expose an EQS test BlueprintBase, so EQS tests remain native-class and reflected-property authored.
 - **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
 - **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
