@@ -79,7 +79,7 @@ Full split below.
 | **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
 | **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
 | **PIE** | Start, stop | ✓ | ✓ |
-| **AI behavior authoring** | Blackboards, Behavior Tree shells/bindings/nodes/validation/properties, subtree references, BP-base helpers, and EQS asset shells/classes/options/tests | ✓ | ✓ |
+| **AI behavior authoring** | Blackboards, Behavior Tree shells/bindings/nodes/validation/properties, subtree references, BP-base helpers, and EQS asset shells/classes/options/tests/validation | ✓ | ✓ |
 | **Materials** | Instances, graph editing, layers, parameter collections | — | ✓ |
 | **UMG** | Widget tree, bindings, animations, Editor Utility Widgets | — | ✓ |
 | **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter | — | ✓ |
@@ -306,7 +306,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 
 **Authoring expansions**
 
-- **Behavior Trees / EQS.** EQS property editing. Blackboard schema authoring, Behavior Tree shell/composite/task/decorator/service/validation/subnode-management/property/graph-node/update/subtree-reference/BP-base-helper authoring, and EQS asset-shell/class-discovery/option/test-list coverage are now shipped in Lite and Professional.
+- **Behavior Trees / EQS.** EQS property editing. Blackboard schema authoring, Behavior Tree shell/composite/task/decorator/service/validation/subnode-management/property/graph-node/update/subtree-reference/BP-base-helper authoring, and EQS asset-shell/class-discovery/option/test-list/validation coverage are now shipped in Lite and Professional.
 - **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
 - **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
