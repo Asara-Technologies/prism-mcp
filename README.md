@@ -55,7 +55,7 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 ## PrismMCP ships in two SKUs
 
-**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), components, Blackboard authoring, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
+**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, Blackboard authoring, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
 
 **Professional: the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
 
@@ -71,6 +71,7 @@ Full split below.
 | **Level actors** | Spawn, transform, delete; outliner; tags | ✓ | ✓ |
 | **Blueprint scaffolding** | Class, variables, CDO defaults, function calls | ✓ | ✓ |
 | **Blueprint graph editing** | 72 node types, transactional rollback | ✓ | ✓ |
+| **Blueprint live debugging** | Breakpoints, stepping, watches, call stack snapshots | ✓ | ✓ |
 | **Components / SCS** | Authoring on actors and Blueprints | ✓ | ✓ |
 | **Selection state** | Get and set; by class or tag | ✓ | ✓ |
 | **Content Browser** | Folders, asset organization, moves | ✓ | ✓ |
@@ -112,6 +113,7 @@ Full split below.
 | **Graph tooling** | Auto-layout, comments, reroute knots, stale-reference scan | ✓ | ✓ |
 | **Function authoring** | Signatures, params, returns, pure/const flags | ✓ | ✓ |
 | **Dispatchers, delegates, interfaces** | With stub graph generation | ✓ | ✓ |
+| **Live debugging** | Breakpoints, step controls, watches, pin eval, debug targets | ✓ | ✓ |
 
 </details>
 
@@ -314,12 +316,11 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 **Workflow expansions**
 
 - **Editor tab and dock layout.** Sense and manipulate layout; save and restore named workspaces.
-- **Blueprint live debugging.** Breakpoints, stepping, watches, call stack snapshots, and debug-filter control.
 - **Cross-system debugger coverage.** Control Rig, StateTree, and Behavior Tree runtime/debug surfaces after the shared debugging contract lands.
 - **Source Control expansion.** Submit, branch, sync, merge orchestration on top of today's read and checkout surface.
 - **Cross-platform builds.** Mac and Linux build axis.
 
-<sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU, including Behavior Tree, StateTree, Smart Objects, and Blueprint debugging surfaces when shipped.*</sub>
+<sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU, including Behavior Tree, StateTree, Smart Objects, and the shipped Blueprint debugging surface.*</sub>
 
 ---
 
@@ -385,7 +386,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 <details>
 <summary><strong>What's the difference between Lite and Professional?</strong></summary>
 
-Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing), components, Blackboard authoring, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Materials, UMG, Animation, Cinematics, Build & Ship, Profiling, Automation, Data, Source Control, and the rest. Roughly 75 commands vs the full ~440.
+Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing and live debugging), components, Blackboard authoring, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Materials, UMG, Animation, Cinematics, Build & Ship, Profiling, Automation, Data, Source Control, and the rest. Roughly 100+ commands vs the full ~440.
 
 </details>
 
