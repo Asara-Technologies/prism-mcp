@@ -84,7 +84,7 @@ Full split below.
 | **UMG** | Widget tree, bindings, animations, Editor Utility Widgets | — | ✓ |
 | **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter | — | ✓ |
 | **Cinematics** | LevelSequence, keyframes, MRQ rendering | — | ✓ |
-| **Audio** | Audio assets, Sound Cue discovery/readback/node CRUD/edge wiring/auto-layout, Sound Class/Mix, Submix routing, Source/Audio Bus sends | — | ✓ |
+| **Audio** | Audio assets, Sound Cue discovery/readback/node CRUD/edge wiring/auto-layout/property writes, Sound Class/Mix, Submix routing, Source/Audio Bus sends | — | ✓ |
 | **Build & Ship** | Cook, package, archive, deploy, launch | — | ✓ |
 | **Profiling** | Frame stats, Trace, Insights | — | ✓ |
 | **Automation tests** | Discover, run async, poll progress and results | — | ✓ |
@@ -225,7 +225,7 @@ Full split below.
 | Capability | Coverage | Professional |
 |:---|:---|:---:|
 | **Audio asset lifecycle** | Create and inspect Sound Cue, MetaSound Source/Patch, Sound Class, Sound Mix, Attenuation, Concurrency, Submix, Audio Bus, and Source Bus assets | ✓ |
-| **Sound Cue graph authoring** | Discover Sound Node types, read Sound Cue runtime trees plus editor layout metadata, add/remove/move graph nodes, wire/unwire node edges, and auto-layout graphs | ✓ |
+| **Sound Cue graph authoring** | Discover Sound Node types, read Sound Cue runtime trees plus editor layout metadata, add/remove/move graph nodes, wire/unwire node edges, auto-layout graphs, and write node properties | ✓ |
 | **Sound Class / Mix** | Hierarchy, class adjustments, and PIE-gated mix modifiers | ✓ |
 | **Submix and bus routing** | Submix hierarchy, submix/source effect chains, Audio Bus sends, Source Bus sends, and SourceBus cycle rejection | ✓ |
 
@@ -325,7 +325,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 - **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
 - **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
-- **Audio depth.** Sound Cue node property writes, MetaSound interface/graph depth, and preview/runtime controls. Audio asset lifecycle, Sound Cue node discovery/readback/CRUD/edge wiring/auto-layout, SoundClass/SoundMix authoring, and Submix/Bus routing are now shipped in Professional.
+- **Audio depth.** MetaSound interface/graph depth and preview/runtime controls. Audio asset lifecycle, Sound Cue node discovery/readback/CRUD/edge wiring/auto-layout/property writes, SoundClass/SoundMix authoring, and Submix/Bus routing are now shipped in Professional.
 - **Gameplay Ability System depth.** Dedicated attribute, derivation, and execution-calc tooling beyond today's Blueprint surface.
 
 **Workflow expansions**
