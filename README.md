@@ -84,7 +84,7 @@ Full split below.
 | **UMG** | Widget tree, bindings, animations, Editor Utility Widgets | — | ✓ |
 | **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter | — | ✓ |
 | **Cinematics** | LevelSequence, keyframes, MRQ rendering | — | ✓ |
-| **Audio** | Sound Cue, MetaSound, class, mix, attenuation, concurrency, submix, bus assets | — | ✓ |
+| **Audio** | Audio assets, Sound Class/Mix, Submix routing, Source/Audio Bus sends | — | ✓ |
 | **Build & Ship** | Cook, package, archive, deploy, launch | — | ✓ |
 | **Profiling** | Frame stats, Trace, Insights | — | ✓ |
 | **Automation tests** | Discover, run async, poll progress and results | — | ✓ |
@@ -225,7 +225,8 @@ Full split below.
 | Capability | Coverage | Professional |
 |:---|:---|:---:|
 | **Audio asset lifecycle** | Create and inspect Sound Cue, MetaSound Source/Patch, Sound Class, Sound Mix, Attenuation, Concurrency, Submix, Audio Bus, and Source Bus assets | ✓ |
-| **Parent chains** | Sound Class and Submix parent assignment with cycle checks | ✓ |
+| **Sound Class / Mix** | Hierarchy, class adjustments, and PIE-gated mix modifiers | ✓ |
+| **Submix and bus routing** | Submix hierarchy, submix/source effect chains, Audio Bus sends, Source Bus sends, and SourceBus cycle rejection | ✓ |
 
 </details>
 
@@ -323,7 +324,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 - **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
 - **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
-- **Audio depth.** Sound Cue graph editing, MetaSound interface/graph depth, SoundClass/SoundMix property authoring, Submix/Bus routing, and preview/runtime controls. Audio asset lifecycle is now shipped in Professional.
+- **Audio depth.** Sound Cue graph editing, MetaSound interface/graph depth, and preview/runtime controls. Audio asset lifecycle, SoundClass/SoundMix authoring, and Submix/Bus routing are now shipped in Professional.
 - **Gameplay Ability System depth.** Dedicated attribute, derivation, and execution-calc tooling beyond today's Blueprint surface.
 
 **Workflow expansions**
