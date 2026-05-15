@@ -310,7 +310,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 - **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
 - **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
-- **Audio.** Sound Cue graph, SoundClass/SoundMix, MetaSound asset and graph.
+- **Audio.** Sound Cue graph, MetaSound asset/interface work, and preview/runtime controls.
 - **Gameplay Ability System depth.** Dedicated attribute, derivation, and execution-calc tooling beyond today's Blueprint surface.
 
 **Workflow expansions**
