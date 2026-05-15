@@ -57,7 +57,7 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 **Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, Blackboard authoring, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
 
-**Professional: the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
+**Professional: the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Audio, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
 
 Full split below.
 
@@ -84,6 +84,7 @@ Full split below.
 | **UMG** | Widget tree, bindings, animations, Editor Utility Widgets | — | ✓ |
 | **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter | — | ✓ |
 | **Cinematics** | LevelSequence, keyframes, MRQ rendering | — | ✓ |
+| **Audio** | Sound Cue, MetaSound, class, mix, attenuation, concurrency, submix, bus assets | — | ✓ |
 | **Build & Ship** | Cook, package, archive, deploy, launch | — | ✓ |
 | **Profiling** | Frame stats, Trace, Insights | — | ✓ |
 | **Automation tests** | Discover, run async, poll progress and results | — | ✓ |
@@ -217,6 +218,18 @@ Full split below.
 </details>
 
 <details>
+<summary><strong>Audio: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Audio asset lifecycle** | Create and inspect Sound Cue, MetaSound Source/Patch, Sound Class, Sound Mix, Attenuation, Concurrency, Submix, Audio Bus, and Source Bus assets | ✓ |
+| **Parent chains** | Sound Class and Submix parent assignment with cycle checks | ✓ |
+
+</details>
+
+<details>
 <summary><strong>Build and Ship: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
@@ -310,7 +323,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 - **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
 - **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
-- **Audio.** Sound Cue graph, SoundClass/SoundMix, MetaSound asset and graph.
+- **Audio depth.** Sound Cue graph editing, MetaSound interface/graph depth, SoundClass/SoundMix property authoring, Submix/Bus routing, and preview/runtime controls. Audio asset lifecycle is now shipped in Professional.
 - **Gameplay Ability System depth.** Dedicated attribute, derivation, and execution-calc tooling beyond today's Blueprint surface.
 
 **Workflow expansions**
@@ -386,7 +399,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 <details>
 <summary><strong>What's the difference between Lite and Professional?</strong></summary>
 
-Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing and live debugging), components, Blackboard authoring, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Materials, UMG, Animation, Cinematics, Build & Ship, Profiling, Automation, Data, Source Control, and the rest. Roughly 100+ commands vs the full ~440.
+Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing and live debugging), components, Blackboard authoring, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Materials, UMG, Animation, Cinematics, Audio, Build & Ship, Profiling, Automation, Data, Source Control, and the rest. Roughly 100+ commands vs the full ~450.
 
 </details>
 
