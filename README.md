@@ -84,7 +84,7 @@ Full split below.
 | **UMG** | Widget tree, bindings, animations, Editor Utility Widgets | — | ✓ |
 | **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter | — | ✓ |
 | **Cinematics** | LevelSequence, keyframes, MRQ rendering | — | ✓ |
-| **Audio** | Audio assets, Sound Cue discovery/readback/node CRUD/edge wiring/auto-layout/property writes, MetaSound interface I/O/defaults/parent interfaces/compile status, editor audition handles, Sound Class/Mix, Submix routing, Source/Audio Bus sends | — | ✓ |
+| **Audio** | Audio assets, Sound Cue discovery/readback/node CRUD/edge wiring/auto-layout/property writes, MetaSound interface I/O/defaults/parent interfaces/compile status, editor audition handles, PIE playback, Sound Class/Mix, Submix routing, Source/Audio Bus sends | — | ✓ |
 | **Build & Ship** | Cook, package, archive, deploy, launch | — | ✓ |
 | **Profiling** | Frame stats, Trace, Insights | — | ✓ |
 | **Automation tests** | Discover, run async, poll progress and results | — | ✓ |
@@ -229,7 +229,7 @@ Full split below.
 | **MetaSound interface** | Read Source/Patch interfaces and graphs; add/remove root inputs and Patch outputs, update root input primitive defaults, declare user-modifiable parent interfaces, and poll frontend registration compile status | ✓ |
 | **Sound Class / Mix** | Hierarchy, class adjustments, and PIE-gated mix modifiers | ✓ |
 | **Submix and bus routing** | Submix hierarchy, submix/source effect chains, Audio Bus sends, Source Bus sends, and SourceBus cycle rejection | ✓ |
-| **Audio preview state** | Editor audition handles, stop/stop-all cleanup, active-audition listing, and runtime-state readback for the audition pool | ✓ |
+| **Audio preview state** | Editor audition handles, stop/stop-all cleanup, active-audition listing, PIE playback, and runtime-state readback for the audition pool | ✓ |
 
 </details>
 
@@ -327,7 +327,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 - **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
 - **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
-- **Audio depth.** Remaining PIE playback, submix mute/solo, and master-volume controls. Audio asset lifecycle, Sound Cue node discovery/readback/CRUD/edge wiring/auto-layout/property writes, MetaSound interface/graph inspection plus root input/output CRUD/default edits/parent-interface declarations/frontend registration compile status, SoundClass/SoundMix authoring, Submix/Bus routing, and editor audition handles are now shipped in Professional.
+- **Audio depth.** Remaining submix mute/solo and master-volume controls. Audio asset lifecycle, Sound Cue node discovery/readback/CRUD/edge wiring/auto-layout/property writes, MetaSound interface/graph inspection plus root input/output CRUD/default edits/parent-interface declarations/frontend registration compile status, SoundClass/SoundMix authoring, Submix/Bus routing, editor audition handles, and PIE playback are now shipped in Professional.
 - **Gameplay Ability System depth.** Dedicated attribute, derivation, and execution-calc tooling beyond today's Blueprint surface.
 
 **Workflow expansions**
