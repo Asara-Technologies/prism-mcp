@@ -244,6 +244,7 @@ Full split below.
 | **Build sessions** | Shared session manager, progress, current step, log tail | ✓ |
 | **Map builds** | Geometry, lighting, navigation, HLODs, texture and virtual texture streaming | ✓ |
 | **Cook, package, archive** | RunUAT BuildCookRun sessions | ✓ |
+| **Cross-platform release artifacts** | Win, Mac, and Linux plugin package axis by UE version and channel | ✓ |
 | **Deploy and launch** | To discovered target devices; launch-after-deploy | ✓ |
 
 </details>
@@ -335,7 +336,6 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 - **Editor tab and dock layout.** Sense and manipulate layout; save and restore named workspaces.
 - **Cross-system debugger coverage.** Control Rig, StateTree, and Behavior Tree runtime/debug surfaces after the shared debugging contract lands.
 - **Source Control expansion.** Submit, branch, sync, merge orchestration on top of today's read and checkout surface.
-- **Cross-platform builds.** Mac and Linux build axis.
 
 <sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU, including Behavior Tree, StateTree, Smart Objects, and the shipped Blueprint debugging surface.*</sub>
 
