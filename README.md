@@ -74,11 +74,11 @@ Full split below.
 | **Blueprint live debugging** | Breakpoints, stepping, watches, call stack snapshots | ✓ | ✓ |
 | **Components / SCS** | Authoring on actors and Blueprints | ✓ | ✓ |
 | **Selection state** | Get and set; by class or tag | ✓ | ✓ |
-| **Content Browser** | Folders, asset organization, moves | ✓ | ✓ |
+| **Content Browser** | Folders, asset organization, moves, import/reimport pipeline presets | ✓ | ✓ |
 | **Console + CVars** | Read state, set CVars | ✓ | ✓ |
 | **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
 | **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
-| **PIE** | Start, stop | ✓ | ✓ |
+| **PIE** | Start, stop, Play From Here | ✓ | ✓ |
 | **AI behavior authoring** | Blackboards, Behavior Tree shells/bindings/nodes/validation/properties, subtree references, BP-base helpers, EQS asset shells/classes/options/tests/validation/properties/update/BP-base generator+context helpers, and StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics | ✓ | ✓ |
 | **Materials** | Instances, graph editing, layers, parameter collections | — | ✓ |
 | **UMG** | Widget tree, bindings, animations, Editor Utility Widgets | — | ✓ |
@@ -142,8 +142,8 @@ Full split below.
 | **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
 | **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
 | **Selection state** | Get/set selected actors; select by class or tag | ✓ | ✓ |
-| **Content Browser** | Folders, asset organization, moves with proper UE references | ✓ | ✓ |
-| **PIE** | Start, stop | ✓ | ✓ |
+| **Content Browser** | Folders, asset organization, moves, import/reimport pipeline presets with proper UE references | ✓ | ✓ |
+| **PIE** | Start, stop, Play From Here | ✓ | ✓ |
 | **Editor lifecycle** | save_all, shutdown_editor, project metadata | — | ✓ |
 | **Live Coding control** | Compile trigger, structured error capture | — | ✓ |
 | **Undo / redo** | Structured history queries | — | ✓ |
