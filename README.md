@@ -57,7 +57,7 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 **Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, Blackboard, Behavior Tree, EQS option/test/property/update/BP-base generator+context authoring, and StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
 
-**Professional: the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
+**Professional: the full editor.** Everything in Lite plus the production toolchain: Smart Objects, Materials, UMG, Animation & Rigging, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
 
 Full split below.
 
@@ -80,6 +80,7 @@ Full split below.
 | **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
 | **PIE** | Start, stop, Play From Here | ✓ | ✓ |
 | **AI behavior authoring** | Blackboards, Behavior Tree shells/bindings/nodes/validation/properties, subtree references, BP-base helpers, EQS asset shells/classes/options/tests/validation/properties/update/BP-base generator+context helpers, and StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics | ✓ | ✓ |
+| **Smart Objects** | Definition assets, slots, reflected slot properties, behavior definitions, asset editor open/close, and world placement | — | ✓ |
 | **Materials** | Instances, graph editing, layers, parameter collections | — | ✓ |
 | **UMG** | Widget tree, bindings, animations, Editor Utility Widgets | — | ✓ |
 | **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter | — | ✓ |
@@ -255,6 +256,7 @@ Full split below.
 | **Enhanced Input** | Input Actions, Input Mapping Contexts, modifier and trigger config | ✓ |
 | **Gameplay Tags** | Tag editing, ini-table CRUD, hierarchy management | ✓ |
 | **Game Features / Modular Gameplay** | Plugin lifecycle, feature state | ✓ |
+| **Smart Objects** | Definition asset creation/readback, slot CRUD/readback, reflected slot property edits, behavior-definition class discovery/add/remove/list/get, asset editor open/close, generic Smart Object spawn, component attach, component definition assignment, and component info | ✓ |
 
 </details>
 
@@ -308,7 +310,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 
 - **Behavior Trees / EQS.** Blackboard schema authoring, Behavior Tree shell/composite/task/decorator/service/validation/subnode-management/property/graph-node/update/subtree-reference/BP-base-helper authoring, and EQS asset-shell/class-discovery/option/test-list/validation/property/update/generator-context-BP-base coverage are now shipped in Lite and Professional. UE 5.7 does not expose an EQS test BlueprintBase, so EQS tests remain native-class and reflected-property authored.
 - **StateTree.** Component/AIComponent StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics/binding diagnostics are now shipping in Lite and Professional.
-- **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
+- **Smart Objects follow-ups.** World Conditions, parameters and bindings, persistent collections, runtime integrations, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
 - **Audio.** Sound Cue graph, SoundClass/SoundMix, MetaSound asset and graph.
 - **Gameplay Ability System depth.** Dedicated attribute, derivation, and execution-calc tooling beyond today's Blueprint surface.
@@ -320,7 +322,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 - **Source Control expansion.** Submit, branch, sync, merge orchestration on top of today's read and checkout surface.
 - **Cross-platform builds.** Mac and Linux build axis.
 
-<sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU, including Behavior Tree, StateTree, Smart Objects, and the shipped Blueprint debugging surface.*</sub>
+<sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU, including Behavior Tree, StateTree, and the shipped Blueprint debugging surface.*</sub>
 
 ---
 
@@ -386,7 +388,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 <details>
 <summary><strong>What's the difference between Lite and Professional?</strong></summary>
 
-Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing and live debugging), components, AI behavior authoring, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Materials, UMG, Animation, Cinematics, Build & Ship, Profiling, Automation, Data, Source Control, and the rest. Roughly 100+ commands vs the full ~440.
+Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing and live debugging), components, AI behavior authoring, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Smart Objects, Materials, UMG, Animation, Cinematics, Build & Ship, Profiling, Automation, Data, Source Control, and the rest. Roughly 100+ commands vs the full ~440.
 
 </details>
 
