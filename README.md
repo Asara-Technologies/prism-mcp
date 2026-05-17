@@ -55,9 +55,9 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 ## PrismMCP ships in two SKUs
 
-**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, Blackboard authoring, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
+**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, Blackboard, Behavior Tree, EQS option/test/property/update/BP-base generator+context authoring, StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics, foliage type authoring, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
 
-**Professional: the full editor.** Everything in Lite plus the production toolchain: Materials, UMG, Animation & Rigging, Cinematics, Audio, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
+**Professional: the full editor.** Everything in Lite plus the production toolchain: Smart Objects, Materials, UMG/Common UI, Animation & Rigging, cross-system debugging for Behavior Tree/Control Rig/RigVM/StateTree, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
 
 Full split below.
 
@@ -70,27 +70,29 @@ Full split below.
 |:---|:---|:---:|:---:|
 | **Level actors** | Spawn, transform, delete; outliner; tags | ✓ | ✓ |
 | **Blueprint scaffolding** | Class, variables, CDO defaults, function calls | ✓ | ✓ |
-| **Blueprint graph editing** | 72 node types, transactional rollback | ✓ | ✓ |
+| **Blueprint graph editing** | Broad node coverage, transactional rollback | ✓ | ✓ |
 | **Blueprint live debugging** | Breakpoints, stepping, watches, call stack snapshots | ✓ | ✓ |
 | **Components / SCS** | Authoring on actors and Blueprints | ✓ | ✓ |
 | **Selection state** | Get and set; by class or tag | ✓ | ✓ |
-| **Content Browser** | Folders, asset organization, moves | ✓ | ✓ |
+| **Content Browser** | Folders, asset organization, moves, import/reimport pipeline presets | ✓ | ✓ |
 | **Console + CVars** | Read state, set CVars | ✓ | ✓ |
 | **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
 | **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
-| **PIE** | Start, stop | ✓ | ✓ |
-| **Blackboard authoring** | Assets, parent chains, 12 native key types, reverse users | ✓ | ✓ |
+| **PIE** | Start, stop, Play From Here | ✓ | ✓ |
+| **AI behavior authoring** | Blackboards, Behavior Tree shells/bindings/nodes/validation/properties, subtree references, BP-base helpers, EQS asset shells/classes/options/tests/validation/properties/update/BP-base generator+context helpers, and StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics | ✓ | ✓ |
+| **Foliage type authoring** | UFoliageType assets for InstancedStaticMesh and Actor variants; source assignment; reflected property reads/writes | ✓ | ✓ |
+| **Smart Objects** | Definition assets, slots, reflected slot properties, behavior definitions, World Conditions, asset editor open/close, and world placement | — | ✓ |
+| **Cross-system debugging** | Behavior Tree runtime inspection/breakpoints, Control Rig/RigVM runtime debugging, StateTree trace analysis | — | ✓ |
 | **Materials** | Instances, graph editing, layers, parameter collections | — | ✓ |
-| **UMG** | Widget tree, bindings, animations, Editor Utility Widgets | — | ✓ |
+| **UMG / Common UI** | Widget tree, bindings, animations, Editor Utility Widgets, CommonUI input tables and PIE stacks | — | ✓ |
 | **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter | — | ✓ |
 | **Cinematics** | LevelSequence, keyframes, MRQ rendering | — | ✓ |
-| **Audio** | Audio assets, Sound Cue discovery/readback/node CRUD/edge wiring/auto-layout/property writes, MetaSound interface I/O/defaults/parent interfaces/compile status, editor audition handles, PIE playback, submix mute/solo, master-volume override, Sound Class/Mix, Submix routing, Source/Audio Bus sends | — | ✓ |
 | **Build & Ship** | Cook, package, archive, deploy, launch | — | ✓ |
 | **Profiling** | Frame stats, Trace, Insights | — | ✓ |
 | **Automation tests** | Discover, run async, poll progress and results | — | ✓ |
 | **Enhanced Input + Game Features** | Input Actions, Mapping Contexts, modifiers, triggers; plugin lifecycle | — | ✓ |
 | **Gameplay Tags** | Hierarchy, project CRUD, container matching, queries | — | ✓ |
-| **Gameplay Ability System** | Via Blueprint surface (deeper authoring planned) | — | ✓ |
+| **Gameplay Ability System** | Attribute discovery/init tables, GameplayEffect/Ability/Cue authoring, ASC runtime control, debug introspection | — | ✓ |
 | **Data** | DataTables, DataAssets, Type System | — | ✓ |
 | **World Partition** | OFPA, DataLayers, streaming, level composition | — | ✓ |
 | **Source Control** | Provider status, read commands, write commands | — | ✓ |
@@ -110,7 +112,7 @@ Full split below.
 | **Function calls on placed actors** | Call existing functions on placed BP actors | ✓ | ✓ |
 | **Components** | Add, remove, reparent, transforms, attachment | ✓ | ✓ |
 | **Graph reading** | 4 detail levels for token-cost control | ✓ | ✓ |
-| **Graph authoring** | 72 node types, inline wiring, transactional rollback | ✓ | ✓ |
+| **Graph authoring** | Broad node coverage, inline wiring, transactional rollback | ✓ | ✓ |
 | **Graph tooling** | Auto-layout, comments, reroute knots, stale-reference scan | ✓ | ✓ |
 | **Function authoring** | Signatures, params, returns, pure/const flags | ✓ | ✓ |
 | **Dispatchers, delegates, interfaces** | With stub graph generation | ✓ | ✓ |
@@ -126,6 +128,7 @@ Full split below.
 | **Actor lifecycle** | Spawn, move, delete; transforms; tags | ✓ | ✓ |
 | **Outliner** | Queries, folder CRUD, selection state | ✓ | ✓ |
 | **Instance editing** | Variable editing, attach/detach, instance components | ✓ | ✓ |
+| **Foliage type authoring** | UFoliageType asset creation, source assignment, reflected property edits | ✓ | ✓ |
 | **Sub-levels** | Basic sub-level loads | ✓ | ✓ |
 | **World Partition** | Actor load, pin, dirty-actor protection | — | ✓ |
 | **DataLayers** | List, read/write membership, runtime state | — | ✓ |
@@ -143,8 +146,8 @@ Full split below.
 | **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
 | **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
 | **Selection state** | Get/set selected actors; select by class or tag | ✓ | ✓ |
-| **Content Browser** | Folders, asset organization, moves with proper UE references | ✓ | ✓ |
-| **PIE** | Start, stop | ✓ | ✓ |
+| **Content Browser** | Folders, asset organization, moves, import/reimport pipeline presets with proper UE references | ✓ | ✓ |
+| **PIE** | Start, stop, Play From Here | ✓ | ✓ |
 | **Editor lifecycle** | save_all, shutdown_editor, project metadata | — | ✓ |
 | **Live Coding control** | Compile trigger, structured error capture | — | ✓ |
 | **Undo / redo** | Structured history queries | — | ✓ |
@@ -170,7 +173,7 @@ Full split below.
 </details>
 
 <details>
-<summary><strong>UMG: Professional only</strong></summary>
+<summary><strong>UMG / Common UI: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
 
@@ -182,6 +185,7 @@ Full split below.
 | **Event bindings** | Bind widget multicast delegates | ✓ |
 | **Widget animations** | Track add, keyframe edit, animation modify and list | ✓ |
 | **Editor Utility Widgets (EUW) and Blueprints (EUB)** | Create, spawn as tab, run | ✓ |
+| **Common UI** | Activatable Widget Blueprints, asset discovery/settings/validation, input action data tables, action widget row handles, PIE stack controls, CommonInput state | ✓ |
 
 </details>
 
@@ -196,6 +200,7 @@ Full split below.
 | **Animation Montages** | Section CRUD, notify add/remove, float-curve key edits | ✓ |
 | **Skeleton and SkeletalMesh inspection** | Bones, sockets, curves, morph targets | ✓ |
 | **Control Rig** | Blueprint create, RigVM graph read/write, hierarchy edits, VM compile | ✓ |
+| **Control Rig / RigVM runtime debugging** | Live targets, debug mode, event queue, instruction visit order, session-scoped breakpoints | ✓ |
 | **IK Rig** | Solver stack (Limb, FullBodyIK, BodyMover, Pole, SetTransform, StretchLimb); goals; retarget chains | ✓ |
 | **IK Retargeter** | Asset CRUD, rig binding, chain mapping, auto-map, pose edits | ✓ |
 
@@ -218,22 +223,6 @@ Full split below.
 </details>
 
 <details>
-<summary><strong>Audio: Professional only</strong></summary>
-
-*Not included in Lite. Available in Professional.*
-
-| Capability | Coverage | Professional |
-|:---|:---|:---:|
-| **Audio asset lifecycle** | Create and inspect Sound Cue, MetaSound Source/Patch, Sound Class, Sound Mix, Attenuation, Concurrency, Submix, Audio Bus, and Source Bus assets | ✓ |
-| **Sound Cue graph authoring** | Discover Sound Node types, read Sound Cue runtime trees plus editor layout metadata, add/remove/move graph nodes, wire/unwire node edges, auto-layout graphs, and write node properties | ✓ |
-| **MetaSound interface** | Read Source/Patch interfaces and graphs; add/remove root inputs and Patch outputs, update root input primitive defaults, declare user-modifiable parent interfaces, and poll frontend registration compile status | ✓ |
-| **Sound Class / Mix** | Hierarchy, class adjustments, and PIE-gated mix modifiers | ✓ |
-| **Submix and bus routing** | Submix hierarchy, submix/source effect chains, Audio Bus sends, Source Bus sends, and SourceBus cycle rejection | ✓ |
-| **Audio preview state** | Editor audition handles, stop/stop-all cleanup, active-audition listing, PIE playback, submix mute/solo, master-volume override, and runtime-state readback for preview/runtime audio state | ✓ |
-
-</details>
-
-<details>
 <summary><strong>Build and Ship: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
@@ -244,7 +233,6 @@ Full split below.
 | **Build sessions** | Shared session manager, progress, current step, log tail | ✓ |
 | **Map builds** | Geometry, lighting, navigation, HLODs, texture and virtual texture streaming | ✓ |
 | **Cook, package, archive** | RunUAT BuildCookRun sessions | ✓ |
-| **Cross-platform release artifacts** | Win, Mac, and Linux plugin package axis by UE version and channel | ✓ |
 | **Deploy and launch** | To discovered target devices; launch-after-deploy | ✓ |
 
 </details>
@@ -273,6 +261,8 @@ Full split below.
 | **Enhanced Input** | Input Actions, Input Mapping Contexts, modifier and trigger config | ✓ |
 | **Gameplay Tags** | Tag editing, ini-table CRUD, hierarchy management | ✓ |
 | **Game Features / Modular Gameplay** | Plugin lifecycle, feature state | ✓ |
+| **Gameplay Ability System** | AttributeSet discovery, init DataTables, ASC setup, GameplayEffect/Ability/Cue authoring, runtime controls, debug snapshots | ✓ |
+| **Smart Objects** | Definition asset creation/readback, slot CRUD/readback, reflected slot property edits, behavior-definition class discovery/add/remove/list/get, World Condition struct discovery/add/remove/list/get/property edits, asset editor open/close, generic Smart Object spawn, component attach, component definition assignment, and component info | ✓ |
 
 </details>
 
@@ -324,20 +314,21 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 
 **Authoring expansions**
 
-- **Behavior Trees / EQS.** Tree authoring and EQS option/test editing. Blackboard schema authoring is now shipped in Lite and Professional.
-- **StateTree.** State hierarchy, evaluators, tasks, conditions, transitions.
-- **Smart Objects.** Definitions, slots, activity tags, world placement, and StateTree interaction hooks.
+- **Behavior Trees / EQS.** Blackboard schema authoring, Behavior Tree shell/composite/task/decorator/service/validation/subnode-management/property/graph-node/update/subtree-reference/BP-base-helper authoring, and EQS asset-shell/class-discovery/option/test-list/validation/property/update/generator-context-BP-base coverage are now shipped in Lite and Professional. UE 5.7 does not expose an EQS test BlueprintBase, so EQS tests remain native-class and reflected-property authored.
+- **StateTree.** Component/AIComponent StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics/binding diagnostics are now shipping in Lite and Professional.
+- **Foliage Type Authoring.** UFoliageType asset creation, source assignment, reflected property edits, and loaded-level type listing are now shipping in Lite and Professional. Instance placement/query, scatter/erase, and Professional-only procedural foliage remain planned follow-ups.
+- **Smart Objects follow-ups.** Parameters and bindings, persistent collections, runtime integrations, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
-- **Audio follow-ups.** MetaSound graph mutation, AudioModulation, Quartz timing, Synesthesia analysis, and secondary-client PIE routing. Audio Authoring v1 is now shipped in Professional.
-- **Gameplay Ability System depth.** Dedicated attribute, derivation, and execution-calc tooling beyond today's Blueprint surface.
+- **Audio.** Sound Cue graph, SoundClass/SoundMix, MetaSound asset and graph.
 
 **Workflow expansions**
 
 - **Editor tab and dock layout.** Sense and manipulate layout; save and restore named workspaces.
-- **Cross-system debugger coverage.** Control Rig, StateTree, and Behavior Tree runtime/debug surfaces after the shared debugging contract lands.
+- **Cross-system debugger coverage.** Behavior Tree runtime inspection/breakpoints, Control Rig/RigVM runtime debugging, and StateTree trace analysis are now shipping in Professional.
 - **Source Control expansion.** Submit, branch, sync, merge orchestration on top of today's read and checkout surface.
+- **Cross-platform builds.** Mac and Linux build axis.
 
-<sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU, including Behavior Tree, StateTree, Smart Objects, and the shipped Blueprint debugging surface.*</sub>
+<sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU, including Behavior Tree, StateTree, Foliage Type Authoring, and the shipped Blueprint debugging surface.*</sub>
 
 ---
 
@@ -403,7 +394,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 <details>
 <summary><strong>What's the difference between Lite and Professional?</strong></summary>
 
-Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing and live debugging), components, Blackboard authoring, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Materials, UMG, Animation, Cinematics, Audio, Build & Ship, Profiling, Automation, Data, Source Control, and the rest. Roughly 100+ commands vs the full ~450.
+Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing and live debugging), components, AI behavior authoring, foliage type authoring, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Smart Objects, Materials, UMG/Common UI, Animation, cross-system debugging, Cinematics, Build & Ship, Profiling, Automation, Data, Source Control, and the rest. Roughly 100+ commands vs the full surface.
 
 </details>
 
