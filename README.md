@@ -55,7 +55,7 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 ## PrismMCP ships in two SKUs
 
-**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, Blackboard, Behavior Tree, EQS option/test/property/update/BP-base generator+context authoring, StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics, foliage type authoring, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
+**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, reflected target/property authoring, Blackboard, Behavior Tree, EQS option/test/property/update/BP-base generator+context authoring, StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics, foliage type authoring, content browser, selection, console, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
 
 **Professional: the full editor.** Everything in Lite plus the production toolchain: Smart Objects, Materials, UMG/Common UI, Animation & Rigging, cross-system debugging for Behavior Tree/Control Rig/RigVM/StateTree, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
 
@@ -78,6 +78,7 @@ Lite descriptor and exclude Pro source before the Unreal build step.
 | **Blueprint graph editing** | Broad node coverage, transactional rollback | ✓ | ✓ |
 | **Blueprint live debugging** | Breakpoints, stepping, watches, call stack snapshots | ✓ | ✓ |
 | **Components / SCS** | Authoring on actors and Blueprints | ✓ | ✓ |
+| **Reflected authoring** | Resolve authoring targets; list/read/validate/set/reset reflected properties; describe structs; mutate arrays, sets, and maps with transaction records | ✓ | ✓ |
 | **Selection state** | Get and set; by class or tag | ✓ | ✓ |
 | **Content Browser** | Folders, asset organization, moves, import/reimport pipeline presets | ✓ | ✓ |
 | **Console + CVars** | Read state, set CVars | ✓ | ✓ |
