@@ -61,6 +61,11 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 Full split below.
 
+The SKU boundary is enforced in the build, not by a runtime toggle. Lite is
+built from the Core + Lite modules only; Professional is built from the Core +
+Lite + Pro modules from the same source SHA. Fab packages are staged from the
+Lite descriptor and exclude Pro source before the Unreal build step.
+
 > [!NOTE]
 > **Full undo and redo on every write.** Every PrismMCP command participates in UE's transaction system. Hit Ctrl+Z to back out a change, or have your AI agent call `undo` and read `get_undo_history` programmatically to roll back cleanly. Inline graph-wiring failures roll back automatically before they corrupt the graph.
 
