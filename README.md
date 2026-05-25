@@ -257,6 +257,7 @@ Lite descriptor and exclude Pro source before the Unreal build step.
 | **Frame stats** | Captures and queries | ✓ |
 | **Trace sessions** | Start, stop, channel control | ✓ |
 | **Insights integration** | Read trace data; query event streams | ✓ |
+| **GPU & frame timing** | Per-queue GPU work, per-frame GPU cost, CPU-vs-GPU bottleneck classification, bookmark/region readback | ✓ |
 | **Automation tests** | List tests, start async session, poll progress and results | ✓ |
 
 </details>
