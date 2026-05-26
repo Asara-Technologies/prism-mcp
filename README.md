@@ -375,7 +375,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 
 [**Get Professional**][direct-product] &nbsp;·&nbsp; [Read the EULA][eula]
 
-[eula]: #
+[eula]: https://www.asaratechnologies.com/legal/eula/
 
 </div>
 
@@ -513,6 +513,7 @@ direct AI access to the Unreal Engine editor.
 
 - [Asara End User License Agreement][eula]
 - [Privacy Policy][privacy]
+- [Source License Addendum][source-license] *(Studio)*
 - [Refund Policy][refunds]
 
 **▸ Fab buyers** *(Lite — Personal, Lite — Developer)*
@@ -521,7 +522,8 @@ direct AI access to the Unreal Engine editor.
 - [Privacy Policy][privacy] *(Asara)*
 - Refunds via [Fab's site policy][fab-refunds]
 
-[privacy]: #
+[privacy]: https://www.asaratechnologies.com/legal/privacy/
+[source-license]: https://www.asaratechnologies.com/legal/source-license/
 [refunds]: REFUNDS.md
 [fab-eula]: https://www.fab.com/eula
 [fab-refunds]: https://fab.com/help/refund-policy
