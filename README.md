@@ -375,7 +375,9 @@ flowchart LR
     C --> D[Your Project]
 ```
 
-Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatible agent.
+Works with **Claude Code**, **Cursor**, **Codex**, **Claude Desktop**, and any MCP-compatible agent.
+
+The in-editor control panel includes a **connection assistant** that generates ready-to-paste config for your MCP client (stdio and HTTP when enabled), an onboarding checklist, and security guidance for network-exposed settings.
 
 ---
 
