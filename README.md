@@ -6,7 +6,7 @@
 -->
 
 > [!IMPORTANT]
-> **Coming Soon.** Pre-launch preview. Pricing, links, and copy may change before public launch. Feedback from testers and reviewers welcome.
+> **Coming Soon.** Pre-launch preview. Pricing, links, and copy may change before public launch. Final EULA and Privacy Policy publish at general availability — pre-launch testers can email support@asaratechnologies.com for current terms. Feedback from testers and reviewers welcome.
 
 <div align="center">
 
@@ -470,7 +470,7 @@ Up and running in under 5 minutes.
 ```json
 {
   "mcpServers": {
-    "unreal": {
+    "prismmcp": {
       "command": "path/to/PrismMCP-Shim",
       "args": ["--port", "55557"]
     }
