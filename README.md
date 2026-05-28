@@ -6,7 +6,7 @@
 -->
 
 > [!IMPORTANT]
-> **Coming Soon.** Pre-launch preview. Pricing, links, and copy may change before public launch. Feedback from testers and reviewers welcome.
+> **Coming Soon.** Pre-launch preview. Pricing, links, and copy may change before public launch. [EULA](EULA.md) and [Privacy Policy](PRIVACY.md) are published as pre-launch drafts; final legal text publishes at general availability. Feedback from testers and reviewers welcome.
 
 <div align="center">
 
@@ -376,7 +376,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 
 [**Get Professional**][direct-product] &nbsp;·&nbsp; [Read the EULA][eula]
 
-[eula]: https://www.asaratechnologies.com/legal/eula/
+[eula]: EULA.md
 
 </div>
 
@@ -470,7 +470,7 @@ Up and running in under 5 minutes.
 ```json
 {
   "mcpServers": {
-    "unreal": {
+    "prismmcp": {
       "command": "path/to/PrismMCP-Shim",
       "args": ["--port", "55557"]
     }
@@ -491,10 +491,12 @@ API reference ships inside the plugin install. Setup guides and workflow recipes
 | **Studio** *(Direct)* | Dedicated time, private channel, custom feature work |
 
 Public issues: [github.com/Asara-Technologies/prism-mcp/issues][issues]<br/>
-Professional & Studio contact: [support@asaratechnologies.com][support]
+Professional & Studio contact: [support@asaratechnologies.com][support]<br/>
+Privacy questions: [privacy@asaratechnologies.com][privacy-email]
 
 [issues]: https://github.com/Asara-Technologies/prism-mcp/issues
 [support]: mailto:support@asaratechnologies.com
+[privacy-email]: mailto:privacy@asaratechnologies.com
 
 ---
 
@@ -523,7 +525,7 @@ direct AI access to the Unreal Engine editor.
 - [Privacy Policy][privacy] *(Asara)*
 - Refunds via [Fab's site policy][fab-refunds]
 
-[privacy]: https://www.asaratechnologies.com/legal/privacy/
+[privacy]: PRIVACY.md
 [source-license]: https://www.asaratechnologies.com/legal/source-license/
 [refunds]: REFUNDS.md
 [fab-eula]: https://www.fab.com/eula
