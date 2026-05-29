@@ -57,7 +57,7 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 **Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, reflected target/property authoring, Blackboard, Behavior Tree, EQS option/test/property/update/BP-base generator+context authoring, StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics, foliage type authoring, content browser, selection, console, programmatic scripting, custom tool extensions, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
 
-**Professional: the full editor.** Everything in Lite plus the production toolchain: Smart Objects, Materials, UMG/Common UI, Animation & Rigging, cross-system debugging for Behavior Tree/Control Rig/RigVM/StateTree, Cinematics, Build & Ship, Profiling, Automation tests, Data, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
+**Professional: the full editor.** Everything in Lite plus the production toolchain: Smart Objects, Materials, UMG/Common UI, Animation & Rigging, cross-system debugging for Behavior Tree/Control Rig/RigVM/StateTree, Cinematics, Build & Ship, Profiling, Automation tests, Data, Localization, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
 
 Full split below.
 
@@ -102,6 +102,7 @@ Lite descriptor and exclude Pro source before the Unreal build step.
 | **Gameplay Tags** | Hierarchy, project CRUD, container matching, queries | — | ✓ |
 | **Gameplay Ability System** | Attribute discovery/init tables, GameplayEffect/Ability/Cue authoring, ASC runtime control, debug introspection | — | ✓ |
 | **Data** | DataTables, DataAssets, Type System | — | ✓ |
+| **Localization** | Targets and cultures, GatherText/compile/export/import pipeline as async jobs, String Tables, locres/archive/manifest inspection | — | ✓ |
 | **World Partition** | OFPA, DataLayers, streaming, level composition | — | ✓ |
 | **Source Control** | Provider status, read commands, write commands | — | ✓ |
 | **Native type reflection** | K2Node discriminators; Asset Registry queries | — | ✓ |
@@ -292,6 +293,21 @@ Lite descriptor and exclude Pro source before the Unreal build step.
 </details>
 
 <details>
+<summary><strong>Localization: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Targets and cultures** | Create, get, list, delete, patch, and validate localization targets; add/remove cultures; set native culture | ✓ |
+| **Pipeline** | GatherText, compile, export and import translations as async jobs with progress polling and structured diffs | ✓ |
+| **Jobs and reports** | Job status, job list, paginated localization reports with per-category key listing | ✓ |
+| **String Tables** | Create tables, set/remove entries, set namespace, list entries, table info | ✓ |
+| **Inspection** | Read locres binaries, localization archives, and manifests | ✓ |
+
+</details>
+
+<details>
 <summary><strong>Source Control: Professional only</strong></summary>
 
 *Not included in Lite. Available in Professional.*
@@ -405,7 +421,7 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 <details>
 <summary><strong>What's the difference between Lite and Professional?</strong></summary>
 
-Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing and live debugging), components, AI behavior authoring, foliage type authoring, programmatic scripting, custom tool extensions, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Smart Objects, Materials, UMG/Common UI, Animation, cross-system debugging, Cinematics, Build & Ship, Profiling, Automation, Data, Source Control, and the rest. Roughly 100+ commands vs the full surface.
+Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing and live debugging), components, AI behavior authoring, foliage type authoring, programmatic scripting, custom tool extensions, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Smart Objects, Materials, UMG/Common UI, Animation, cross-system debugging, Cinematics, Build & Ship, Profiling, Automation, Data, Localization, Source Control, and the rest. Roughly 100+ commands vs the full surface.
 
 </details>
 
