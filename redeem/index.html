@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="license-server-origin" content="https://license.asaratechnologies.com">
+  <title>PrismMCP Download Redemption</title>
+  <style>
+    :root { color-scheme: light; --ink: #17202a; --muted: #5b6470; --line: #d7dde5; --accent: #22577a; --bg: #f7f9fb; --panel: #ffffff; --danger: #9f1d35; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); line-height: 1.5; }
+    main { width: min(980px, calc(100% - 32px)); margin: 0 auto; padding: 40px 0 56px; }
+    header { margin-bottom: 24px; }
+    .eyebrow { margin: 0 0 8px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+    h1 { margin: 0 0 10px; font-size: clamp(2rem, 6vw, 3.75rem); line-height: 1.02; letter-spacing: 0; }
+    .lede { max-width: 720px; margin: 0; color: var(--muted); font-size: 1.05rem; }
+    form, .notice, #results, #error { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+    form { display: grid; gap: 18px; padding: 20px; margin: 20px 0; }
+    .fields { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    label { display: grid; gap: 6px; font-weight: 700; }
+    input { width: 100%; min-height: 44px; border: 1px solid #aeb8c4; border-radius: 6px; padding: 10px 12px; font: inherit; background: #fff; color: var(--ink); }
+    input:focus { outline: 3px solid rgba(34, 87, 122, 0.22); border-color: var(--accent); }
+    button { min-height: 42px; border: 0; border-radius: 6px; padding: 10px 14px; font: inherit; font-weight: 700; color: #fff; background: var(--accent); cursor: pointer; }
+    button:disabled { opacity: 0.62; cursor: progress; }
+    .notice { padding: 16px 18px; color: var(--muted); }
+    .notice strong { color: var(--ink); }
+    #error { display: none; margin: 18px 0; padding: 14px 16px; color: var(--danger); border-color: rgba(159, 29, 53, 0.35); background: #fff7f8; }
+    #results { display: none; margin-top: 20px; overflow-x: auto; }
+    #results .summary { padding: 16px 18px 0; color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; min-width: 720px; }
+    th, td { padding: 12px 14px; text-align: left; border-top: 1px solid var(--line); vertical-align: middle; }
+    th { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+    .latest { display: inline-block; margin-left: 8px; padding: 2px 7px; border-radius: 999px; background: #e8f3ec; color: #1f6b3b; font-size: 0.75rem; font-weight: 700; }
+    .empty { padding: 18px; color: var(--muted); }
+    @media (max-width: 720px) {
+      main { width: min(100% - 24px, 980px); padding-top: 28px; }
+      .fields { grid-template-columns: 1fr; }
+      form { padding: 16px; }
+      button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Asara PrismMCP</p>
+      <h1>Download PrismMCP</h1>
+      <p class="lede">Enter the email address on your license and your activation code, seat code, or license key to view available builds.</p>
+    </header>
+
+    <section class="notice" aria-label="Privacy note">
+      <strong>Privacy note:</strong> this page does not store your credential in the URL, cookies, local storage, or session storage. Each request sends your email and credential directly to the PrismMCP license server.
+    </section>
+
+    <form id="redeem-form" novalidate>
+      <div class="fields">
+        <label>
+          Email address
+          <input name="email" type="email" autocomplete="email" maxlength="320" required>
+        </label>
+        <label>
+          Activation code or license key
+          <input name="credential" type="password" autocomplete="off" minlength="8" maxlength="128" required>
+        </label>
+      </div>
+      <button type="submit">Show downloads</button>
+    </form>
+
+    <div id="error" role="alert" aria-live="polite"></div>
+    <section id="results" aria-live="polite"></section>
+  </main>
+  <script src="redeem.js"></script>
+</body>
+</html>
