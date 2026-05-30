@@ -1,0 +1,17 @@
+{
+  "name": "download-redemption-page",
+  "version": "1.0.0",
+  "description": "Static PrismMCP download redemption page tests.",
+  "private": true,
+  "scripts": {
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "devDependencies": {
+    "happy-dom": "^20.9.0",
+    "vitest": "^4.1.7"
+  }
+}
