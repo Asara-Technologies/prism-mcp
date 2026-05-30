@@ -87,6 +87,14 @@
         plugin_version: button.dataset.pluginVersion,
         asset_name: button.dataset.assetName
       });
+      // Defense in depth: refuse anything that isn't https:// before navigating.
+      // Compromised or MITM'd license server cannot redirect via javascript: / data:.
+      if (typeof response.url !== "string" || !/^https:\/\//.test(response.url)) {
+        renderError("Download URL was not a valid https:// link. Try again.");
+        button.disabled = false;
+        button.textContent = "Download";
+        return;
+      }
       window.location.assign(response.url);
     } catch (error) {
       renderError(messageForError(error));

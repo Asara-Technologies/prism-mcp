@@ -137,18 +137,36 @@ describe("redeem page", () => {
     expect(document.querySelector("#error").textContent).toMatch(/one download per minute/i);
   });
 
-  it("download click assigns window.location.assign to the returned URL", async () => {
+  it("download click assigns window.location.assign to the returned https URL", async () => {
     await renderCatalog();
     global.fetch = vi.fn().mockResolvedValue({
       ok: true,
       status: 200,
-      json: async () => ({ url: "about:blank#test", asset_name: "x", size_bytes: 1 })
+      json: async () => ({ url: "https://signed.example/asset.zip", asset_name: "x", size_bytes: 1 })
     });
     window.location.assign = vi.fn();
 
     document.querySelector("button[data-action='download']").click();
     await flushAsyncWork();
 
-    expect(window.location.assign).toHaveBeenCalledWith("about:blank#test");
+    expect(window.location.assign).toHaveBeenCalledWith("https://signed.example/asset.zip");
+  });
+
+  it("refuses non-https download URLs (javascript:, data:, http:)", async () => {
+    for (const malicious of ["javascript:alert(1)", "data:text/html,<script>alert(1)</script>", "http://insecure.example/a"]) {
+      await renderCatalog();
+      global.fetch = vi.fn().mockResolvedValue({
+        ok: true,
+        status: 200,
+        json: async () => ({ url: malicious, asset_name: "x", size_bytes: 1 })
+      });
+      window.location.assign = vi.fn();
+
+      document.querySelector("button[data-action='download']").click();
+      await flushAsyncWork();
+
+      expect(window.location.assign).not.toHaveBeenCalled();
+      expect(document.querySelector("#error").textContent).toMatch(/https:\/\//);
+    }
   });
 });
