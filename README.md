@@ -77,7 +77,7 @@ Lite descriptor and exclude Pro source before the Unreal build step.
 | **Blueprint scaffolding** | Class, variables, CDO defaults, function calls | ✓ | ✓ |
 | **Blueprint graph editing** | Broad node coverage, transactional rollback | ✓ | ✓ |
 | **Blueprint live debugging** | Breakpoints, stepping, watches, call stack snapshots | ✓ | ✓ |
-| **Blueprint-to-C++ conversion preview** | Selected Blueprint function/event migration, staged native files, guided workflow reports, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails, reproducible proof-pack reports, public command walkthroughs, and explicit non-goals | — | ✓ |
+| **Blueprint-to-C++ conversion preview** | Selected Blueprint function/event migration, staged native files, guided workflow reports, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails with allowlisted component-default replay, reproducible proof-pack reports, public command walkthroughs, and explicit non-goals | — | ✓ |
 | **Components / SCS** | Authoring on actors and Blueprints | ✓ | ✓ |
 | **Reflected authoring** | Resolve authoring targets; list/read/validate/set/reset reflected properties; describe structs; mutate arrays, sets, and maps with transaction records | ✓ | ✓ |
 | **Selection state** | Get and set; by class or tag | ✓ | ✓ |
@@ -127,7 +127,7 @@ Lite descriptor and exclude Pro source before the Unreal build step.
 | **Function authoring** | Signatures, params, returns, pure/const flags | ✓ | ✓ |
 | **Dispatchers, delegates, interfaces** | With stub graph generation | ✓ | ✓ |
 | **Live debugging** | Breakpoints, step controls, watches, pin eval, debug targets | ✓ | ✓ |
-| **Blueprint-to-C++ preview** | Selected function/event migration, staged native files, guided workflow reports, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails, reproducible proof-pack reports, public command walkthroughs, and explicit non-goals | — | ✓ |
+| **Blueprint-to-C++ preview** | Selected function/event migration, staged native files, guided workflow reports, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails with allowlisted component-default replay, reproducible proof-pack reports, public command walkthroughs, and explicit non-goals | — | ✓ |
 
 </details>
 
@@ -177,7 +177,7 @@ Example side-effect-free staging preview:
 }
 ```
 
-Known boundaries: this is a Professional preview pipeline for selected Blueprint functions/events, not arbitrary "convert any Blueprint" automation. The guided workflow command is a planner, not a destructive runner. It does not stage files, run UBT, patch references, reparent Blueprints, confirm deletion, or delete assets. Timing observations in proof reports are project-local command/runtime observations, not cooked-build speedup claims. Arbitrary reflected component property replay remains follow-up scope.
+Known boundaries: this is a Professional preview pipeline for selected Blueprint functions/events, not arbitrary "convert any Blueprint" automation. Mode D component-default replay is allowlist-only and reports skipped property deltas for manual review. The guided workflow command is a planner, not a destructive runner. It does not stage files, run UBT, patch references, reparent Blueprints, confirm deletion, or delete assets. Timing observations in proof reports are project-local command/runtime observations, not cooked-build speedup claims. Arbitrary reflected component property serialization remains out of scope.
 
 </details>
 
@@ -404,7 +404,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 
 - **Editor tab and dock layout.** Sense and manipulate layout; save and restore named workspaces.
 - **Cross-system debugger coverage.** Behavior Tree runtime inspection/breakpoints, Control Rig/RigVM runtime debugging, and StateTree trace analysis are now shipping in Professional.
-- **Blueprint-to-C++ conversion.** Professional preview coverage now includes selected function/event migration, staged native files, guided workflow reports with explicit analyze/dry-run/stage/rebuild/verify/parity/reference-patch gates, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails, reproducible proof-pack reports covering project conversion coverage, manifest-backed non-latent parity, and the committed L7 runtime fixture matrix, plus a public command walkthrough with JSON examples and known non-goals. The guided workflow report is a planning surface, not one-click destructive conversion. Timing observations are project-local proof data, not cooked-build speedup claims. Arbitrary reflected component property replay remains follow-up scope.
+- **Blueprint-to-C++ conversion.** Professional preview coverage now includes selected function/event migration, staged native files, guided workflow reports with explicit analyze/dry-run/stage/rebuild/verify/parity/reference-patch gates, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails with allowlisted component-default replay and skipped-property diagnostics, reproducible proof-pack reports covering project conversion coverage, manifest-backed non-latent parity, and the committed L7 runtime fixture matrix, plus a public command walkthrough with JSON examples and known non-goals. The guided workflow report is a planning surface, not one-click destructive conversion. Timing observations are project-local proof data, not cooked-build speedup claims. Arbitrary reflected component property serialization remains out of scope.
 - **Source Control expansion.** Submit, branch, sync, merge orchestration on top of today's read and checkout surface.
 - **Cross-platform builds.** Mac and Linux build axis.
 
