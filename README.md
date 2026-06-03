@@ -77,7 +77,7 @@ Lite descriptor and exclude Pro source before the Unreal build step.
 | **Blueprint scaffolding** | Class, variables, CDO defaults, function calls | ✓ | ✓ |
 | **Blueprint graph editing** | Broad node coverage, transactional rollback | ✓ | ✓ |
 | **Blueprint live debugging** | Breakpoints, stepping, watches, call stack snapshots | ✓ | ✓ |
-| **Blueprint-to-C++ conversion preview** | Selected Blueprint function/event migration, staged native files, guided workflow reports, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails, and reproducible proof-pack reports | — | ✓ |
+| **Blueprint-to-C++ conversion preview** | Selected Blueprint function/event migration, staged native files, guided workflow reports, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails, reproducible proof-pack reports, public command walkthroughs, and explicit non-goals | — | ✓ |
 | **Components / SCS** | Authoring on actors and Blueprints | ✓ | ✓ |
 | **Reflected authoring** | Resolve authoring targets; list/read/validate/set/reset reflected properties; describe structs; mutate arrays, sets, and maps with transaction records | ✓ | ✓ |
 | **Selection state** | Get and set; by class or tag | ✓ | ✓ |
@@ -127,7 +127,57 @@ Lite descriptor and exclude Pro source before the Unreal build step.
 | **Function authoring** | Signatures, params, returns, pure/const flags | ✓ | ✓ |
 | **Dispatchers, delegates, interfaces** | With stub graph generation | ✓ | ✓ |
 | **Live debugging** | Breakpoints, step controls, watches, pin eval, debug targets | ✓ | ✓ |
-| **Blueprint-to-C++ preview** | Selected function/event migration, staged native files, guided workflow reports, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails, and reproducible proof-pack reports | — | ✓ |
+| **Blueprint-to-C++ preview** | Selected function/event migration, staged native files, guided workflow reports, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails, reproducible proof-pack reports, public command walkthroughs, and explicit non-goals | — | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Blueprint-to-C++ preview: Professional only</strong></summary>
+
+| Phase | Representative commands | Project mutation |
+|:---|:---|:---:|
+| Analyze | `dev_bpc_analyze_blueprint_convertibility`, `dev_bpc_project_conversion_coverage_report` | No |
+| Guided workflow | `dev_bpc_generate_guided_conversion_workflow` | No, except optional markdown report output |
+| Dry-run preview | `dev_bpc_convert_function`, `dev_bpc_convert_class_mode_b`, `dev_bpc_convert_class_mode_d`, `dev_bpc_convert_type_assets` with `dry_run: true` | No |
+| Stage generated code | Path A, Mode B, Mode D, and type-asset conversion with `dry_run: false` | Generated files and Prism sidecars only |
+| Rebuild and diagnose | `dev_bpc_external_rebuild`, `dev_bpc_compile_and_diagnose_conversion`, `dev_bpc_backmap_errors` | Build artifacts |
+| Verify and prove | `dev_bpc_verify_conversion`, `dev_bpc_run_parity_tests`, `dev_bpc_generate_public_proof_report` | Parity manifests or optional report output |
+| Apply explicit asset changes | Mode A graph patch/restore, Mode B reference patch, Mode D reparent preview/apply/remove | Only when the specific apply command is called |
+
+Example guided workflow request:
+
+```json
+{
+  "command": "dev_bpc_generate_guided_conversion_workflow",
+  "params": {
+    "asset_path": "/Game/BP_PlayerPawn.BP_PlayerPawn",
+    "mode": "mode_d",
+    "project_path": "D:/Projects/MyGame/MyGame.uproject",
+    "module_name": "MyGameGenerated",
+    "class_name": "PlayerPawnNative",
+    "functions": ["ReceiveBeginPlay", "ComputeMoveSpeed"],
+    "include_analysis": true
+  }
+}
+```
+
+Example side-effect-free staging preview:
+
+```json
+{
+  "command": "dev_bpc_convert_class_mode_d",
+  "params": {
+    "asset": "/Game/BP_PlayerPawn.BP_PlayerPawn",
+    "functions": ["ReceiveBeginPlay", "ComputeMoveSpeed"],
+    "project_path": "D:/Projects/MyGame/MyGame.uproject",
+    "module_name": "MyGameGenerated",
+    "class_name": "PlayerPawnNative",
+    "dry_run": true
+  }
+}
+```
+
+Known boundaries: this is a Professional preview pipeline for selected Blueprint functions/events, not arbitrary "convert any Blueprint" automation. The guided workflow command is a planner, not a destructive runner. It does not stage files, run UBT, patch references, reparent Blueprints, confirm deletion, or delete assets. Timing observations in proof reports are project-local command/runtime observations, not cooked-build speedup claims. Arbitrary reflected component property replay remains follow-up scope.
 
 </details>
 
@@ -354,7 +404,7 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 
 - **Editor tab and dock layout.** Sense and manipulate layout; save and restore named workspaces.
 - **Cross-system debugger coverage.** Behavior Tree runtime inspection/breakpoints, Control Rig/RigVM runtime debugging, and StateTree trace analysis are now shipping in Professional.
-- **Blueprint-to-C++ conversion.** Professional preview coverage now includes selected function/event migration, staged native files, guided workflow reports with explicit analyze/dry-run/stage/rebuild/verify/parity/reference-patch gates, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails, and reproducible proof-pack reports covering project conversion coverage, manifest-backed non-latent parity, and the committed L7 runtime fixture matrix. The guided workflow report is a planning surface, not one-click destructive conversion. Timing observations are project-local proof data, not cooked-build speedup claims. Arbitrary reflected component property replay remains follow-up scope.
+- **Blueprint-to-C++ conversion.** Professional preview coverage now includes selected function/event migration, staged native files, guided workflow reports with explicit analyze/dry-run/stage/rebuild/verify/parity/reference-patch gates, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails, reproducible proof-pack reports covering project conversion coverage, manifest-backed non-latent parity, and the committed L7 runtime fixture matrix, plus a public command walkthrough with JSON examples and known non-goals. The guided workflow report is a planning surface, not one-click destructive conversion. Timing observations are project-local proof data, not cooked-build speedup claims. Arbitrary reflected component property replay remains follow-up scope.
 - **Source Control expansion.** Submit, branch, sync, merge orchestration on top of today's read and checkout surface.
 - **Cross-platform builds.** Mac and Linux build axis.
 
