@@ -17,6 +17,9 @@ An agent-driven pipeline for converting Blueprint functions and classes to gener
 - Mode D native parent: preview reparenting before applying it; component default replay is allowlist-controlled with structured skip diagnostics for anything not replayed; rollback reads `.prism.moded` sidecar metadata
 - Convert Blueprint UserDefinedStruct and UserDefinedEnum assets to native type headers with a scoped type map sidecar
 - Backmap UBT error lines to Blueprint source pins using sidecar diagnostics
+- Replication-aware Mode D: replicated variables get DOREPLIFETIME, RPCs get Server/Client/NetMulticast specifiers, OnRep callbacks are synthesized, replicated components call SetIsReplicatedByDefault
+- Interface-aware Mode D: native interfaces appear in the C++ inheritance list, unlifted interface functions get default-returning stubs, BlueprintNativeEvent overrides use _Implementation suffix
+- GAS-aware Mode D: GameplayAbility Blueprints convert with full CDO metadata (instancing/network policies, tag containers, cost/cooldown class references, ability triggers) and K2_ Blueprint events map to native C++ overrides with correct Super call positioning; AttributeSet Blueprints get ATTRIBUTE_ACCESSORS macros and GAMEPLAYATTRIBUTE_REPNOTIFY in OnRep callbacks
 
 ## Systems covered
 
