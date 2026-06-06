@@ -22,6 +22,8 @@
 
 [**Get Professional**][buy] &nbsp;·&nbsp; [Try on Fab][fab] &nbsp;·&nbsp; [Watch Demo][demo]
 
+[**Documentation**](docs/) &nbsp;·&nbsp; [**Coverage**](COVERAGE.md) &nbsp;·&nbsp; [**Releases**](https://github.com/Asara-Technologies/prism-mcp/releases)
+
 [buy]: #pricing
 [fab]: #
 [demo]: #
@@ -55,19 +57,16 @@ force-multiplying workflows. I'm truly excited to help with yours.
 
 ## PrismMCP ships in two SKUs
 
-**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface), Blueprint live debugging, components, reflected target/property authoring, Blackboard, Behavior Tree, EQS option/test/property/update/BP-base generator+context authoring, StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics, foliage type authoring, content browser, selection, console, programmatic scripting, custom tool extensions, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
+**Lite: gameplay authoring.** Level actors, Blueprints (full authoring surface including graph editing and live debugging), components, reflected authoring, AI behavior authoring (Blackboard, Behavior Tree, EQS, StateTree), foliage type authoring, content browser, selection, console, programmatic scripting, custom tool extensions, PIE. The surface you live in day to day. [Sold on Fab][fab-product].
 
-**Professional: the full editor.** Everything in Lite plus the production toolchain: Smart Objects, Materials, UMG/Common UI, Animation & Rigging, cross-system debugging for Behavior Tree/Control Rig/RigVM/StateTree, Cinematics, Build & Ship, Profiling, Automation tests, Data, Localization, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
-
-Full split below.
+**Professional: the full editor.** Everything in Lite plus the production toolchain: Smart Objects, Materials, UMG/Common UI, Animation & Rigging, cross-system debugging, Blueprint-to-C++ preview, Cinematics, Build & Ship, Profiling, Automation tests, Data, Localization, World Partition, Source Control, native type reflection, editor lifecycle, Live Coding. [Sold direct from Asara][direct-product].
 
 The SKU boundary is enforced in the build, not by a runtime toggle. Lite is
 built from the Core + Lite modules only; Professional is built from the Core +
-Lite + Pro modules from the same source SHA. Fab packages are staged from the
-Lite descriptor and exclude Pro source before the Unreal build step.
+Lite + Pro modules from the same source SHA.
 
 > [!NOTE]
-> **Full undo and redo on every write.** Every PrismMCP command participates in UE's transaction system. Hit Ctrl+Z to back out a change, or have your AI agent call `undo` and read `get_undo_history` programmatically to roll back cleanly. Inline graph-wiring failures roll back automatically before they corrupt the graph.
+> **Full undo and redo on every write.** Every PrismMCP command participates in UE's transaction system. Hit Ctrl+Z to back out a change, or have your AI agent call `undo` and read `get_undo_history` programmatically to roll back cleanly.
 
 ### Capability matrix
 
@@ -77,39 +76,46 @@ Lite descriptor and exclude Pro source before the Unreal build step.
 | **Blueprint scaffolding** | Class, variables, CDO defaults, function calls | ✓ | ✓ |
 | **Blueprint graph editing** | Broad node coverage, transactional rollback | ✓ | ✓ |
 | **Blueprint live debugging** | Breakpoints, stepping, watches, call stack snapshots | ✓ | ✓ |
-| **Blueprint-to-C++ conversion preview** | Selected Blueprint function/event migration, staged native files, guided workflow reports, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails with allowlisted component-default replay, reproducible proof-pack reports, public command walkthroughs, and explicit non-goals | — | ✓ |
+| **Blueprint-to-C++ conversion preview** | Selected function/event migration, staged native files, guided workflow | — | ✓ |
 | **Components / SCS** | Authoring on actors and Blueprints | ✓ | ✓ |
-| **Reflected authoring** | Resolve authoring targets; list/read/validate/set/reset reflected properties; describe structs; mutate arrays, sets, and maps with transaction records | ✓ | ✓ |
+| **Reflected authoring** | List/read/validate/set/reset reflected properties; struct describe; array/set/map mutation | ✓ | ✓ |
+| **AI behavior authoring** | Blackboard, Behavior Tree, EQS, StateTree: full authoring surface | ✓ | ✓ |
+| **Foliage type authoring** | UFoliageType assets, source assignment, reflected property edits | ✓ | ✓ |
 | **Selection state** | Get and set; by class or tag | ✓ | ✓ |
-| **Content Browser** | Folders, asset organization, moves, import/reimport pipeline presets | ✓ | ✓ |
+| **Content Browser** | Folders, asset organization, moves, import/reimport | ✓ | ✓ |
 | **Console + CVars** | Read state, set CVars | ✓ | ✓ |
-| **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
-| **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
-| **Programmatic scripting** | Run sandboxed Python snippets with `execute_tool(command, params)`, print capture, structured results, limits, and rollback on failure | ✓ | ✓ |
-| **Custom tool extensions** | Register C++ extension modules, Blueprint Toolset DataAssets, tagged UFUNCTION commands, and Python extension packs with live discovery and Atlas extension metadata | ✓ | ✓ |
+| **Programmatic scripting** | Sandboxed Python with `execute_tool()`, structured results, rollback on failure | ✓ | ✓ |
+| **Custom tool extensions** | C++ modules, Blueprint Toolsets, UFUNCTION commands, Python extension packs | ✓ | ✓ |
 | **PIE** | Start, stop, Play From Here | ✓ | ✓ |
-| **AI behavior authoring** | Blackboards, Behavior Tree shells/bindings/nodes/validation/properties, subtree references, BP-base helpers, EQS asset shells/classes/options/tests/validation/properties/update/BP-base generator+context helpers, and StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics | ✓ | ✓ |
-| **Foliage type authoring** | UFoliageType assets for InstancedStaticMesh and Actor variants; source assignment; reflected property reads/writes | ✓ | ✓ |
-| **Smart Objects** | Definition assets, slots, reflected slot properties, behavior definitions, World Conditions, asset editor open/close, and world placement | — | ✓ |
-| **Cross-system debugging** | Behavior Tree runtime inspection/breakpoints, Control Rig/RigVM runtime debugging, StateTree trace analysis | — | ✓ |
+| **Smart Objects** | Definitions, slots, behaviors, World Conditions, world placement | — | ✓ |
+| **Cross-system debugging** | BT runtime, Control Rig/RigVM, StateTree trace | — | ✓ |
 | **Materials** | Instances, graph editing, layers, parameter collections | — | ✓ |
+<<<<<<< Updated upstream
+| **UMG / Common UI** | Widget tree, bindings, animations, EUW, CommonUI input | — | ✓ |
+| **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter, Physics Assets | — | ✓ |
+| **Cinematics** | LevelSequence, keyframes, MRQ rendering | — | ✓ |
+=======
 | **UMG / Common UI** | Widget tree, bindings, animations, Editor Utility Widgets, CommonUI input tables and PIE stacks | — | ✓ |
 | **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter, Physics Asset body/primitive/constraint authoring | — | ✓ |
-| **Cinematics** | LevelSequence, keyframes, MRQ rendering | — | ✓ |
+| **Cinematics** | LevelSequence, keyframes, Curve Editor selection/visibility, MRQ rendering | — | ✓ |
+>>>>>>> Stashed changes
 | **Build & Ship** | Cook, package, archive, deploy, launch | — | ✓ |
-| **Profiling** | Frame stats, Trace, Insights | — | ✓ |
+| **Profiling** | Frame stats, Trace, Insights, GPU timing | — | ✓ |
 | **Automation tests** | Discover, run async, poll progress and results | — | ✓ |
-| **Enhanced Input + Game Features** | Input Actions, Mapping Contexts, modifiers, triggers; plugin lifecycle | — | ✓ |
-| **Gameplay Tags** | Hierarchy, project CRUD, container matching, queries | — | ✓ |
-| **Gameplay Ability System** | Attribute discovery/init tables, GameplayEffect/Ability/Cue authoring, ASC runtime control, debug introspection | — | ✓ |
+| **Enhanced Input + Game Features** | Input Actions, Mapping Contexts; plugin lifecycle | — | ✓ |
+| **Gameplay Tags** | Hierarchy, project CRUD, matching, queries | — | ✓ |
+| **Gameplay Ability System** | Attributes, effects, abilities, cues, ASC runtime, debug | — | ✓ |
 | **Data** | DataTables, DataAssets, Type System | — | ✓ |
-| **Localization** | Targets and cultures, GatherText/compile/export/import pipeline as async jobs, String Tables, locres/archive/manifest inspection | — | ✓ |
+| **Localization** | Targets, cultures, GatherText pipeline, String Tables | — | ✓ |
 | **World Partition** | OFPA, DataLayers, streaming, level composition | — | ✓ |
 | **Source Control** | Provider status, read commands, write commands | — | ✓ |
 | **Native type reflection** | K2Node discriminators; Asset Registry queries | — | ✓ |
 | **Editor lifecycle** | save_all, shutdown, project metadata | — | ✓ |
 | **Live Coding** | Compile trigger, structured error capture | — | ✓ |
 
+<<<<<<< Updated upstream
+Full capability breakdown by module: [docs/capabilities/](docs/capabilities/)
+=======
 ### Surface in detail
 
 <details>
@@ -127,57 +133,6 @@ Lite descriptor and exclude Pro source before the Unreal build step.
 | **Function authoring** | Signatures, params, returns, pure/const flags | ✓ | ✓ |
 | **Dispatchers, delegates, interfaces** | With stub graph generation | ✓ | ✓ |
 | **Live debugging** | Breakpoints, step controls, watches, pin eval, debug targets | ✓ | ✓ |
-| **Blueprint-to-C++ preview** | Selected function/event migration, staged native files, guided workflow reports, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails with allowlisted component-default replay, reproducible proof-pack reports, public command walkthroughs, and explicit non-goals | — | ✓ |
-
-</details>
-
-<details>
-<summary><strong>Blueprint-to-C++ preview: Professional only</strong></summary>
-
-| Phase | Representative commands | Project mutation |
-|:---|:---|:---:|
-| Analyze | `dev_bpc_analyze_blueprint_convertibility`, `dev_bpc_project_conversion_coverage_report` | No |
-| Guided workflow | `dev_bpc_generate_guided_conversion_workflow` | No, except optional markdown report output |
-| Dry-run preview | `dev_bpc_convert_function`, `dev_bpc_convert_class_mode_b`, `dev_bpc_convert_class_mode_d`, `dev_bpc_convert_type_assets` with `dry_run: true` | No |
-| Stage generated code | Path A, Mode B, Mode D, and type-asset conversion with `dry_run: false` | Generated files and Prism sidecars only |
-| Rebuild and diagnose | `dev_bpc_external_rebuild`, `dev_bpc_compile_and_diagnose_conversion`, `dev_bpc_backmap_errors` | Build artifacts |
-| Verify and prove | `dev_bpc_verify_conversion`, `dev_bpc_run_parity_tests`, `dev_bpc_generate_public_proof_report` | Parity manifests or optional report output |
-| Apply explicit asset changes | Mode A graph patch/restore, Mode B reference patch, Mode D reparent preview/apply/remove | Only when the specific apply command is called |
-
-Example guided workflow request:
-
-```json
-{
-  "command": "dev_bpc_generate_guided_conversion_workflow",
-  "params": {
-    "asset_path": "/Game/BP_PlayerPawn.BP_PlayerPawn",
-    "mode": "mode_d",
-    "project_path": "D:/Projects/MyGame/MyGame.uproject",
-    "module_name": "MyGameGenerated",
-    "class_name": "PlayerPawnNative",
-    "functions": ["ReceiveBeginPlay", "ComputeMoveSpeed"],
-    "include_analysis": true
-  }
-}
-```
-
-Example side-effect-free staging preview:
-
-```json
-{
-  "command": "dev_bpc_convert_class_mode_d",
-  "params": {
-    "asset": "/Game/BP_PlayerPawn.BP_PlayerPawn",
-    "functions": ["ReceiveBeginPlay", "ComputeMoveSpeed"],
-    "project_path": "D:/Projects/MyGame/MyGame.uproject",
-    "module_name": "MyGameGenerated",
-    "class_name": "PlayerPawnNative",
-    "dry_run": true
-  }
-}
-```
-
-Known boundaries: this is a Professional preview pipeline for selected Blueprint functions/events, not arbitrary "convert any Blueprint" automation. Mode D component-default replay is allowlist-only and reports skipped property deltas for manual review. The guided workflow command is a planner, not a destructive runner. It does not stage files, run UBT, patch references, reparent Blueprints, confirm deletion, or delete assets. Timing observations in proof reports are project-local command/runtime observations, not cooked-build speedup claims. Arbitrary reflected component property serialization remains out of scope.
 
 </details>
 
@@ -279,7 +234,8 @@ Known boundaries: this is a Professional preview pipeline for selected Blueprint
 | **LevelSequence lifecycle** | Create, open in editor, get metadata | ✓ |
 | **Bindings** | List, add/remove possessable, set display names | ✓ |
 | **Tracks and sections** | Typed tracks, section frame ranges, event endpoints | ✓ |
-| **Keyframes** | Get/set values, per-key interpolation, tangent handles, batch add | ✓ |
+| **Keyframes** | Get/set values, per-key interpolation, tangent handles, batch add, string channels, defaults, baking | ✓ |
+| **Curve Editor** | Open/close state, outliner channel selection, key selection, curve visibility | ✓ |
 | **Composition** | Subsequence list/walk, camera-cut shots, shot camera binding | ✓ |
 | **Playback and rendering** | Playback control; MoviePipeline render queue and status | ✓ |
 
@@ -384,6 +340,7 @@ Known boundaries: this is a Professional preview pipeline for selected Blueprint
 | **Asset Registry queries** | Asset search, metadata, package dependencies, reverse references | ✓ |
 
 </details>
+>>>>>>> Stashed changes
 
 ---
 
@@ -393,9 +350,6 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 
 **Authoring expansions**
 
-- **Behavior Trees / EQS.** Blackboard schema authoring, Behavior Tree shell/composite/task/decorator/service/validation/subnode-management/property/graph-node/update/subtree-reference/BP-base-helper authoring, and EQS asset-shell/class-discovery/option/test-list/validation/property/update/generator-context-BP-base coverage are now shipped in Lite and Professional. UE 5.7 does not expose an EQS test BlueprintBase, so EQS tests remain native-class and reflected-property authored.
-- **StateTree.** Component/AIComponent StateTree asset hierarchy plus schema-filtered node discovery/readback/native placement/reorder/remove/property patching/transition readback+creation+edit+remove including inline condition authoring/readback and delegate transition bindings/primitive + common/generic struct/object/class parameter declarations and values/general property bindings with task/root/state friendly anchors and array-indexed paths/BP-base task/condition/consideration/evaluator node assets+override discovery+placement+root/nested instance edits/compile diagnostics/binding diagnostics are now shipping in Lite and Professional.
-- **Foliage Type Authoring.** UFoliageType asset creation, source assignment, reflected property edits, and loaded-level type listing are now shipping in Lite and Professional. Instance placement/query, scatter/erase, and Professional-only procedural foliage remain planned follow-ups.
 - **Smart Objects follow-ups.** Parameters and bindings, persistent collections, runtime integrations, and StateTree interaction hooks.
 - **Niagara.** System and emitter lifecycle, parameter access, limited graph mutation.
 - **Audio.** Sound Cue graph, SoundClass/SoundMix, MetaSound asset and graph.
@@ -403,12 +357,19 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 **Workflow expansions**
 
 - **Editor tab and dock layout.** Sense and manipulate layout; save and restore named workspaces.
-- **Cross-system debugger coverage.** Behavior Tree runtime inspection/breakpoints, Control Rig/RigVM runtime debugging, and StateTree trace analysis are now shipping in Professional.
-- **Blueprint-to-C++ conversion.** Professional preview coverage now includes selected function/event migration, staged native files, guided workflow reports with explicit analyze/dry-run/stage/rebuild/verify/parity/reference-patch gates, compile/backmap recovery, Mode A surgical helpers, Mode D native-parent scaffold/reparent/rollback guardrails with allowlisted component-default replay and skipped-property diagnostics, reproducible proof-pack reports covering project conversion coverage, manifest-backed non-latent parity, and the committed L7 runtime fixture matrix, plus a public command walkthrough with JSON examples and known non-goals. The guided workflow report is a planning surface, not one-click destructive conversion. Timing observations are project-local proof data, not cooked-build speedup claims. Arbitrary reflected component property serialization remains out of scope.
 - **Source Control expansion.** Submit, branch, sync, merge orchestration on top of today's read and checkout surface.
 - **Cross-platform builds.** Mac and Linux build axis.
 
+<<<<<<< Updated upstream
+<sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU.*</sub>
+=======
+**Release and distribution**
+
+- **End-to-end Pro release pipeline.** One-shot operator workflow chains Atlas-regenerated documentation, LLM-assisted release notes, per-engine build matrix, GitHub Release publication, asarawebsite refresh, and license-server catalog registration. v1 ships UE 5.7 / Win64; matrix architecture forward-compatible for 5.3-5.8 across Win/Mac/Linux. License-portal signed-URL downloads land in a separate follow-up.
+- **Developer-facing /releases page on asaratechnologies.com.** Browse Pro release history, supported UE versions, and artifact metadata. Downloads stream from the license portal once that surface ships.
+
 <sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU, including Behavior Tree, StateTree, Foliage Type Authoring, and the shipped Blueprint debugging surface.*</sub>
+>>>>>>> Stashed changes
 
 ---
 
@@ -469,70 +430,11 @@ Works with **Claude Code**, **Cursor**, **Claude Desktop**, and any MCP-compatib
 > [!NOTE]
 > **Direct licenses are annual, no auto-renewal.** Your license is valid for 12 months from activation. You always get the latest version while your license is active. To keep using PrismMCP after the term ends, buy a new license. A short offline grace window covers the gap so a forgotten or in-flight purchase doesn't lock you out the moment the term flips. We send one reminder email 30 days before the term ends. *Lite (Fab) purchases are one-time and version-frozen, with no expiration.*
 
-### Pricing FAQ
-
-<details>
-<summary><strong>What's the difference between Lite and Professional?</strong></summary>
-
-Lite (Fab) covers the gameplay-authoring core: actors, Blueprints (including graph editing and live debugging), components, AI behavior authoring, foliage type authoring, programmatic scripting, custom tool extensions, basic editor surface, content browser. Professional (Direct) adds the production toolchain: Smart Objects, Materials, UMG/Common UI, Animation, cross-system debugging, Cinematics, Build & Ship, Profiling, Automation, Data, Localization, Source Control, and the rest. Roughly 100+ commands vs the full surface.
-
-</details>
-
-<details>
-<summary><strong>Why is Direct annual instead of one-time like Fab?</strong></summary>
-
-Direct customers get continuous updates, priority support, and DRM that ties licenses to your machines so we can keep the tool secure and aligned with our roadmap. The annual model reflects what you're actually getting: a working tool, not a snapshot. No auto-renewal. When the 12 months end, buy again if you want another year. We send a single reminder email 30 days before the term ends so you can decide on your own schedule.
-
-</details>
-
-<details>
-<summary><strong>Can I move my license to a new machine? <em>(Direct only)</em></strong></summary>
-
-Each license has a fixed number of machine activations per user (Professional — Personal: 2, Professional — Developer: 5). Deactivating one machine frees a slot. Lost laptop, dead drive, hardware swap: email me and I'll release the activation manually.
-
-</details>
-
-<details>
-<summary><strong>What's the refund policy?</strong></summary>
-
-Lite (Fab): per Fab's site policy. Direct (Professional — Personal, Professional — Developer including bulk, and Studio): 30-day no-questions refund from first activation, 60-day hard cap from purchase. Studio refunds are also case-by-case at Asara's discretion if the contract is silent. We want you happy.
-
-</details>
-
-<details>
-<summary><strong>Do I need an internet connection? <em>(Direct only)</em></strong></summary>
-
-PrismMCP works offline. Your license re-verifies in the background per the activation policy; if the license server is unreachable for an extended period, the tool keeps working through a grace window before requiring re-verification. Long-term airgapped deployments are a Studio tier conversation.
-
-</details>
-
-<details>
-<summary><strong>What if my revenue grows past $100K mid-year?</strong></summary>
-
-Eligibility is checked at each purchase, same convention as Fab. If you cross $100K during your 12-month term, finish out the term on Personal; the next time you buy, move to Developer. We don't audit. Buyer attestation is the contract.
-
-</details>
-
-<sub>*These are plain-English summaries. Full legal terms in the [EULA][eula].*</sub>
-
 ---
 
 ## Get started
 
-Up and running in under 5 minutes.
-
-**▸ Lite (Fab)**
-
-1. Install PrismMCP Lite from [Fab][fab] (Personal $20 or Developer $69)
-2. Connect your MCP client (Claude Code, Cursor, Claude Desktop, etc.)
-3. Issue your first command
-
-**▸ Professional (Direct)**
-
-1. [Buy a Professional license][buy] ($99/year Personal · $199/year Developer · Studio Contact)
-2. Activate your license key (one-click on first launch)
-3. Connect your MCP client
-4. Issue your first command
+Up and running in under 5 minutes. Full setup guide: [docs/getting-started/](docs/getting-started/)
 
 **Compatibility:** UE 5.3 · 5.4 · 5.5 · 5.6 · 5.7 · Win · Mac · Linux
 
@@ -546,8 +448,6 @@ Up and running in under 5 minutes.
   }
 }
 ```
-
-API reference ships inside the plugin install. Setup guides and workflow recipes will be published in this repo at launch.
 
 ---
 
@@ -581,14 +481,14 @@ direct AI access to the Unreal Engine editor.
 
 ## Legal
 
-**▸ Direct buyers** *(Professional, Studio)*
+**Direct buyers** *(Professional, Studio)*
 
 - [Asara End User License Agreement][eula]
 - [Privacy Policy][privacy]
 - [Source License Addendum][source-license] *(Studio)*
 - [Refund Policy][refunds]
 
-**▸ Fab buyers** *(Lite — Personal, Lite — Developer)*
+**Fab buyers** *(Lite — Personal, Lite — Developer)*
 
 - [Fab Standard License][fab-eula] *(governed by Epic)*
 - [Privacy Policy][privacy] *(Asara)*
