@@ -22,7 +22,7 @@
 
 [**Get Professional**][buy] &nbsp;·&nbsp; [Try on Fab][fab] &nbsp;·&nbsp; [Watch Demo][demo]
 
-[**Documentation**](docs/) &nbsp;·&nbsp; [**Releases**](https://github.com/Asara-Technologies/prism-mcp/releases)
+[**Documentation**](docs/) &nbsp;·&nbsp; [**Coverage**](COVERAGE.md) &nbsp;·&nbsp; [**Releases**](https://github.com/Asara-Technologies/prism-mcp/releases)
 
 [buy]: #pricing
 [fab]: #
@@ -90,9 +90,15 @@ Lite + Pro modules from the same source SHA.
 | **Smart Objects** | Definitions, slots, behaviors, World Conditions, world placement | — | ✓ |
 | **Cross-system debugging** | BT runtime, Control Rig/RigVM, StateTree trace | — | ✓ |
 | **Materials** | Instances, graph editing, layers, parameter collections | — | ✓ |
+<<<<<<< Updated upstream
 | **UMG / Common UI** | Widget tree, bindings, animations, EUW, CommonUI input | — | ✓ |
 | **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter, Physics Assets | — | ✓ |
 | **Cinematics** | LevelSequence, keyframes, MRQ rendering | — | ✓ |
+=======
+| **UMG / Common UI** | Widget tree, bindings, animations, Editor Utility Widgets, CommonUI input tables and PIE stacks | — | ✓ |
+| **Animation & Rigging** | AnimBP, montages, Control Rig, IK Rig, IK Retargeter, Physics Asset body/primitive/constraint authoring | — | ✓ |
+| **Cinematics** | LevelSequence, keyframes, Curve Editor selection/visibility, MRQ rendering | — | ✓ |
+>>>>>>> Stashed changes
 | **Build & Ship** | Cook, package, archive, deploy, launch | — | ✓ |
 | **Profiling** | Frame stats, Trace, Insights, GPU timing | — | ✓ |
 | **Automation tests** | Discover, run async, poll progress and results | — | ✓ |
@@ -107,7 +113,234 @@ Lite + Pro modules from the same source SHA.
 | **Editor lifecycle** | save_all, shutdown, project metadata | — | ✓ |
 | **Live Coding** | Compile trigger, structured error capture | — | ✓ |
 
+<<<<<<< Updated upstream
 Full capability breakdown by module: [docs/capabilities/](docs/capabilities/)
+=======
+### Surface in detail
+
+<details>
+<summary><strong>Blueprints: full surface</strong></summary>
+
+| Capability | Coverage | Lite | Professional |
+|:---|:---|:---:|:---:|
+| **Class authoring** | Create class, set CDO defaults, compile | ✓ | ✓ |
+| **Variables** | Full UPROPERTY flag and metadata control | ✓ | ✓ |
+| **Function calls on placed actors** | Call existing functions on placed BP actors | ✓ | ✓ |
+| **Components** | Add, remove, reparent, transforms, attachment | ✓ | ✓ |
+| **Graph reading** | 4 detail levels for token-cost control | ✓ | ✓ |
+| **Graph authoring** | Broad node coverage, inline wiring, transactional rollback | ✓ | ✓ |
+| **Graph tooling** | Auto-layout, comments, reroute knots, stale-reference scan | ✓ | ✓ |
+| **Function authoring** | Signatures, params, returns, pure/const flags | ✓ | ✓ |
+| **Dispatchers, delegates, interfaces** | With stub graph generation | ✓ | ✓ |
+| **Live debugging** | Breakpoints, step controls, watches, pin eval, debug targets | ✓ | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Levels and World: full surface</strong></summary>
+
+| Capability | Coverage | Lite | Professional |
+|:---|:---|:---:|:---:|
+| **Actor lifecycle** | Spawn, move, delete; transforms; tags | ✓ | ✓ |
+| **Outliner** | Queries, folder CRUD, selection state | ✓ | ✓ |
+| **Instance editing** | Variable editing, attach/detach, instance components | ✓ | ✓ |
+| **Foliage type authoring** | UFoliageType asset creation, source assignment, reflected property edits | ✓ | ✓ |
+| **Sub-levels** | Basic sub-level loads | ✓ | ✓ |
+| **World Partition** | Actor load, pin, dirty-actor protection | — | ✓ |
+| **DataLayers** | List, read/write membership, runtime state | — | ✓ |
+| **Level composition** | Sub-levels, streaming, level instances at scale | — | ✓ |
+| **Batch operations** | Multi-op transactions | — | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Editor surface: Lite and Professional</strong></summary>
+
+| Capability | Coverage | Lite | Professional |
+|:---|:---|:---:|:---:|
+| **Console + CVars** | Read state, set CVars | ✓ | ✓ |
+| **Output Log + Message Log** | Read with severity filter | ✓ | ✓ |
+| **Usage stats** | Aggregate per-session call bytes and estimated tokens | ✓ | ✓ |
+| **Programmatic scripting** | Run sandboxed Python snippets with `execute_tool(command, params)`, print capture, structured results, limits, and rollback on failure | ✓ | ✓ |
+| **Custom tool extensions** | C++ modules, Blueprint Toolset DataAssets, tagged UFUNCTION commands, and Python extension packs surfaced through `tools/list` and `atlas_list_extensions` | ✓ | ✓ |
+| **Selection state** | Get/set selected actors; select by class or tag | ✓ | ✓ |
+| **Content Browser** | Folders, asset organization, moves, import/reimport pipeline presets with proper UE references | ✓ | ✓ |
+| **PIE** | Start, stop, Play From Here | ✓ | ✓ |
+| **Editor lifecycle** | save_all, shutdown_editor, project metadata | — | ✓ |
+| **Live Coding control** | Compile trigger, structured error capture | — | ✓ |
+| **Undo / redo** | Structured history queries | — | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Materials: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Material assets** | Create, recompile, auto-layout expressions | ✓ |
+| **Expression graph** | Read at 3 detail levels; search by type, parameter, or value | ✓ |
+| **Expression authoring** | Registered discriminators plus `Custom` escape hatch | ✓ |
+| **Parameter authoring** | Scalar, vector, texture, static switch | ✓ |
+| **Material instances (MIC)** | Create, reparent, override walk | ✓ |
+| **Static switches** | Set, list | ✓ |
+| **Material layers** | Assign layer functions and blends; full layer-stack read | ✓ |
+| **Material parameter collections (MPC)** | Create, scalar/vector authoring with type inference, info readback | ✓ |
+
+</details>
+
+<details>
+<summary><strong>UMG / Common UI: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Widget discovery** | List loaded UWidget classes; class inspection | ✓ |
+| **Widget tree authoring** | Build or replace from recursive JSON hierarchy | ✓ |
+| **Property bindings** | UMG native editor binding table CRUD | ✓ |
+| **Event bindings** | Bind widget multicast delegates | ✓ |
+| **Widget animations** | Track add, keyframe edit, animation modify and list | ✓ |
+| **Editor Utility Widgets (EUW) and Blueprints (EUB)** | Create, spawn as tab, run | ✓ |
+| **Common UI** | Activatable Widget Blueprints, asset discovery/settings/validation, input action data tables, action widget row handles, PIE stack controls, CommonInput state | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Animation and Rigging: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **AnimGraph authoring** | Via Blueprint stack: slot, blend, additive, state machine | ✓ |
+| **Animation Montages** | Section CRUD, notify add/remove, float-curve key edits | ✓ |
+| **Skeleton and SkeletalMesh inspection** | Bones, sockets, curves, morph targets | ✓ |
+| **Control Rig** | Blueprint create, RigVM graph read/write, hierarchy edits, VM compile | ✓ |
+| **Control Rig / RigVM runtime debugging** | Live targets, debug mode, event queue, instruction visit order, session-scoped breakpoints | ✓ |
+| **IK Rig** | Solver stack (Limb, FullBodyIK, BodyMover, Pole, SetTransform, StretchLimb); goals; retarget chains | ✓ |
+| **IK Retargeter** | Asset CRUD, rig binding, chain mapping, auto-map, pose edits | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Cinematics: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **LevelSequence lifecycle** | Create, open in editor, get metadata | ✓ |
+| **Bindings** | List, add/remove possessable, set display names | ✓ |
+| **Tracks and sections** | Typed tracks, section frame ranges, event endpoints | ✓ |
+| **Keyframes** | Get/set values, per-key interpolation, tangent handles, batch add, string channels, defaults, baking | ✓ |
+| **Curve Editor** | Open/close state, outliner channel selection, key selection, curve visibility | ✓ |
+| **Composition** | Subsequence list/walk, camera-cut shots, shot camera binding | ✓ |
+| **Playback and rendering** | Playback control; MoviePipeline render queue and status | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Build and Ship: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Build discovery** | Platforms, devices, build targets, project build metadata | ✓ |
+| **Build sessions** | Shared session manager, progress, current step, log tail | ✓ |
+| **Map builds** | Geometry, lighting, navigation, HLODs, texture and virtual texture streaming | ✓ |
+| **Cook, package, archive** | RunUAT BuildCookRun sessions | ✓ |
+| **Deploy and launch** | To discovered target devices; launch-after-deploy | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Profiling and Automation: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Frame stats** | Captures and queries | ✓ |
+| **Trace sessions** | Start, stop, channel control | ✓ |
+| **Insights integration** | Read trace data; query event streams | ✓ |
+| **GPU & frame timing** | Per-queue GPU work, per-frame GPU cost, CPU-vs-GPU bottleneck classification, bookmark/region readback | ✓ |
+| **Automation tests** | List tests, start async session, poll progress and results | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Input and Gameplay: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Enhanced Input** | Input Actions, Input Mapping Contexts, modifier and trigger config | ✓ |
+| **Gameplay Tags** | Tag editing, ini-table CRUD, hierarchy management | ✓ |
+| **Game Features / Modular Gameplay** | Plugin lifecycle, feature state | ✓ |
+| **Gameplay Ability System** | AttributeSet discovery, init DataTables, ASC setup, GameplayEffect/Ability/Cue authoring, runtime controls, debug snapshots | ✓ |
+| **Smart Objects** | Definition asset creation/readback, slot CRUD/readback, reflected slot property edits, behavior-definition class discovery/add/remove/list/get, World Condition struct discovery/add/remove/list/get/property edits, asset editor open/close, generic Smart Object spawn, component attach, component definition assignment, and component info | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Data: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **DataTable** | Row CRUD, struct schema lookup, batch updates | ✓ |
+| **DataAsset** | CRUD, property edit, subclass listing | ✓ |
+| **Type System** | UDS / User Defined Enum / Struct create, modify, get | ✓ |
+| **Generic asset creation** | Factory-backed `create_asset` | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Localization: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Targets and cultures** | Create, get, list, delete, patch, and validate localization targets; add/remove cultures; set native culture | ✓ |
+| **Pipeline** | GatherText, compile, export and import translations as async jobs with progress polling and structured diffs | ✓ |
+| **Jobs and reports** | Job status, job list, paginated localization reports with per-category key listing | ✓ |
+| **String Tables** | Create tables, set/remove entries, set namespace, list entries, table info | ✓ |
+| **Inspection** | Read locres binaries, localization archives, and manifests | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Source Control: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Provider status** | Connected provider; branch and workspace info | ✓ |
+| **Read commands** | File state, write-readiness, prepare-for-edit | ✓ |
+| **Write commands** | Checkout, revert, submit (narrow, transaction-safe) | ✓ |
+
+</details>
+
+<details>
+<summary><strong>Authoring discovery: Professional only</strong></summary>
+
+*Not included in Lite. Available in Professional.*
+
+| Capability | Coverage | Professional |
+|:---|:---|:---:|
+| **Native type reflection** | Search C++ classes, structs, enums; inspect UClass, UScriptStruct, UEnum | ✓ |
+| **K2Node discriminators** | Discoverable K2Node types for graph authoring | ✓ |
+| **Asset Registry queries** | Asset search, metadata, package dependencies, reverse references | ✓ |
+
+</details>
+>>>>>>> Stashed changes
 
 ---
 
@@ -127,7 +360,16 @@ The matrix above is today's shipped surface. Here's what's planned next. Order, 
 - **Source Control expansion.** Submit, branch, sync, merge orchestration on top of today's read and checkout surface.
 - **Cross-platform builds.** Mac and Linux build axis.
 
+<<<<<<< Updated upstream
 <sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU.*</sub>
+=======
+**Release and distribution**
+
+- **End-to-end Pro release pipeline.** One-shot operator workflow chains Atlas-regenerated documentation, LLM-assisted release notes, per-engine build matrix, GitHub Release publication, asarawebsite refresh, and license-server catalog registration. v1 ships UE 5.7 / Win64; matrix architecture forward-compatible for 5.3-5.8 across Win/Mac/Linux. License-portal signed-URL downloads land in a separate follow-up.
+- **Developer-facing /releases page on asaratechnologies.com.** Browse Pro release history, supported UE versions, and artifact metadata. Downloads stream from the license portal once that surface ships.
+
+<sub>*Professional gets the full roadmap. Lite also receives gameplay-authoring core expansions where they fit that SKU, including Behavior Tree, StateTree, Foliage Type Authoring, and the shipped Blueprint debugging surface.*</sub>
+>>>>>>> Stashed changes
 
 ---
 
