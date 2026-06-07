@@ -6,7 +6,7 @@ Your AI agent, inside the Unreal Editor.
 
 > **Status:** Beta -- [contact us](mailto:sales@asaratechnologies.com) for access or a trial.
 
-Authoring, world building, gameplay, full debugging, and Blueprint-to-C++ conversion. 2,000+ commands across 60+ editor systems, all agent-controllable through one MCP connection. UE 5.3--5.7. Windows, Mac, Linux.
+Authoring, world building, gameplay, full debugging, and Blueprint-to-C++ conversion. 1,678 commands across 58 editor systems, all agent-controllable through one MCP connection. UE 5.3--5.7. Windows, Mac, Linux.
 
 ---
 
@@ -48,7 +48,7 @@ Command reference by module: [docs/command-reference/](docs/command-reference/)
 | | |
 |:---|:---|
 | [Getting started](docs/getting-started/) | Installation, client connection, configuration |
-| [Command Reference](docs/command-reference/) | 2,000+ commands by module -- Lite with full schemas, Pro with descriptions |
+| [Command Reference](docs/command-reference/) | 1,678 commands by module -- Lite with full schemas, Pro with descriptions |
 | [Guides](docs/guides/) | Security, HTTP transport, cluster loading, settings reference |
 | [Examples](docs/examples/) | C++, Blueprint, and Python workflows |
 
