@@ -89,4 +89,4 @@ Delete a per-project PrismMCP editor layout snapshot if it exists.
 
 Move a non-main-frame Slate editor window to a screen position.
 
-_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._
+_Generated from commit `acf91a617efb` at 2026-06-07T21:47:41Z._

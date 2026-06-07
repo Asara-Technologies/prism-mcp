@@ -277,4 +277,4 @@ Unload a World Partition actor from the editor load adapter. Refuses dirty loade
 
 Remove a World Partition actor from the editor's persistent pinned-actors set.
 
-_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._
+_Generated from commit `acf91a617efb` at 2026-06-07T21:47:41Z._
