@@ -1,0 +1,36 @@
+# data-layers
+
+**Feature area:** World and level authoring
+**Commands:** 5
+
+[description pending]
+
+## read
+
+[description pending]
+
+### `get_actor_data_layers`
+
+Return the DataLayer memberships for a loaded actor by stable actor handle.
+
+### `list_data_layers`
+
+List DataLayer instances in the current editor world with editor and runtime state.
+
+## write
+
+[description pending]
+
+### `set_actor_data_layers`
+
+Replace a loaded actor's DataLayer memberships by stable actor handle.
+
+### `set_data_layer_editor_visible`
+
+Set a DataLayer instance's editor viewport visibility by asset path or instance name.
+
+### `set_data_layer_runtime_state`
+
+Set a runtime DataLayer instance state to Unloaded, Loaded, or Activated.
+
+_Generated from commit `8812a051f27a` at 2026-06-07T19:01:04Z._
