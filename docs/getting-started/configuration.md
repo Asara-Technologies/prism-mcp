@@ -10,7 +10,7 @@ Open **Project Settings > Plugins > PrismMCP** to access the plugin configuratio
 - **Log Verbosity** -- Controls how much detail PrismMCP writes to the editor's Output Log. Options range from silent through verbose. Higher verbosity is useful for diagnosing connection issues.
 - **Auto Start** -- Whether the MCP server starts automatically when the editor launches. Enabled by default.
 
-For the full settings table with types, defaults, restart requirements, and security notes, see the [Settings Reference](../reference/settings.md).
+For the full settings table with types, defaults, restart requirements, and security notes, see the [Settings Reference](../guides/settings.md).
 
 ## Shim options
 
@@ -29,7 +29,7 @@ PrismMCP includes safety controls to limit what commands can do:
 - **Read/Write classification** -- Every command is classified as Read (observes state only) or Write (modifies the project). Your security policy can restrict write access.
 - **Sandboxing** -- Write operations are bounded to the editor session. PrismMCP does not execute arbitrary shell commands, access the filesystem outside the project, or make network requests on your behalf.
 
-Refer to the [Settings Reference](../reference/settings.md) for detailed security configuration options.
+Refer to the [Settings Reference](../guides/settings.md) for detailed security configuration options.
 
 ## Logging and diagnostics
 

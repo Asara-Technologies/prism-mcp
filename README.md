@@ -49,8 +49,7 @@ Command reference by module: [docs/capabilities/](docs/capabilities/)
 |:---|:---|
 | [Getting started](docs/getting-started/) | Installation, client connection, configuration |
 | [Capabilities](docs/capabilities/) | Command reference by module -- Lite with full schemas, Pro with descriptions |
-| [Guides](docs/guides/) | Security, HTTP transport, cluster loading |
-| [Reference](docs/reference/) | Settings, transport spec |
+| [Guides](docs/guides/) | Security, HTTP transport, cluster loading, settings reference |
 | [Examples](docs/examples/) | C++, Blueprint, and Python workflows |
 
 ---

@@ -104,7 +104,7 @@ proxy configuration.
 
 The `resources/read` API exposes a limited, privacy-reviewed catalog of
 read-only editor data. See the
-[Feature Reference](../reference/http-transport.md#resources) for the full
+[HTTP Transport Reference](http-transport.md#resources) for the full
 URI list.
 
 In summary:
