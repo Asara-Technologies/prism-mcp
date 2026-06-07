@@ -3,11 +3,11 @@
 **Feature area:** Gameplay systems
 **Commands:** 65
 
-[description pending]
+Inspect and drive the Gameplay Ability System at editor and runtime levels. Read ASC snapshots, attribute values, ability summaries, gameplay effects, and cue registrations. Activate and cancel abilities, apply effects, and execute cues during PIE.
 
 ## lifecycle
 
-[description pending]
+Activate and cancel abilities, apply gameplay effects, execute cues, and grant abilities to actors during PIE.
 
 ### `activate_ability_by_class`
 
@@ -39,7 +39,7 @@ Give a GameplayAbility class to an actor ASC.
 
 ## read
 
-[description pending]
+Read ASC snapshots, attribute values, ability summaries, effect stacks, cooldowns, cue registrations, and project GAS settings.
 
 ### `find_cue_notify_assets`
 
@@ -115,7 +115,7 @@ List GameplayEffect modifiers.
 
 ## write
 
-[description pending]
+Author Gameplay Ability, Gameplay Effect, and Attribute Set assets. Set attribute defaults, configure effect modifiers, and manage cue notify bindings.
 
 ### `add_gameplay_cue`
 
@@ -277,4 +277,4 @@ Set an actor ASC replication mode.
 
 Patch a GameplayEffect modifier by property payload.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

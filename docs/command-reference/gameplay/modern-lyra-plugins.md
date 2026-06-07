@@ -3,11 +3,11 @@
 **Feature area:** Gameplay systems
 **Commands:** 75
 
-[description pending]
+Inspect and author assets from Lyra-era Epic gameplay plugins: CommonConversation, CommonGame, CommonUser, DataRegistry, GameSettings, GameSubtitles, GameplayMessageRouter, ModularGameplay, ModularGameplayActors, and UIExtension. Each cluster maps to one plugin's asset types.
 
 ## async-mixin
 
-[description pending]
+Query AsyncMixin plugin availability and API boundaries.
 
 ### `get_async_mixin_info`
 
@@ -53,7 +53,7 @@ Describe AsyncMixin availability and API boundaries.
 
 ## common-conversation
 
-[description pending]
+Author and inspect CommonConversation database graphs: create nodes, subnodes, and compile databases.
 
 ### `compile_conversation_database`
 
@@ -353,7 +353,7 @@ Wire conversation nodes.
 
 ## common-game
 
-[description pending]
+Inspect CommonGame messaging subsystem assets and runtime state.
 
 ### `get_game_instance_info`
 
@@ -700,7 +700,7 @@ Show a CommonGame confirmation dialog.
 
 ## common-user
 
-[description pending]
+Query CommonUser session state, local player initialization, and privilege information.
 
 ### `configure_platform_traits`
 
@@ -1037,7 +1037,7 @@ CommonUser reflected query: get_session_state.
 
 ## data-registry
 
-[description pending]
+Inspect and query UDataRegistry assets, sources, and cached items at editor time.
 
 ### `get_data_registry`
 
@@ -1342,7 +1342,7 @@ Update DataRegistry developer settings.
 
 ## game-settings
 
-[description pending]
+Read and modify GameSettings registry entries and setting definitions.
 
 ### `apply_setting_changes`
 
@@ -1772,7 +1772,7 @@ GameSettings mutation command: set_setting_value.
 
 ## game-subtitles
 
-[description pending]
+Inspect GameSubtitles configuration and subtitle display options.
 
 ### `configure_subtitle_player`
 
@@ -1868,7 +1868,7 @@ Set GameSubtitles display config.
 
 ## gameplay-message-router
 
-[description pending]
+Inspect GameplayMessageRouter channel registrations and broadcast listeners.
 
 ### `broadcast_message`
 
@@ -2057,7 +2057,7 @@ List known gameplay tag message channels.
 
 ## modular-gameplay
 
-[description pending]
+Query ModularGameplay component injection rules, extension handlers, and initialization policies.
 
 ### `get_actor_init_state`
 
@@ -2271,7 +2271,7 @@ List loaded init-state feature implementers.
 
 ## modular-gameplay-actors
 
-[description pending]
+Inspect ModularGameplayActors component sets, initialization sequences, and pawn extension state.
 
 ### `get_modular_actor_class`
 
@@ -2418,7 +2418,7 @@ List ModularGameplayActors classes.
 
 ## ui-extension
 
-[description pending]
+Query UIExtension point registrations, active extensions, and extension widget mappings.
 
 ### `get_ui_extension_point`
 
@@ -2525,4 +2525,4 @@ Register a UIExtension widget.
 
 Unregister a UIExtension widget.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

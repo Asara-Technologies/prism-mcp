@@ -3,11 +3,11 @@
 **Feature area:** Replication and networking
 **Commands:** 6
 
-[description pending]
+Inspect and modify network replication state during PIE. Read per-actor net roles, dormancy, and replication graph placement. Enumerate replicated properties and RPC functions. Mutate runtime replication parameters for diagnostics.
 
 ## read
 
-[description pending]
+Inspect per-actor net roles, dormancy, replication graph metadata, replicated properties, and RPC function declarations.
 
 ### `get_actor_net_state`
 
@@ -31,10 +31,10 @@ Enumerates all RPC functions on a class with net type, reliability, validation, 
 
 ## write
 
-[description pending]
+Mutate runtime replication state on actors for diagnostic purposes during PIE.
 
 ### `set_actor_net_state`
 
 Mutates runtime replication state on an actor: replicates flag, dormancy, update frequencies. Runtime diagnostic mutation -- not undoable. Requires an active PIE or play session.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

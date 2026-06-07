@@ -3,11 +3,11 @@
 **Feature area:** Blueprint authoring
 **Commands:** 31
 
-[description pending]
+Control the Blueprint Visual Scripting debugger during PIE sessions. Step into/over/out, inspect call stacks, evaluate pin values at breakpoints, manage breakpoint state, set conditional breakpoints, and bind debug targets to breaking instances.
 
 ## lifecycle
 
-[description pending]
+Step into, over, or out of Blueprint execution frames and abort running scripts.
 
 ### `bp_abort_execution`
 
@@ -31,7 +31,7 @@ Request Blueprint debugger step over.
 
 ## manage
 
-[description pending]
+Continue from breaks, evaluate pins, bind debug targets, and run spike-phase diagnostic probes.
 
 ### `bp_bind_to_breaking_instance`
 
@@ -59,7 +59,7 @@ Spike-phase debug_object_handle resolver for T1.41 S4.
 
 ## read
 
-[description pending]
+Read break state snapshots, call stacks, breakpoint conditions, watch values, and available stepping actions.
 
 ### `bp_can_step`
 
@@ -107,7 +107,7 @@ Spike-phase debug candidate enumerator for T1.41 S4 row 8.
 
 ## write
 
-[description pending]
+Set and remove breakpoints, configure conditional break expressions, and manage watch lists.
 
 ### `bp_add_watch`
 
@@ -145,4 +145,4 @@ Enable or disable Blueprint pause-on-exception with session restore.
 
 Spike-phase pause-on-exception toggle probe for T1.41 S3.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

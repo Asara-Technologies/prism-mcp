@@ -3,11 +3,11 @@
 **Feature area:** UI
 **Commands:** 28
 
-[description pending]
+Author and inspect UMG Widget Blueprints. Build widget trees from JSON hierarchies, bind properties and events, manage animations with keyframed tracks, compile widgets, and query widget type schemas and named slot bindings.
 
 ## lifecycle
 
-[description pending]
+Bind and unbind widget events and properties, build widget trees from JSON, and compile Widget Blueprints.
 
 ### `bind_widget_event`
 
@@ -35,7 +35,7 @@ Remove a native UMG property binding from a widget.
 
 ## read
 
-[description pending]
+Read widget trees, inspect widget types and bindings, list animations, query named slots, and enumerate Widget Blueprint assets.
 
 ### `get_named_slots`
 
@@ -71,7 +71,7 @@ List loaded UWidget subclasses with containment metadata.
 
 ## write
 
-[description pending]
+Add widgets, configure properties, author animation tracks with keyframes, and modify widget tree hierarchy.
 
 ### `add_animation_track`
 
@@ -129,4 +129,4 @@ Assign or replace content in a named slot on a host widget.
 
 Set or clear the bIsVariable flag on a widget, controlling whether it is exposed as a Blueprint variable.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

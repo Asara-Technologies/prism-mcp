@@ -3,11 +3,11 @@
 **Feature area:** Blueprint authoring
 **Commands:** 33
 
-[description pending]
+Inspect and generate native C++ type scaffolding from the editor. Read UClass, UStruct, and UEnum metadata, enumerate reflected properties, and author new native type stubs or headers.
 
 ## read
 
-[description pending]
+Inspect UClass, UStruct, and UEnum metadata. Enumerate reflected properties, functions, and inheritance chains from native types.
 
 ### `describe_struct_type`
 
@@ -75,7 +75,7 @@ Validate assignability of a proposed reference value against a reflected propert
 
 ## write
 
-[description pending]
+Generate C++ type stubs, headers, and boilerplate for new native classes, structs, and enums.
 
 ### `add_instanced_subobject`
 
@@ -145,4 +145,4 @@ Write a typed value to an FInstancedPropertyBag entry. Supports dry_run.
 
 Write a reflected property by path. Supports dry_run validation without mutation.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

@@ -3,11 +3,11 @@
 **Feature area:** Audio
 **Commands:** 67
 
-[description pending]
+Author and preview audio assets including MetaSounds, Sound Cues, Sound Classes, Sound Submixes, and Sound Attenuation. Commands support graph editing, compile workflows, editor audition with transport controls, and PIE playback at 2D or world locations.
 
 ## lifecycle
 
-[description pending]
+Compile MetaSounds, play sounds in PIE worlds, and manage audition transport state.
 
 ### `compile_metasound`
 
@@ -31,7 +31,7 @@ Stop and release one active audition handle.
 
 ## manage
 
-[description pending]
+Preview sounds through the editor audio device, auto-layout MetaSound and Sound Cue graphs.
 
 ### `audition_sound`
 
@@ -47,7 +47,7 @@ Apply a deterministic layered layout to a Sound Cue graph.
 
 ## read
 
-[description pending]
+Inspect audio assets, read MetaSound interfaces, query sound class/submix hierarchies, and list active auditions.
 
 ### `get_audio_asset_info`
 
@@ -91,7 +91,7 @@ Read a Sound Cue runtime node tree plus editor graph layout metadata when presen
 
 ## write
 
-[description pending]
+Author MetaSound and Sound Cue graphs, create audio assets, add nodes and connections, and configure attenuation and modulation.
 
 ### `add_metasound_input`
 
@@ -289,4 +289,4 @@ Mute or unmute a USoundSubmix in the active editor/PIE audio device.
 
 Solo or unsolo a USoundSubmix in the active editor/PIE audio device.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

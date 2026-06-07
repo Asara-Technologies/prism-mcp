@@ -3,11 +3,11 @@
 **Feature area:** World and level authoring
 **Commands:** 66
 
-[description pending]
+Author and inspect Landscape actors. Commands cover heightmap editing (flatten, noise, ramp), paint layer weight manipulation, material assignment, spline authoring, landscape creation and import, component management, and structural validation. Supports edit-layer-aware operations.
 
 ## heightmap
 
-[description pending]
+Edit landscape elevation data: flatten regions, apply deterministic noise, and blend ramps between control points.
 
 ### `flatten_landscape_region`
 
@@ -226,7 +226,7 @@ Smooth landscape heightmap samples in a region.
 
 ## manage
 
-[description pending]
+Create, import, and configure landscapes. Manage components and edit layer assignments.
 
 ### `clear_edit_layer`
 
@@ -827,7 +827,7 @@ Sample world-space landscape heights at multiple world XY locations.
 
 ## materials
 
-[description pending]
+Assign and configure landscape material layers and their physical material bindings.
 
 ### `get_landscape_lod_materials`
 
@@ -1089,7 +1089,7 @@ Set a scalar, vector, or texture landscape material parameter.
 
 ## read
 
-[description pending]
+Inspect landscape metadata, component layout, edit layers, material assignments, and heightmap sample data.
 
 ### `get_active_edit_layer`
 
@@ -1432,7 +1432,7 @@ List loaded ALandscape actors in the current editor world.
 
 ## splines
 
-[description pending]
+Author landscape splines: add control points, set tangents, and configure mesh-to-spline deformation.
 
 ### `add_spline_control_point`
 
@@ -1909,7 +1909,7 @@ Update a landscape spline segment.
 
 ## validate
 
-[description pending]
+Validate landscape structural integrity and layer configuration consistency.
 
 ### `validate_heightmap_file`
 
@@ -2001,7 +2001,7 @@ Probe a weightmap file: resolution, detected format, compatibility with target l
 
 ## weightmap
 
-[description pending]
+Read and write paint layer weight data on landscape components.
 
 ### `create_landscape_layer`
 
@@ -2564,7 +2564,7 @@ Write a paint layer weightmap region from base64 uint8 samples.
 
 ## write
 
-[description pending]
+Write heightmap samples, configure build settings, and modify landscape properties.
 
 ### `create_edit_layer`
 
@@ -3040,4 +3040,4 @@ Modify Nanite settings and auto-trigger mesh rebuild.
 }
 ```
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

@@ -3,11 +3,11 @@
 **Feature area:** Documentation and discovery
 **Commands:** 6
 
-[description pending]
+Search and query the PrismMCP command catalog at runtime. Provides full-text search across command names, descriptions, modules, and clusters with optional filtering by tier, status, and source.
 
 ## manage
 
-[description pending]
+Search the Atlas command catalog by name, description, module, or cluster with filtering by tier and status.
 
 ### `atlas_search`
 
@@ -102,7 +102,7 @@ Search generated Atlas commands by command name, description, module, or cluster
 
 ## read
 
-[description pending]
+Read Atlas module metadata, command schemas, and catalog statistics.
 
 ### `atlas_describe_command`
 
@@ -373,4 +373,4 @@ List generated Atlas modules with feature areas, cluster tags, and command count
 }
 ```
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

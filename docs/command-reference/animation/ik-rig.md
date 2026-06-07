@@ -3,11 +3,11 @@
 **Feature area:** Animation
 **Commands:** 13
 
-[description pending]
+Create and configure IK Rig assets. Add solvers, goals, and retarget chains to a skeleton. Inspect rig structure including solver stacks and goal-bone assignments.
 
 ## read
 
-[description pending]
+Inspect IK Rig skeleton, solvers, goals, and retarget chain configuration.
 
 ### `get_ik_rig_info`
 
@@ -19,7 +19,7 @@ List built-in IK Rig solver types accepted by add_ik_solver.
 
 ## write
 
-[description pending]
+Create IK Rigs, add solvers and goals, and define retarget chains for skeleton assets.
 
 ### `add_ik_goal`
 
@@ -65,4 +65,4 @@ Set the retarget root bone for an IK Rig.
 
 Set enabled, StartBone, EndBone, or an editable solver/settings property.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

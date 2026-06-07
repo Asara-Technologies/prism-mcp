@@ -3,11 +3,11 @@
 **Feature area:** Editor runtime
 **Commands:** 6
 
-[description pending]
+Control Play In Editor (PIE) and Simulate In Editor (SIE) sessions. Start, stop, pause, and toggle between PIE and SIE modes. Poll session status and enumerate active PIE world contexts.
 
 ## lifecycle
 
-[description pending]
+Start, stop, and toggle between PIE and SIE play sessions.
 
 ### `start_play_session`
 
@@ -23,7 +23,7 @@ Request a PIE <-> SIE possess/eject toggle for the active play session.
 
 ## read
 
-[description pending]
+Poll live play session status and enumerate active PIE world contexts.
 
 ### `get_play_session_status`
 
@@ -35,10 +35,10 @@ List live PIE world contexts for the current play session. This is never cached.
 
 ## write
 
-[description pending]
+Pause or resume active PIE/SIE worlds.
 
 ### `set_play_session_paused`
 
 Pause or resume all active PIE/SIE worlds.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

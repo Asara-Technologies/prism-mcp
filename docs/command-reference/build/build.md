@@ -3,11 +3,11 @@
 **Feature area:** Build and deployment
 **Commands:** 12
 
-[description pending]
+Drive Unreal build pipelines from the editor. Start cook, package, or archive sessions via RunUAT, poll build progress, list output artifacts, enumerate platforms and configurations, and deploy staged builds to target devices.
 
 ## lifecycle
 
-[description pending]
+Start, cancel, and deploy BuildCookRun pipeline sessions.
 
 ### `cancel_build_session`
 
@@ -23,7 +23,7 @@ Start a cook, package, or archive BuildCookRun session through RunUAT.
 
 ## read
 
-[description pending]
+Poll build progress, list artifacts, enumerate platforms/configurations/targets/devices, and read project build metadata.
 
 ### `get_build_artifacts`
 
@@ -61,4 +61,4 @@ Enumerate connected or known target devices, optionally filtered by platform.
 
 Enumerate target platforms known to this Unreal Engine install.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

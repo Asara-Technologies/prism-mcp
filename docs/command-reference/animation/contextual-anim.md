@@ -3,11 +3,11 @@
 **Feature area:** Animation
 **Commands:** 24
 
-[description pending]
+Inspect and author Contextual Animation scene assets. Read roles, sections, anim sets, tracks, warp points, IK targets, and selection criteria. Author new sections, sets, and tracks, and validate structural integrity of scene assets.
 
 ## read
 
-[description pending]
+Read scene asset metadata, roles, sections, anim sets, tracks, warp points, IK targets, and selection criteria. Validate structural integrity.
 
 ### `contextual_anim.get_anim_set`
 
@@ -55,7 +55,7 @@ Structural validity of a scene asset: has_valid_data plus a list of issues (miss
 
 ## write
 
-[description pending]
+Add and configure sections, anim sets, and tracks within Contextual Animation scene assets.
 
 ### `contextual_anim.add_anim_set`
 
@@ -109,4 +109,4 @@ Remove a section from a scene asset by index or name.
 
 Assign the RolesAsset reference on a scene asset, with an optional PrimaryRole.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

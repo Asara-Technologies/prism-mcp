@@ -3,11 +3,11 @@
 **Feature area:** Diagnostics
 **Commands:** 49
 
-[description pending]
+Capture and analyze performance data. Start/stop Unreal Insights trace sessions with channel selection, capture GPU profiles and memory reports, read frame timing stats, manage stat groups, and emit custom timing regions into the trace stream.
 
 ## lifecycle
 
-[description pending]
+Start, stop, pause, and resume Unreal Insights trace sessions. Capture GPU profiles and memory reports. Enable and disable stat groups and trace channels.
 
 ### `capture_gpu_profile`
 
@@ -51,7 +51,7 @@ Stop the active trace session. If tracing to memory, save_to must be specified t
 
 ## manage
 
-[description pending]
+Emit custom timing regions into the trace stream and execute trace-safe console commands.
 
 ### `begin_trace_region`
 
@@ -67,7 +67,7 @@ Execute a trace-related console command. Only trace-safe prefixes allowed; sessi
 
 ## read
 
-[description pending]
+Poll capture results, read frame timing stats, query stat group data, list trace channels, and inspect trace session state.
 
 ### `get_capture_result`
 
@@ -266,7 +266,7 @@ Analyze the active trace file and return top-N most expensive scopes. Returns a 
 
 ## write
 
-[description pending]
+Configure profiling parameters, set stat thresholds, and manage trace file output paths.
 
 ### `add_trace_bookmark`
 
@@ -329,4 +329,4 @@ Delete a non-active .utrace file from the profiling directory.
 
 Set the .utrace file used by trace readback commands.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

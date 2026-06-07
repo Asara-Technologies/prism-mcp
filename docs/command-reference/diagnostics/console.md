@@ -3,11 +3,11 @@
 **Feature area:** Diagnostics
 **Commands:** 9
 
-[description pending]
+Execute console commands and manage Console Variables (CVars). Read, write, and search CVars by name or help text, create named CVar presets, and apply preset bundles atomically.
 
 ## manage
 
-[description pending]
+Execute console commands with output capture and apply named CVar presets.
 
 ### `apply_cvar_preset`
 
@@ -19,7 +19,7 @@ Execute a UE console command with output capture and dangerous-command confirmat
 
 ## read
 
-[description pending]
+Read CVar values, list and search console variables by name or help text.
 
 ### `get_cvar`
 
@@ -39,7 +39,7 @@ Search console variable names and help text for a case-insensitive substring.
 
 ## write
 
-[description pending]
+Set writable CVars and create or delete named CVar presets.
 
 ### `create_cvar_preset`
 
@@ -53,4 +53,4 @@ Delete a named CVar preset from PrismMCP settings.
 
 Set a writable console variable using ECVF_SetByConsole.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

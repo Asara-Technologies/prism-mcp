@@ -3,11 +3,11 @@
 **Feature area:** Blueprint authoring
 **Commands:** 11
 
-[description pending]
+Read and write Blueprint component hierarchies. Inspect Scene Component trees on Blueprint CDOs, add new components, set component properties, and manage attachment relationships.
 
 ## read
 
-[description pending]
+Inspect the Scene Component tree and read component properties on Blueprint CDOs.
 
 ### `get_blueprint_component_hierarchy`
 
@@ -27,7 +27,7 @@ Legacy alias for get_blueprint_component_properties.
 
 ## write
 
-[description pending]
+Add components to Blueprints, set component property values, and manage attachment hierarchies.
 
 ### `add_blueprint_component`
 
@@ -57,4 +57,4 @@ Set a path-based property value on an editable Blueprint SCS component template.
 
 Set relative transform fields on an editable Blueprint SCS scene component.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

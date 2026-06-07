@@ -3,11 +3,11 @@
 **Feature area:** Diagnostics
 **Commands:** 4
 
-[description pending]
+Run and monitor Unreal Automation Tests from the editor. Start async test sessions by filter or explicit path list, poll for progress and structured results, and stop running sessions.
 
 ## lifecycle
 
-[description pending]
+Start and stop async automation test sessions.
 
 ### `run_tests`
 
@@ -19,7 +19,7 @@ Stop all currently running automation tests. Returns state snapshot at stop time
 
 ## read
 
-[description pending]
+Poll test results and enumerate available automation tests by name prefix.
 
 ### `get_test_results`
 
@@ -29,4 +29,4 @@ Poll the current or most recently completed test session for progress and result
 
 Enumerate available automation tests. Optionally filter by name prefix.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

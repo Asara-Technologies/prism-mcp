@@ -3,11 +3,11 @@
 **Feature area:** Gameplay systems
 **Commands:** 12
 
-[description pending]
+Manage Game Feature plugins and their lifecycle. Scaffold new plugins, add and remove UGameFeatureAction entries, inspect dependencies, trigger state transitions, and poll asynchronous activation progress.
 
 ## manage
 
-[description pending]
+Request Game Feature plugin lifecycle state transitions with async completion polling.
 
 ### `change_game_feature_state`
 
@@ -15,7 +15,7 @@ Request a Game Feature plugin lifecycle transition. Returns immediately; poll ge
 
 ## read
 
-[description pending]
+Inspect plugin metadata, dependencies, lifecycle state, action details, and enumerate discovered Game Feature plugins.
 
 ### `describe_game_feature_action_class`
 
@@ -47,7 +47,7 @@ List discovered Game Feature plugins with current lifecycle state and action cou
 
 ## write
 
-[description pending]
+Scaffold new Game Feature plugins, add and remove UGameFeatureAction entries on GameFeatureData assets.
 
 ### `add_game_feature_action`
 
@@ -65,4 +65,4 @@ Remove one action by index from a plugin's GameFeatureData asset.
 
 Update descriptor metadata and Game Feature dependency declarations in a plugin's .uplugin file.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

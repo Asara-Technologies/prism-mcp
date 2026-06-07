@@ -3,11 +3,11 @@
 **Feature area:** Assets and content
 **Commands:** 27
 
-[description pending]
+Inspect and author Dataflow graphs used by Geometry Collection and Chaos destruction assets. Read node schemas and evaluation state, connect and disconnect pins, evaluate nodes, and apply auto-layout.
 
 ## manage
 
-[description pending]
+Connect and disconnect pins, evaluate nodes, open graph editors, auto-layout, and reposition nodes.
 
 ### `auto_layout_dataflow_graph`
 
@@ -39,7 +39,7 @@ Move one or more Dataflow nodes.
 
 ## read
 
-[description pending]
+Inspect Dataflow graph structure, node schemas, evaluation status, and debug draw state.
 
 ### `get_dataflow_debug_draw_state`
 
@@ -83,7 +83,7 @@ List Dataflow asset variables.
 
 ## validate
 
-[description pending]
+Validate Dataflow graph connectivity and node configuration.
 
 ### `validate_dataflow_connection`
 
@@ -91,7 +91,7 @@ Dry-run a Dataflow pin connection.
 
 ## write
 
-[description pending]
+Add Dataflow nodes, build graphs batch-style, and set node properties.
 
 ### `add_dataflow_comment`
 
@@ -129,4 +129,4 @@ Set a Dataflow asset variable.
 
 Set reflected Dataflow node properties.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

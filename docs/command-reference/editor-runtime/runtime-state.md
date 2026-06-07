@@ -3,11 +3,11 @@
 **Feature area:** Editor runtime
 **Commands:** 5
 
-[description pending]
+Inspect live actor state during PIE sessions. Read cross-domain runtime snapshots, enumerate available properties, query individual property values, and write properties for diagnostic purposes.
 
 ## read
 
-[description pending]
+Read cross-domain runtime snapshots, enumerate properties, and query specific property values on PIE actors.
 
 ### `get_gameplay_effect_time_remaining`
 
@@ -27,10 +27,10 @@ Enumerate available properties on a PIE actor or component, with optional filter
 
 ## write
 
-[description pending]
+Write raw property values on PIE actors for diagnostic mutation (no replication or PostEditChange).
 
 ### `set_runtime_property`
 
 Write a property on a PIE actor (raw local write -- no replication, RepNotify, or PostEditChangeProperty).
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

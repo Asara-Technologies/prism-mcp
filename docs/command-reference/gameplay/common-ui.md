@@ -3,11 +3,11 @@
 **Feature area:** Gameplay systems
 **Commands:** 14
 
-[description pending]
+Author and inspect CommonUI widget stacks, input action data tables, and activatable widget hierarchies. Includes project-wide validation of CommonActionWidget bindings, PIE stack inspection, and CommonInput state queries.
 
 ## lifecycle
 
-[description pending]
+Run project-wide CommonUI setup validation for broken bindings and missing configuration.
 
 ### `validate_common_ui_setup`
 
@@ -15,7 +15,7 @@ Project-wide CommonUI setup diagnostic. Scans Widget Blueprints under path_filte
 
 ## read
 
-[description pending]
+Inspect activatable widget stacks, CommonInput state, settings, input action data tables, and discover CommonUI assets by kind.
 
 ### `get_activatable_widget_stack`
 
@@ -43,7 +43,7 @@ List rows from a UCommonGenericInputActionDataTable.
 
 ## write
 
-[description pending]
+Add input action row handles, create data tables, push/pop/clear activatable widget stacks in PIE.
 
 ### `add_action_widget_input_action`
 
@@ -73,4 +73,4 @@ Remove matching CommonUI input-action row handles from a Widget Blueprint widget
 
 Set the current CommonInput type for a PIE LocalPlayer. This is snapshot-style; CommonInput may recalculate the type on the next real input event.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._
