@@ -25,12 +25,13 @@ LogPrismMCP: PrismMCP initialized
 
 ## Professional (Direct)
 
-1. Purchase a Professional license from [asaratechnologies.com](https://asaratechnologies.com).
-2. Download the plugin package from the releases page for your engine version.
-3. Extract the package into your project's `Plugins/` folder (or the engine's `Plugins/Marketplace/` folder for engine-wide use).
-4. Open your project in the Unreal Editor.
-5. Go to **Edit > Plugins**, search for **PrismMCP**, and confirm it is enabled.
-6. Restart the editor when prompted.
+1. Purchase a Professional license from [asaratechnologies.com](https://www.asaratechnologies.com/products/prism-mcp).
+2. Go to the [downloads page](https://www.asaratechnologies.com/products/prism-mcp/downloads) and enter your license key.
+3. Select your engine version and download the plugin package.
+4. Extract the package into your project's `Plugins/` folder (or the engine's `Plugins/Marketplace/` folder for engine-wide use).
+5. Open your project in the Unreal Editor.
+6. Go to **Edit > Plugins**, search for **PrismMCP**, and confirm it is enabled.
+7. Restart the editor when prompted.
 
 ### License activation (Pro only)
 
