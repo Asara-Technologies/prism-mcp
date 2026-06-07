@@ -4,7 +4,7 @@ All settings are in **Project Settings > Plugins > PrismMCP**.
 
 | Setting | Category | Type | Default | Restart | Security |
 |---|---|---|---|---|---|
-| `BindAddress` | Server | string | `127.0.0.1` | yes | Controls which network interface the transport listens on. Binding beyond localhost exposes editor commands to the network; review the [security and privacy guide](../guides/security-and-privacy.md) before doing so. |
+| `BindAddress` | Server | string | `127.0.0.1` | yes | Controls which network interface the transport listens on. Binding beyond localhost exposes editor commands to the network; review the [security and privacy guide](security-and-privacy.md) before doing so. |
 
 > TCP listen address. Default 127.0.0.1 (loopback only). Setting to 0.0.0.0 binds all interfaces and exposes editor commands to anyone on the network -- use only on trusted networks.
 
@@ -56,9 +56,9 @@ All settings are in **Project Settings > Plugins > PrismMCP**.
 
 > Port for the HTTP MCP transport. Default 8080.
 
-| `HttpBindAddress` | HTTP Transport | string | `127.0.0.1` | yes | Controls which network interface the HTTP transport listens on. Binding beyond localhost exposes editor commands to the network; review the [security and privacy guide](../guides/security-and-privacy.md) before doing so. |
+| `HttpBindAddress` | HTTP Transport | string | `127.0.0.1` | yes | Controls which network interface the HTTP transport listens on. Binding beyond localhost exposes editor commands to the network; review the [security and privacy guide](security-and-privacy.md) before doing so. |
 
-> Bind address for the HTTP transport. Localhost (127.0.0.1 or ::1) is always allowed. A non-localhost address (LAN) is permitted only when Enable In-Process TLS is on with a valid cert/key and a bearer token; otherwise it is refused. See the [security and privacy guide](../guides/security-and-privacy.md).
+> Bind address for the HTTP transport. Localhost (127.0.0.1 or ::1) is always allowed. A non-localhost address (LAN) is permitted only when Enable In-Process TLS is on with a valid cert/key and a bearer token; otherwise it is refused. See the [security and privacy guide](security-and-privacy.md).
 
 | `MaxHttpSessions` | HTTP Transport | int | `8` | no |  |
 
@@ -68,7 +68,7 @@ All settings are in **Project Settings > Plugins > PrismMCP**.
 
 > Idle session timeout. Sessions with no activity are evicted.
 
-| `HttpAuthMode` | HTTP Transport | enum (Auto, None, BearerToken) | `Auto` | no | Selects HTTP client authentication. BearerToken always requires a token; use it for any non-localhost exposure. See the [security and privacy guide](../guides/security-and-privacy.md). |
+| `HttpAuthMode` | HTTP Transport | enum (Auto, None, BearerToken) | `Auto` | no | Selects HTTP client authentication. BearerToken always requires a token; use it for any non-localhost exposure. See the [security and privacy guide](security-and-privacy.md). |
 
 > Auto derives from bind address: localhost=no auth, non-localhost=Bearer token. Explicit overrides: None, BearerToken.
 
@@ -80,11 +80,11 @@ All settings are in **Project Settings > Plugins > PrismMCP**.
 
 > Terminate TLS inside the editor on the HTTP transport. Requires a certificate and key below. When enabled, the HTTP port serves HTTPS only (no plaintext). A non-localhost bind is permitted only when TLS is active with a valid cert/key and a bearer token. Changing this requires a server restart.
 
-| `TlsCertPath` | HTTP Transport | filepath | `(FilePath="")` | yes | TLS certificate for the HTTP transport. See the [security and privacy guide](../guides/security-and-privacy.md) for the current TLS options and status. |
+| `TlsCertPath` | HTTP Transport | filepath | `(FilePath="")` | yes | TLS certificate for the HTTP transport. See the [security and privacy guide](security-and-privacy.md) for the current TLS options and status. |
 
 > Path to a PEM certificate for in-process TLS. Used when Enable In-Process TLS is on. For zero client setup, use a CA-trusted certificate (public CA or your studio's internal CA). Self-signed certs work but require per-client trust configuration. Changing this requires a server restart.
 
-| `TlsKeyPath` | HTTP Transport | filepath | `(secret)` | yes | TLS key for the HTTP transport. See the [security and privacy guide](../guides/security-and-privacy.md) for the current TLS options and status. |
+| `TlsKeyPath` | HTTP Transport | filepath | `(secret)` | yes | TLS key for the HTTP transport. See the [security and privacy guide](security-and-privacy.md) for the current TLS options and status. |
 
 > Path to the unencrypted PEM private key matching the certificate above. Used when Enable In-Process TLS is on. Passphrase-protected keys are not supported in this version. This path is treated as a secret -- it is never logged or included in settings snapshots. Changing this requires a server restart.
 
