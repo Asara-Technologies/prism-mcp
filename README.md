@@ -1,12 +1,10 @@
 # PrismMCP
 
-**[asaratechnologies.com/products/prism-mcp](https://www.asaratechnologies.com/products/prism-mcp)** -- product page, pricing, and demos.
+**Your AI agent, inside the Unreal Editor.** [Product page](https://www.asaratechnologies.com/products/prism-mcp)
 
-Your AI agent, inside the Unreal Editor.
+> **Beta** -- [contact us](mailto:sales@asaratechnologies.com) for access or a trial.
 
-> **Status:** Beta -- [contact us](mailto:sales@asaratechnologies.com) for access or a trial.
-
-Authoring, world building, gameplay, full debugging, and Blueprint-to-C++ conversion. 1,678 commands across 58 editor systems, all agent-controllable through one MCP connection. UE 5.3--5.7. Windows, Mac, Linux.
+1,678 commands across 58 editor systems — authoring, world building, gameplay, debugging, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3--5.7. Windows, Mac, Linux.
 
 ---
 
