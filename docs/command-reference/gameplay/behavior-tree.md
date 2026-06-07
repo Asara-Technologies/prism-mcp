@@ -3,11 +3,11 @@
 **Feature area:** Gameplay systems
 **Commands:** 45
 
-[description pending]
+Inspect and author Behavior Tree assets and debug running BT instances in PIE. Commands cover tree structure reading, Blackboard key inspection, node class enumeration, Blueprint event listing, runtime state polling, breakpoint management, and full graph authoring with decorators, services, and tasks.
 
 ## manage
 
-[description pending]
+Control BT debugging flow such as continuing after breakpoint pauses.
 
 ### `bt_continue`
 
@@ -15,7 +15,7 @@ Continue after a BT polling breakpoint paused PIE.
 
 ## read
 
-[description pending]
+Inspect BT asset structure, Blackboard data, runtime state, active nodes, breakpoints, and debug targets.
 
 ### `bt_describe_runtime`
 
@@ -79,7 +79,7 @@ List canonical Behavior Tree Blueprint events and whether each is already implem
 
 ## validate
 
-[description pending]
+Validate Behavior Tree structural integrity and Blackboard key consistency.
 
 ### `validate_behavior_tree`
 
@@ -87,7 +87,7 @@ Validate a Behavior Tree asset graph and return structured warnings/errors.
 
 ## write
 
-[description pending]
+Author BT graph nodes, decorators, services, and tasks. Set node properties and manage breakpoints.
 
 ### `add_blackboard_key`
 
@@ -201,4 +201,4 @@ Update the child tree or injection tag on an existing Behavior Tree subtree refe
 
 Explicitly rebuild a Behavior Tree runtime asset from its editor graph.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

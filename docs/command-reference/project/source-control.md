@@ -3,11 +3,11 @@
 **Feature area:** Project operations
 **Commands:** 42
 
-[description pending]
+Interface with the editor's source control provider. Query file and actor SCC status, check write readiness, view revision history, diff asset revisions, inspect changelists, manage branch tracking, and perform checkout/revert/submit operations.
 
 ## read
 
-[description pending]
+Query file and actor SCC status, check write readiness, view revision history, diff revisions, inspect changelists, list shelved files, and read branch state.
 
 ### `check_write_readiness`
 
@@ -95,7 +95,7 @@ Preview a submit operation without performing any mutation. Returns per-file rea
 
 ## write
 
-[description pending]
+Checkout, revert, submit, shelve, and unshelve files. Register status branches and perform bulk checkout operations.
 
 ### `branch_files`
 
@@ -181,4 +181,4 @@ Sync files to head or a specific revision. Requires confirm: true. Dirty-package
 
 Unshelve files from a changelist into the workspace. Requires confirm: true. Uses UE's FUnshelve operation. Requires a provider that supports changelists.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

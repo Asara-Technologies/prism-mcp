@@ -3,11 +3,11 @@
 **Feature area:** Gameplay systems
 **Commands:** 48
 
-[description pending]
+Inspect and author Smart Object definitions, runtime slots, and interaction behaviors. Spawn Smart Object actors, manage persistent collections, claim and release slots during PIE, configure behavior definitions, and validate slot/tag structure.
 
 ## lifecycle
 
-[description pending]
+Open/close asset editors, spawn Smart Object actors and persistent collections, and run subsystem debug controls.
 
 ### `close_smart_object_asset_editor`
 
@@ -31,7 +31,7 @@ Spawn an ASmartObjectPersistentCollection actor in the editor world.
 
 ## manage
 
-[description pending]
+Claim, use, and release Smart Object slots. Rebuild persistent collections.
 
 ### `claim_smart_object`
 
@@ -51,7 +51,7 @@ Mark a claimed Smart Object slot as occupied and return the selected behavior de
 
 ## read
 
-[description pending]
+Find runtime slots, inspect definitions, read behavior and component info, query registration state, and list slot tags.
 
 ### `find_smart_objects`
 
@@ -135,7 +135,7 @@ List world conditions on the definition or one slot.
 
 ## validate
 
-[description pending]
+Validate Smart Object definition structure, slot tags, and behavior configuration.
 
 ### `validate_smart_object_bindings`
 
@@ -143,7 +143,7 @@ Validate all Smart Object property bindings and return unresolved diagnostics.
 
 ## write
 
-[description pending]
+Author Smart Object definitions: add/remove slots, set behavior definitions, configure tags, and modify slot properties.
 
 ### `add_behavior_definition`
 
@@ -217,4 +217,4 @@ Set a reflected property on one Smart Object slot.
 
 Set a reflected property on one Smart Object world condition.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

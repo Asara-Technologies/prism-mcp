@@ -3,11 +3,11 @@
 **Feature area:** World and level authoring
 **Commands:** 9
 
-[description pending]
+Manage sub-levels and level instances in the editor world. Create levels, spawn level instances, load/unload streaming sub-levels, set the active editing level, and inspect level metadata and dirty state.
 
 ## read
 
-[description pending]
+Inspect level metadata, list streaming sub-levels and level instances, and query level instance transforms.
 
 ### `get_level_info`
 
@@ -27,7 +27,7 @@ List streaming sub-levels and level instance actors in the current editor world,
 
 ## write
 
-[description pending]
+Create levels, spawn level instances, set the active editing level, load/unload sub-levels, and configure level instance references.
 
 ### `create_level`
 
@@ -49,4 +49,4 @@ Set the referenced world/map asset on an existing ALevelInstance actor.
 
 Load or unload a streaming sub-level or level instance by name or level package path in the editor.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

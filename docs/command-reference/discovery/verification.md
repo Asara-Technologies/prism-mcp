@@ -3,11 +3,11 @@
 **Feature area:** Documentation and discovery
 **Commands:** 3
 
-[description pending]
+Run internal health checks against PrismMCP's command registration, schema integrity, and Atlas data consistency. Returns structured pass/fail diagnostics.
 
 ## read
 
-[description pending]
+Run lightweight health checks against command registration, schema integrity, and Atlas data consistency.
 
 ### `get_health_check`
 
@@ -179,4 +179,4 @@ Return aggregate PrismMCP verification state from the build-time manifest.
 }
 ```
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

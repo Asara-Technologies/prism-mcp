@@ -3,11 +3,11 @@
 **Feature area:** Materials and VFX
 **Commands:** 75
 
-[description pending]
+Inspect and author Niagara particle systems and emitters. Read module inputs, dynamic input schemas, and script graphs. Build graphs with batch node placement, compile systems, capture sim caches, validate stack readiness, and apply auto-layout.
 
 ## graph-authoring
 
-[description pending]
+Apply fixes from validation, auto-layout graphs, configure sim-cache parameters, activate/deactivate components, reconstruct stale nodes, and validate system readiness.
 
 ### `apply_niagara_stack_fix`
 
@@ -39,7 +39,7 @@ Validate Niagara system compile and runtime readiness signals.
 
 ## lifecycle
 
-[description pending]
+Build Niagara graphs batch-style, compile systems, capture sim caches, and abort async tasks.
 
 ### `abort_niagara_task`
 
@@ -63,7 +63,7 @@ Request a Niagara system compile.
 
 ## read
 
-[description pending]
+Inspect Niagara system, emitter, and script graphs. Read module inputs, dynamic input schemas, stale references, and node metadata.
 
 ### `analyze_niagara_function`
 
@@ -163,7 +163,7 @@ Search node titles, names, comments, and pin names in a Niagara script graph.
 
 ## write
 
-[description pending]
+Add modules, set inputs, connect pins, create emitters and systems, and configure Niagara stack entries.
 
 ### `add_emitter_to_system`
 
@@ -321,4 +321,4 @@ Set a single editable property on a Niagara renderer.
 
 Set a Niagara system user parameter design-time default.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

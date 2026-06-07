@@ -3,11 +3,11 @@
 **Feature area:** Gameplay systems
 **Commands:** 48
 
-[description pending]
+Inspect and author StateTree assets and debug running instances in PIE. Read states, transitions, tasks, and property bindings. Place nodes, compile trees, send runtime events, and step through trace analysis for debugging.
 
 ## lifecycle
 
-[description pending]
+Compile StateTree assets and control trace analysis sessions (step, resume).
 
 ### `compile_state_tree`
 
@@ -23,7 +23,7 @@ Step StateTree trace analysis by a supported flat event mapping.
 
 ## manage
 
-[description pending]
+Configure schemas, send runtime events, and query trace debugger availability.
 
 ### `configure_gameplay_interaction_state_tree_schema`
 
@@ -39,7 +39,7 @@ Return StateTree trace debugger availability and active analysis state.
 
 ## read
 
-[description pending]
+Inspect states, transitions, tasks, parameters, bindings, node classes, and runtime instance state in PIE.
 
 ### `get_state_tree_event_queue`
 
@@ -107,7 +107,7 @@ List live StateTree trace descriptors when the trace debugger is enabled.
 
 ## write
 
-[description pending]
+Place and configure StateTree nodes, states, transitions, tasks, and property bindings.
 
 ### `add_state_tree_binding`
 
@@ -213,4 +213,4 @@ Remove a transient StateTree breakpoint.
 
 Set a transient StateTree editor-data breakpoint.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

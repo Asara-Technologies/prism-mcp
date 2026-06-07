@@ -3,11 +3,11 @@
 **Feature area:** World and level authoring
 **Commands:** 25
 
-[description pending]
+Place and manage foliage instances in the editor world. Commands cover seeded scatter and erase operations with surface snapping, procedural foliage volumes, World Partition-aware routing, instance inspection, and foliage type enumeration.
 
 ## lifecycle
 
-[description pending]
+Spawn procedural foliage volumes bound to spawner assets.
 
 ### `spawn_procedural_foliage_volume`
 
@@ -15,7 +15,7 @@ Spawn an AProceduralFoliageVolume and bind it to a spawner asset.
 
 ## manage
 
-[description pending]
+Scatter and erase foliage instances using brush, volume, or advanced WP-aware operations with surface snapping and paint-layer filters.
 
 ### `apply_foliage_brush`
 
@@ -43,7 +43,7 @@ Seeded foliage scatter inside a box or sphere shape, optionally snapping candida
 
 ## read
 
-[description pending]
+List foliage instances and types, inspect individual instances, read procedural spawner state, and query routing targets.
 
 ### `get_foliage_instance`
 
@@ -71,7 +71,7 @@ Enumerate UFoliageType assets referenced by InstancedFoliageActors in scope.
 
 ## write
 
-[description pending]
+Add explicit foliage instances, configure procedural foliage types and spawners, and modify instance transforms.
 
 ### `add_foliage_instances`
 
@@ -121,4 +121,4 @@ Replace the UFoliageType source mesh (ISM) or actor class (Actor).
 
 Write a reflected property on a UProceduralFoliageSpawner asset.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

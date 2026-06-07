@@ -3,11 +3,11 @@
 **Feature area:** Animation
 **Commands:** 23
 
-[description pending]
+Inspect and author Physics Assets for skeletal meshes. Read body and constraint configurations, list collision shapes and disabled pairs, add/remove bodies and constraints, and configure physics simulation modes and mass properties.
 
 ## read
 
-[description pending]
+Inspect physics bodies, constraints, collision shapes, disabled pairs, mass scales, and physics simulation modes.
 
 ### `get_physics_asset_body_mass_scale`
 
@@ -43,7 +43,7 @@ List sphere, capsule, and box collision primitives across all bodies in a UPhysi
 
 ## write
 
-[description pending]
+Add and remove bodies and constraints, configure shapes, set mass and physics modes, and manage collision disable pairs.
 
 ### `add_physics_asset_body`
 
@@ -105,4 +105,4 @@ Set or clear the preview USkeletalMesh on a UPhysicsAsset. Pass an empty (or omi
 
 Add or replace a named sphere primitive on a body in a UPhysicsAsset. If a sphere/capsule/box with the same name already exists on the body, it is replaced with the new sphere (cross-type replacement).
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

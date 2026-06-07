@@ -3,11 +3,11 @@
 **Feature area:** Editor tooling
 **Commands:** 17
 
-[description pending]
+Manage Slate editor windows and dock tabs. Spawn, focus, close, dock, and undock tabs. Resize windows and splitter areas. Save and restore per-project layout snapshots.
 
 ## lifecycle
 
-[description pending]
+Spawn, focus, close, dock, undock, and resize Slate tabs and windows.
 
 ### `close_tab`
 
@@ -39,7 +39,7 @@ Move a live Slate dock tab into a new floating editor window.
 
 ## manage
 
-[description pending]
+Resize windows, save and restore per-project layout snapshots.
 
 ### `resize_window`
 
@@ -55,7 +55,7 @@ Save the current editor tab/window layout state to a per-project snapshot file.
 
 ## read
 
-[description pending]
+Inspect tab and window state, enumerate open editors and their positions.
 
 ### `get_tab_info`
 
@@ -79,7 +79,7 @@ List interactive top-level Slate editor windows with session-local window identi
 
 ## write
 
-[description pending]
+Modify window properties and persist layout configuration changes.
 
 ### `delete_layout_snapshot`
 
@@ -89,4 +89,4 @@ Delete a per-project PrismMCP editor layout snapshot if it exists.
 
 Move a non-main-frame Slate editor window to a screen position.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

@@ -3,11 +3,11 @@
 **Feature area:** Cinematics
 **Commands:** 249
 
-[description pending]
+Full authoring and inspection of Level Sequences and their tracks. Commands cover track and section CRUD, keyframe manipulation, Control Rig integration, camera cuts, audio tracks, sub-sequences, fade/transform tracks, and playback control. The largest module in PrismMCP with coverage across the full Sequencer editing surface.
 
 ## lifecycle
 
-[description pending]
+Navigate sequence focus stacks: focus into sub-sequences and pop back to parent sequences.
 
 ### `sequencer_focus_parent_sequence`
 
@@ -19,7 +19,7 @@ Focus into a sub-sequence/shot by sub-section locator
 
 ## manage
 
-[description pending]
+Control Rig integration: read and write control values (position, rotation, scale, transform), manage visibility masks, query evaluation priority, and toggle layered/absolute modes.
 
 ### `controlrig_hide_all_controls`
 
@@ -91,7 +91,7 @@ Mute or unmute all track filters (globally disables filtering without changing i
 
 ## read
 
-[description pending]
+Read sequence structure, track hierarchies, section properties, keyframe data, binding state, and playback settings.
 
 ### `controlrig_get_controls_mask`
 
@@ -351,7 +351,7 @@ List tracks on a binding or master tracks on the sequence.
 
 ## write
 
-[description pending]
+Author tracks, sections, and keyframes. Add bindings, camera cuts, audio/fade/transform tracks, sub-sequences, and modify sequence playback settings.
 
 ### `controlrig_set_controls_mask`
 
@@ -1017,4 +1017,4 @@ Attach a named tag to a Sequencer binding.
 
 Remove a named tag from a Sequencer binding.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

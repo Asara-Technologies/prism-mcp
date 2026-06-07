@@ -3,11 +3,11 @@
 **Feature area:** Editor tooling
 **Commands:** 19
 
-[description pending]
+Drive Editor Utility Widgets and Blueprints, control viewport focus, open levels, trigger Live Coding compiles, and execute sandboxed Python scripts that compose PrismMCP commands programmatically.
 
 ## lifecycle
 
-[description pending]
+Open/close Editor Utility Widget tabs, open levels, focus viewports, run EUB functions, and trigger Live Coding compiles.
 
 ### `close_euw_tab`
 
@@ -35,7 +35,7 @@ Trigger a Live Coding compile of changed C++ source files. Windows only. Optiona
 
 ## manage
 
-[description pending]
+Execute sandboxed Python scripts that compose PrismMCP commands programmatically.
 
 ### `execute_script`
 
@@ -141,7 +141,7 @@ Capture a PNG screenshot of the active editor viewport and save it to the specif
 
 ## read
 
-[description pending]
+Query available editor utilities, running tabs, and execution state.
 
 ### `get_compile_errors`
 
@@ -157,7 +157,7 @@ List currently open Editor Utility Widget tabs registered through the editor uti
 
 ## write
 
-[description pending]
+Configure editor utility settings and register custom utility operations.
 
 ### `create_editor_utility_blueprint`
 
@@ -179,4 +179,4 @@ Duplicate an asset to a new content-browser path. The source asset is preserved;
 
 Rename and/or move an asset by specifying source and destination content-browser paths. The source is removed; the destination is created.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

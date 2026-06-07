@@ -3,11 +3,11 @@
 **Feature area:** World and level authoring
 **Commands:** 5
 
-[description pending]
+Manage World Partition Data Layers. List layer instances with editor/runtime state, query per-actor memberships, set visibility, and control runtime load states.
 
 ## read
 
-[description pending]
+List Data Layer instances and query per-actor Data Layer memberships.
 
 ### `get_actor_data_layers`
 
@@ -19,7 +19,7 @@ List DataLayer instances in the current editor world with editor and runtime sta
 
 ## write
 
-[description pending]
+Set actor Data Layer memberships, control editor visibility, and set runtime load states.
 
 ### `set_actor_data_layers`
 
@@ -33,4 +33,4 @@ Set a DataLayer instance's editor viewport visibility by asset path or instance 
 
 Set a runtime DataLayer instance state to Unloaded, Loaded, or Activated.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

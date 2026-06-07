@@ -3,11 +3,11 @@
 **Feature area:** Blueprint authoring
 **Commands:** 39
 
-[description pending]
+Read and author Blueprint event graphs and function graphs at the node and pin level. Commands support tiered detail reading, batch node+wire construction, auto-layout, node reconstruction, local variable management, graph search, and comment box authoring.
 
 ## graph-authoring
 
-[description pending]
+Batch-create nodes and wires, apply auto-layout, reconstruct stale nodes, and resize comment boxes.
 
 ### `auto_layout`
 
@@ -27,7 +27,7 @@ Resize a comment box's bounding rect to enclose specified nodes.
 
 ## read
 
-[description pending]
+Read graphs at multiple detail tiers, inspect nodes and pins, list discriminators, search by content, and analyze classes for node authoring.
 
 ### `analyze_class_for_node_authoring`
 
@@ -75,7 +75,7 @@ Search within a Blueprint's graphs by node name, pin name, pin default value, or
 
 ## write
 
-[description pending]
+Add individual nodes, variables, and connections. Set pin defaults, manage graph metadata, and modify existing node configurations.
 
 ### `add_blueprint_variable`
 
@@ -290,4 +290,4 @@ Remove a node from a graph and clean up all its connections. Reports what was re
 
 Set the default (literal) value of a pin on an existing node. Pin defaults are always stored as strings in UE. Rejects exec pins.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

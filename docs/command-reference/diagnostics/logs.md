@@ -3,11 +3,11 @@
 **Feature area:** Diagnostics
 **Commands:** 5
 
-[description pending]
+Read and control Unreal Engine log output. Query per-category verbosity, read the Message Log, and adjust runtime log verbosity levels.
 
 ## read
 
-[description pending]
+Read Message Log entries and query per-category runtime verbosity levels.
 
 ### `get_log_verbosity`
 
@@ -224,7 +224,7 @@ Enumerate registered log categories with current runtime verbosity. Supports pre
 
 ## write
 
-[description pending]
+Set runtime log category verbosity for diagnostics.
 
 ### `set_log_verbosity`
 
@@ -289,4 +289,4 @@ Set runtime verbosity for a log category. Does not persist across editor restart
 }
 ```
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

@@ -3,11 +3,11 @@
 **Feature area:** World and level authoring
 **Commands:** 65
 
-[description pending]
+Inspect and manipulate actors in the editor world. Enumerate actors with stable handles, read properties and component hierarchies, spawn and delete actors, manage transforms and attachments, control World Partition loading, and query world diagnostic flags including WP/OFPA status.
 
 ## lifecycle
 
-[description pending]
+Start in-editor map build sessions.
 
 ### `start_map_build`
 
@@ -15,7 +15,7 @@ Start an in-editor map build session.
 
 ## read
 
-[description pending]
+Enumerate actors with stable handles, read properties and components, query World Partition descriptors, inspect world flags, and check actor load state.
 
 ### `find_actors_by_name`
 
@@ -71,7 +71,7 @@ Enumerate map build types applicable to the currently loaded editor world.
 
 ## write
 
-[description pending]
+Spawn and delete actors, set transforms, attach actors, add components, manage outliner folders, and control World Partition actor loading.
 
 ### `add_instance_component`
 
@@ -277,4 +277,4 @@ Unload a World Partition actor from the editor load adapter. Refuses dirty loade
 
 Remove a World Partition actor from the editor's persistent pinned-actors set.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

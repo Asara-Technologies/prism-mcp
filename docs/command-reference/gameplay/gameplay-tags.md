@@ -3,11 +3,11 @@
 **Feature area:** Gameplay systems
 **Commands:** 10
 
-[description pending]
+Query and mutate the Gameplay Tag hierarchy. List tags with source and restricted metadata, find tag referencers across assets, evaluate tag queries, and add/remove/rename tags in config-backed sources with dry-run support.
 
 ## read
 
-[description pending]
+List the tag hierarchy with source metadata, find tag referencers across assets, evaluate tag queries, and match containers.
 
 ### `evaluate_gameplay_tag_query`
 
@@ -35,7 +35,7 @@ Match a Gameplay Tag container against one tag or another container using exact 
 
 ## validate
 
-[description pending]
+Validate tag write inputs without mutating project settings (dry-run pre-flight).
 
 ### `validate_gameplay_tags`
 
@@ -43,7 +43,7 @@ Validate Gameplay Tag write inputs without mutating project settings.
 
 ## write
 
-[description pending]
+Add, remove, and rename Gameplay Tags in config-backed sources with redirect support and dry-run mode.
 
 ### `add_gameplay_tag`
 
@@ -57,4 +57,4 @@ Remove an explicit leaf Gameplay Tag from a writable config-backed source, or pr
 
 Leaf-rename an explicit Gameplay Tag, creating a redirect by default, or preview with dry_run.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

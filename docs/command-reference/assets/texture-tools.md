@@ -3,11 +3,11 @@
 **Feature area:** Assets and content
 **Commands:** 35
 
-[description pending]
+Analyze and manage texture assets for performance and quality. Audit compression settings, estimate platform memory budgets, analyze streaming pool usage, assess Virtual Texture readiness, manage Runtime Virtual Texture volumes, and inspect texture references.
 
 ## lifecycle
 
-[description pending]
+Spawn Runtime Virtual Texture volumes in the editor world.
 
 ### `spawn_rvt_volume`
 
@@ -15,7 +15,7 @@ Spawn a Runtime Virtual Texture volume in the current editor world.
 
 ## manage
 
-[description pending]
+Assess VT migration readiness, audit texture quality rules, and estimate platform-specific compressed sizes.
 
 ### `assess_virtual_texture_readiness`
 
@@ -31,7 +31,7 @@ Estimate compressed texture sizes without cooking.
 
 ## read
 
-[description pending]
+Analyze streaming budgets, platform memory estimates, texture references, material dependencies, and RVT configuration.
 
 ### `analyze_platform_texture_budget`
 
@@ -158,7 +158,7 @@ List RVT assets and volumes.
 
 ## validate
 
-[description pending]
+Validate texture settings against quality and performance rules.
 
 ### `validate_texture_naming`
 
@@ -166,7 +166,7 @@ Validate texture names and suffix conventions.
 
 ## write
 
-[description pending]
+Modify texture compression settings, streaming parameters, LOD bias, and Virtual Texture configuration.
 
 ### `batch_set_texture_settings`
 
@@ -216,4 +216,4 @@ Patch texture settings by snake_case property names.
 
 Set virtual texture settings.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

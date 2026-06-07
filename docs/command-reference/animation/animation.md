@@ -3,11 +3,11 @@
 **Feature area:** Animation
 **Commands:** 36
 
-[description pending]
+Inspect and author animation assets including skeletal meshes, skeletons, anim montages, and state machines. Commands cover bone compatibility checks, retarget source discovery, montage section/notify/curve editing, and state machine graph construction.
 
 ## read
 
-[description pending]
+Query skeleton compatibility, inspect montage structure, read state machine graphs, and suggest bone mappings between skeletons.
 
 ### `check_skeleton_compatibility`
 
@@ -47,7 +47,7 @@ Analyze two skeleton bone hierarchies and suggest name-based bone correspondence
 
 ## write
 
-[description pending]
+Create montages, add sections/notifies/curves, author state machine states and transitions, and add skeletal mesh sockets.
 
 ### `add_conduit`
 
@@ -157,4 +157,4 @@ Set properties on an existing state or conduit. Supports entry state wiring and 
 
 Set properties on an existing transition in an animation state machine.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

@@ -3,11 +3,11 @@
 **Feature area:** Editor tooling
 **Commands:** 11
 
-[description pending]
+Observe and control editor-level state. Capture editor screenshots, open asset editors, read project metadata, and query active editor mode information.
 
 ## lifecycle
 
-[description pending]
+Capture editor screenshots and open asset editors.
 
 ### `capture_editor_image`
 
@@ -92,7 +92,7 @@ Open the asset editor for the asset at the given content-browser package path.
 
 ## manage
 
-[description pending]
+Manage editor mode state and project-level operations.
 
 ### `render_asset_thumbnail`
 
@@ -244,7 +244,7 @@ Project a world-space position to normalized screen coordinates in the active le
 
 ## read
 
-[description pending]
+Read project metadata, editor configuration, and active mode information.
 
 ### `get_content_browser_path`
 
@@ -423,7 +423,7 @@ List actors whose bounds intersect the active level viewport frustum (frustum-on
 
 ## write
 
-[description pending]
+Modify editor state settings and configuration values.
 
 ### `set_content_browser_path`
 
@@ -515,4 +515,4 @@ Set the active level viewport camera location and rotation. FOV is optional and 
 }
 ```
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

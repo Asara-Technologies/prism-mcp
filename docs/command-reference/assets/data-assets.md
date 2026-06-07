@@ -3,11 +3,11 @@
 **Feature area:** Assets and content
 **Commands:** 17
 
-[description pending]
+Create and inspect Data Tables, Data Assets, User Defined Structs, and User Defined Enums. Read table rows and struct fields, add rows, and create new typed data containers through the UE factory system.
 
 ## read
 
-[description pending]
+Read Data Table rows and metadata, Data Asset properties, User Defined Enum entries, and Struct field definitions.
 
 ### `get_data_asset`
 
@@ -35,7 +35,7 @@ List all loaded UClass types that inherit from UDataAsset. Useful for discoverin
 
 ## write
 
-[description pending]
+Create Data Tables, Data Assets, Enums, and Structs. Add table rows and generic factory-backed assets.
 
 ### `add_data_table_row`
 
@@ -81,4 +81,4 @@ Remove a row from a Data Table by name.
 
 Set a property value on a Data Asset. The value is parsed via UE's ImportText and must match the property type.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

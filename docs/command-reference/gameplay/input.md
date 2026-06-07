@@ -3,11 +3,11 @@
 **Feature area:** Gameplay systems
 **Commands:** 18
 
-[description pending]
+Author and inspect Enhanced Input assets. Create and configure Input Actions and Input Mapping Contexts, add key bindings with triggers and modifiers, and enumerate supported keys and modifier/trigger classes.
 
 ## read
 
-[description pending]
+Inspect Input Actions, Mapping Contexts, and enumerate available keys, triggers, and modifiers.
 
 ### `get_input_action`
 
@@ -39,7 +39,7 @@ List UE FKey names accepted by Enhanced Input mapping commands.
 
 ## write
 
-[description pending]
+Create Input Actions and Mapping Contexts, add key-action mappings, and configure triggers and modifiers.
 
 ### `add_input_behavior`
 
@@ -85,4 +85,4 @@ Set one reflected property on an Enhanced Input trigger or modifier object attac
 
 Update an existing mapping's key and/or action in a UInputMappingContext. Requires at least one of new_key or new_action.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

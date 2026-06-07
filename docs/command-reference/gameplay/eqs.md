@@ -3,11 +3,11 @@
 **Feature area:** Gameplay systems
 **Commands:** 17
 
-[description pending]
+Author and validate Environment Query System (EQS) assets. Add and remove query options, configure generators and tests, inspect reflected properties, and run structural validation on query graphs.
 
 ## read
 
-[description pending]
+Inspect Environment Query options, generators, tests, and their reflected properties. List available EQS classes.
 
 ### `add_query_option`
 
@@ -43,7 +43,7 @@ Reorder all EQS options using a complete index permutation.
 
 ## validate
 
-[description pending]
+Validate an Environment Query's option, generator, and test structure for authoring errors.
 
 ### `validate_env_query`
 
@@ -51,7 +51,7 @@ Validate an Environment Query's option, generator, and test structure.
 
 ## write
 
-[description pending]
+Create queries, add options with generators, add tests, set properties, and reorder options.
 
 ### `add_test`
 
@@ -85,4 +85,4 @@ Set a reflected property on an EQS option test.
 
 Explicitly synchronize an Environment Query editor graph back into the runtime query asset.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

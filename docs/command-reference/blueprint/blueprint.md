@@ -3,11 +3,11 @@
 **Feature area:** Blueprint authoring
 **Commands:** 27
 
-[description pending]
+Manage Blueprint asset structure: compile, inspect variables/functions/properties, query class hierarchies, and author interface contracts. Includes project-wide queries for interface implementors, conformance gaps, and call-site analysis.
 
 ## lifecycle
 
-[description pending]
+Compile Blueprint assets and report structured compilation diagnostics.
 
 ### `compile_blueprint`
 
@@ -15,7 +15,7 @@ Compile a Blueprint asset and save it. Returns compilation status with structure
 
 ## read
 
-[description pending]
+Inspect Blueprint functions, variables, properties, interfaces, class hierarchies, and overridable functions. Run project-wide conformance and call-site queries.
 
 ### `find_blueprint_by_name`
 
@@ -79,7 +79,7 @@ Pre-flight safety check for interface refactoring. Combines conformance analysis
 
 ## write
 
-[description pending]
+Add and remove variables, implement interfaces, override functions, set property defaults, and manage Blueprint metadata.
 
 ### `add_component_to_blueprint`
 
@@ -125,4 +125,4 @@ Configure physics simulation settings on a primitive component (UPrimitiveCompon
 
 Set the static mesh asset and/or material on a StaticMeshComponent inside a Blueprint. Provide content-browser paths for the mesh and material.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

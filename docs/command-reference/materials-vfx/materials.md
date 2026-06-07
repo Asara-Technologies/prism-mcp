@@ -3,11 +3,11 @@
 **Feature area:** Materials and VFX
 **Commands:** 29
 
-[description pending]
+Inspect and author Material and Material Instance assets. Read expression graphs, parameter hierarchies, static switches, and layer stacks. Add expressions and parameters, connect pins, set overrides, compile shaders, and apply auto-layout.
 
 ## graph-authoring
 
-[description pending]
+Add expressions, connect pins, compile shaders, and auto-layout material graphs.
 
 ### `auto_layout_material`
 
@@ -19,7 +19,7 @@ Force material shader recompilation and report available status.
 
 ## read
 
-[description pending]
+Read material graphs, parameter hierarchies, instance state, layer stacks, static switches, and collection parameters.
 
 ### `get_collection_info`
 
@@ -59,7 +59,7 @@ Search material expressions by type, label, property, or value.
 
 ## write
 
-[description pending]
+Add expressions and parameters, connect to material outputs, set parameter overrides, and manage material instance layers.
 
 ### `add_material_expression`
 
@@ -133,4 +133,4 @@ Set a scalar/vector/texture parameter override by name.
 
 Set a static switch parameter value (triggers shader permutation recompile).
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

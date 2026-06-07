@@ -3,11 +3,11 @@
 **Feature area:** Assets and content
 **Commands:** 25
 
-[description pending]
+Import, reimport, and process mesh and content assets. Covers Interchange and Factory import pipelines with per-format options, static mesh collision generation, LOD creation, lightmap UV generation, mesh merging, and socket authoring.
 
 ## lifecycle
 
-[description pending]
+Run static mesh editor tools such as UV projection operations.
 
 ### `run_static_mesh_editor_tool`
 
@@ -15,7 +15,7 @@ Run a safe static mesh editor tool such as planar/cylindrical/box UV projection.
 
 ## manage
 
-[description pending]
+Import and reimport assets, generate collision/LODs/lightmap UVs, merge meshes, and manage import presets.
 
 ### `generate_static_mesh_collision`
 
@@ -47,7 +47,7 @@ Save a named pipeline_options dict as a reusable preset.
 
 ## read
 
-[description pending]
+Inspect static mesh processing state, query import pipeline options, list presets and sockets.
 
 ### `get_hlod_authoring_info`
 
@@ -75,7 +75,7 @@ List sockets authored directly on a UStaticMesh.
 
 ## validate
 
-[description pending]
+Validate import options and pipeline configurations before committing an import.
 
 ### `validate_import_options`
 
@@ -83,7 +83,7 @@ Dry-run validation of a pipeline_options dict against the resolved Interchange p
 
 ## write
 
-[description pending]
+Author static mesh sockets, set build settings, and configure Nanite processing.
 
 ### `add_static_mesh_lod`
 
@@ -125,4 +125,4 @@ Patch per-LOD screen size, FMeshReductionSettings, and FMeshBuildSettings.
 
 Patch an existing UStaticMesh socket transform or tag.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

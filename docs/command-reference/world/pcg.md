@@ -3,11 +3,11 @@
 **Feature area:** World and level authoring
 **Commands:** 34
 
-[description pending]
+Inspect and author Procedural Content Generation (PCG) graphs. Read node schemas and graph structure, batch-construct graphs, connect and disconnect pins, bind graphs to actors, trigger generation, and validate output.
 
 ## lifecycle
 
-[description pending]
+Batch-construct PCG graphs from manifests.
 
 ### `build_pcg_graph`
 
@@ -15,7 +15,7 @@ Batch-construct a PCG graph from a manifest.
 
 ## manage
 
-[description pending]
+Connect and disconnect pins, duplicate nodes, bind graphs to actors, trigger generation, cleanup output, recompile, and auto-layout.
 
 ### `auto_layout_pcg_graph`
 
@@ -67,7 +67,7 @@ Search PCG graph nodes.
 
 ## read
 
-[description pending]
+Inspect PCG graph structure, individual nodes, and node schemas.
 
 ### `get_pcg_graph`
 
@@ -103,7 +103,7 @@ Enumerate exposed PCG node types.
 
 ## validate
 
-[description pending]
+Validate PCG graph connectivity and node configuration for authoring errors.
 
 ### `validate_pcg_connection`
 
@@ -115,7 +115,7 @@ Validate PCG graph topology and compile diagnostics.
 
 ## write
 
-[description pending]
+Add PCG nodes, set node settings, and author graph structure.
 
 ### `add_pcg_comment`
 
@@ -161,4 +161,4 @@ Update a PCG graph comment.
 
 Mutate PCG node settings and metadata.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

@@ -3,11 +3,11 @@
 **Feature area:** Blueprint authoring
 **Commands:** 31
 
-[description pending]
+Blueprint-to-C++ conversion tooling. Analyze Blueprint functions for native convertibility, emit C++ helpers via Mode A surgical or Mode B/D batch workflows, register and run parity tests between BP and generated code, and produce project-wide conversion coverage reports.
 
 ## read
 
-[description pending]
+Analyze Blueprint convertibility, preview emitted C++ code, dump ASTs, backmap compiler errors, run parity tests, and generate conversion coverage reports.
 
 ### `dev_bpc_analyze_blueprint_convertibility`
 
@@ -71,7 +71,7 @@ Check whether a generated BPC module is loaded in the current editor session.
 
 ## write
 
-[description pending]
+Execute Mode A surgical conversions, batch Mode B/D conversions, compile generated modules, remove conversions, and manage the conversion lifecycle.
 
 ### `dev_bpc_batch_convert`
 
@@ -137,4 +137,4 @@ Mode B: scan in-project references to a Blueprint-generated class.
 
 Dry-run or remove a Prism-managed C++ module from disk and the .uproject file.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

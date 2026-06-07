@@ -3,11 +3,11 @@
 **Feature area:** Editor tooling
 **Commands:** 2
 
-[description pending]
+Manage the PrismMCP clipboard buffer for cross-command data transfer. Clear specific domains or all buffered data.
 
 ## manage
 
-[description pending]
+Clear clipboard buffer domains used for cross-command data transfer.
 
 ### `clipboard_clear`
 
@@ -84,4 +84,4 @@ Returns the current MCP clipboard buffer state: domains with content, item count
 }
 ```
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

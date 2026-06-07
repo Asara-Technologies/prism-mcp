@@ -3,11 +3,11 @@
 **Feature area:** Animation
 **Commands:** 40
 
-[description pending]
+Inspect and author Control Rig Blueprints and their RigVM graphs. Read hierarchy elements, variables, and graph structure. Author rig units, connections, and variables. Includes RigVM breakpoint debugging during PIE.
 
 ## manage
 
-[description pending]
+Control RigVM debugger flow such as continuing after breakpoints.
 
 ### `rigvm_debug_continue`
 
@@ -15,7 +15,7 @@ Continue after a RigVM breakpoint paused PIE.
 
 ## read
 
-[description pending]
+Inspect Control Rig hierarchy, graphs, variables, element transforms, unit types, and debugger state.
 
 ### `get_control_rig_info`
 
@@ -75,7 +75,7 @@ List live RigVMHost / Control Rig debug targets.
 
 ## write
 
-[description pending]
+Author RigVM graph nodes, connections, and variables. Build graphs batch-style and modify rig hierarchy elements.
 
 ### `add_rig_bone`
 
@@ -177,4 +177,4 @@ Set the editor graph position of a Control Rig RigVM node.
 
 Set a RigVM pin default value by pin path.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

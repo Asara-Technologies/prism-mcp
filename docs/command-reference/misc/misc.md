@@ -3,11 +3,11 @@
 **Feature area:** Miscellaneous
 **Commands:** 4
 
-[description pending]
+Utility commands that do not belong to a specific domain. Includes a health-check ping, undo/redo history inspection, and general-purpose helpers.
 
 ## manage
 
-[description pending]
+Health-check ping that confirms editor responsiveness.
 
 ### `ping`
 
@@ -40,7 +40,7 @@ Health check. Returns 'pong' if the editor is responsive.
 
 ## read
 
-[description pending]
+Inspect the editor undo/redo transaction history.
 
 ### `get_undo_history`
 
@@ -99,7 +99,7 @@ Return the current undo and redo stacks as named transaction lists. Optional 'li
 
 ## write
 
-[description pending]
+Perform undo or redo operations on the editor transaction stack.
 
 ### `redo`
 
@@ -189,4 +189,4 @@ Undo the most recent editor operation. Returns the name of the transaction that 
 }
 ```
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

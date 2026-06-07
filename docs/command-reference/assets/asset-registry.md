@@ -3,11 +3,11 @@
 **Feature area:** Assets and content
 **Commands:** 18
 
-[description pending]
+Query and manage the Unreal Asset Registry. Commands browse folders, search by class or path, resolve content-to-disk paths, inspect dependencies and referencers, find orphaned assets, validate integrity, and perform batch move/copy/delete operations.
 
 ## manage
 
-[description pending]
+Perform batch asset operations, browse folders, fix up redirectors, and resolve content-to-disk paths.
 
 ### `batch_assets`
 
@@ -27,7 +27,7 @@ Convert between content paths and disk paths. Accepts either format and returns 
 
 ## read
 
-[description pending]
+Search and inspect assets by class, path, or name. Query dependencies, referencers, and import options.
 
 ### `find_assets`
 
@@ -67,7 +67,7 @@ List subfolders under a content path. Returns folder names, content paths, disk 
 
 ## validate
 
-[description pending]
+Validate assets in a path for errors such as missing references or corrupt data.
 
 ### `validate_assets`
 
@@ -75,7 +75,7 @@ Validate assets in a path, checking for errors such as missing references or cor
 
 ## write
 
-[description pending]
+Create folders and perform write-side asset registry operations.
 
 ### `create_folder`
 
@@ -93,4 +93,4 @@ Move an asset to a new location in the content browser, optionally fixing up ref
 
 Rename a folder in the content browser by moving all assets to a new folder with the given name. Creates redirectors for moved assets.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

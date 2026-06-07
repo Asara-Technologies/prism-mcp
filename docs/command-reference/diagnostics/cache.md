@@ -3,11 +3,11 @@
 **Feature area:** Diagnostics
 **Commands:** 2
 
-[description pending]
+Inspect and manage PrismMCP's internal result cache. Read hit/miss statistics and entry counts, or flush cached data to force fresh queries.
 
 ## read
 
-[description pending]
+Query cache statistics including entry count, byte usage, and hit/miss rates.
 
 ### `get_cache_stats`
 
@@ -75,7 +75,7 @@ Get result cache statistics: entry count, byte usage, hit/miss rates.
 
 ## write
 
-[description pending]
+Flush cached entries to force fresh data on subsequent queries.
 
 ### `clear_cache`
 
@@ -116,4 +116,4 @@ Clear the MCP result cache. Returns count of entries cleared and bytes freed.
 }
 ```
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

@@ -3,11 +3,11 @@
 **Feature area:** Assets and content
 **Commands:** 25
 
-[description pending]
+Drive the Unreal Localization pipeline. Run GatherText, compile manifests into .locres, export/import PO translations, inspect archives and manifests, generate coverage reports, and manage String Table assets and localization target configuration.
 
 ## lifecycle
 
-[description pending]
+Compile localization targets and run the GatherText pipeline with async job tracking.
 
 ### `compile_localization`
 
@@ -19,7 +19,7 @@ Launch the GatherText pipeline for a localization target. Returns a job ID for p
 
 ## manage
 
-[description pending]
+Export and import PO translations, patch localization target configuration.
 
 ### `export_translations`
 
@@ -35,7 +35,7 @@ Patch localization target settings via structured JSON partial input.
 
 ## read
 
-[description pending]
+Poll localization jobs, read manifests and archives, generate coverage reports, and inspect String Table assets.
 
 ### `get_localization_job`
 
@@ -79,7 +79,7 @@ List every entry in a String Table, or read one key when key is supplied.
 
 ## validate
 
-[description pending]
+Validate localization data integrity and translation completeness.
 
 ### `validate_localization_target`
 
@@ -87,7 +87,7 @@ Validate localization target config and translation coverage. Reports config iss
 
 ## write
 
-[description pending]
+Create and modify String Table entries, configure localization targets, and author translation records.
 
 ### `add_target_culture`
 
@@ -125,4 +125,4 @@ Add or replace one String Table entry, optionally patching string metadata.
 
 Set a String Table asset namespace.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._

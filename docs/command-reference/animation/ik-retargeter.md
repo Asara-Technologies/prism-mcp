@@ -3,11 +3,11 @@
 **Feature area:** Animation
 **Commands:** 8
 
-[description pending]
+Create and configure IK Retargeter assets. Assign source/target IK Rigs, manage retarget poses, map chains between skeletons automatically or manually, and inspect current mapping state.
 
 ## read
 
-[description pending]
+Inspect IK Retargeter rig bindings, chain mappings, and retarget pose summaries.
 
 ### `get_ik_retargeter_info`
 
@@ -15,7 +15,7 @@ Get IK Retargeter rig bindings, chain mappings, and retarget pose summaries.
 
 ## write
 
-[description pending]
+Create retargeters, assign rigs, add poses, map chains automatically or manually, and set bone rotation deltas.
 
 ### `add_retarget_pose`
 
@@ -45,4 +45,4 @@ Map one target retarget chain to a source chain, or clear it with null/empty sou
 
 Set named retarget-pose bone rotation deltas in degrees.
 
-_Generated from commit `6b418668437a` at 2026-06-07T20:56:46Z._
+_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._
