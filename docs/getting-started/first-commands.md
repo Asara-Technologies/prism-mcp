@@ -61,5 +61,5 @@ The response includes the undo count and redo count after the operation. Check t
 You now have a working PrismMCP connection with verified round-trip editor control. From here:
 
 - Browse the full command list by calling `tools/list` in your MCP client.
-- Explore the capability reference in [`../capabilities/`](../capabilities/) for commands grouped by module.
+- Explore the command reference in [`../command-reference/`](../command-reference/) for commands grouped by module.
 - See [Configuration](configuration.md) for port, security, and logging options.
