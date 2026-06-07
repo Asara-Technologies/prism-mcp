@@ -39,7 +39,7 @@ One tool, two tiers. Core authoring ships as **Lite** through [Epic Fab](https:/
 
 See the full feature breakdown: **[asaratechnologies.com/products/prism-mcp/features](https://www.asaratechnologies.com/products/prism-mcp/features)**
 
-Command reference by module: [docs/capabilities/](docs/capabilities/)
+Command reference by module: [docs/command-reference/](docs/command-reference/)
 
 ---
 
@@ -48,7 +48,7 @@ Command reference by module: [docs/capabilities/](docs/capabilities/)
 | | |
 |:---|:---|
 | [Getting started](docs/getting-started/) | Installation, client connection, configuration |
-| [Capabilities](docs/capabilities/) | Command reference by module -- Lite with full schemas, Pro with descriptions |
+| [Command Reference](docs/command-reference/) | 2,000+ commands by module -- Lite with full schemas, Pro with descriptions |
 | [Guides](docs/guides/) | Security, HTTP transport, cluster loading, settings reference |
 | [Examples](docs/examples/) | C++, Blueprint, and Python workflows |
 
