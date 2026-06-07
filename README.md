@@ -29,6 +29,8 @@ Works with Claude Code, Cursor, Claude Desktop, and any MCP-compatible agent.
 
 Full setup: [docs/getting-started/](docs/getting-started/)
 
+**Download or redeem your license:** [asaratechnologies.com/products/prism-mcp/downloads](https://www.asaratechnologies.com/products/prism-mcp/downloads)
+
 ---
 
 ## Two tiers
