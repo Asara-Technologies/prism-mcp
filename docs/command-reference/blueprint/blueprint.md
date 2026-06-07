@@ -125,4 +125,4 @@ Configure physics simulation settings on a primitive component (UPrimitiveCompon
 
 Set the static mesh asset and/or material on a StaticMeshComponent inside a Blueprint. Provide content-browser paths for the mesh and material.
 
-_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._
+_Generated from commit `acf91a617efb` at 2026-06-07T21:47:41Z._

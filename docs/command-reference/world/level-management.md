@@ -49,4 +49,4 @@ Set the referenced world/map asset on an existing ALevelInstance actor.
 
 Load or unload a streaming sub-level or level instance by name or level package path in the editor.
 
-_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._
+_Generated from commit `acf91a617efb` at 2026-06-07T21:47:41Z._

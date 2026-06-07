@@ -329,4 +329,4 @@ Delete a non-active .utrace file from the profiling directory.
 
 Set the .utrace file used by trace readback commands.
 
-_Generated from commit `97eb6ac57a6b` at 2026-06-07T21:12:52Z._
+_Generated from commit `acf91a617efb` at 2026-06-07T21:47:41Z._
