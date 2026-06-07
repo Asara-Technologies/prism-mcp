@@ -1,0 +1,23 @@
+{
+  "name": "InventoryPythonTools",
+  "version": "1.0.0",
+  "author": "Studio Team",
+  "description": "Example Python-backed inventory commands.",
+  "commands": [
+    {
+      "name": "inventory_py_echo",
+      "description": "Echo an inventory item id from Python.",
+      "module": "inventory",
+      "cluster": "read",
+      "tier": "lite",
+      "handler": "handlers.echo",
+      "required_params": [
+        {
+          "name": "item_id",
+          "type": "string",
+          "description": "Inventory item id"
+        }
+      ]
+    }
+  ]
+}
