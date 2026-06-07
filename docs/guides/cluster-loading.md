@@ -1,6 +1,6 @@
 # Cluster-Gated Tool Loading
 
-PrismMCP registers 1,000+ MCP tools. Loading all of them into an LLM's context
+PrismMCP registers 2,000+ MCP tools. Loading all of them into an LLM's context
 window on every request wastes tokens and crowds out the user's actual task.
 Clusters let clients load only the tools they need.
 
