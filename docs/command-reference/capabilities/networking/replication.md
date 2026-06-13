@@ -37,4 +37,4 @@ Mutate runtime replication state on actors for diagnostic purposes during PIE.
 
 Mutates runtime replication state on an actor: replicates flag, dormancy, update frequencies. Runtime diagnostic mutation -- not undoable. Requires an active PIE or play session.
 
-_Generated from commit `00750b91e5c3` at 2026-06-09T06:28:33Z._
+_Generated from commit `b939b51256dd` at 2026-06-13T22:48:19Z._
