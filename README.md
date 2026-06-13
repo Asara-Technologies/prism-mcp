@@ -29,6 +29,11 @@ Full setup: [docs/getting-started/](docs/getting-started/)
 
 **Download or redeem your license:** [asaratechnologies.com/products/prism-mcp/downloads](https://www.asaratechnologies.com/products/prism-mcp/downloads)
 
+Source-built engine note: Pro declares Epic's experimental `ContextualAnimation` plugin as
+an enabled optional dependency. If your custom engine omits that plugin, PrismMCP still
+loads; ContextualAnimation commands report `plugin_unavailable` until the plugin is compiled
+and available.
+
 ---
 
 ## Two tiers
