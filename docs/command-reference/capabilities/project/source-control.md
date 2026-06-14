@@ -181,4 +181,4 @@ Sync files to head or a specific revision. Requires confirm: true. Dirty-package
 
 Unshelve files from a changelist into the workspace. Requires confirm: true. Uses UE's FUnshelve operation. Requires a provider that supports changelists.
 
-_Generated from commit `72ed403a48ac` at 2026-06-14T00:31:07Z._
+_Generated from commit `c4a795595b18` at 2026-06-14T06:38:55Z._
