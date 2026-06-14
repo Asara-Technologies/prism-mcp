@@ -201,4 +201,4 @@ Update the child tree or injection tag on an existing Behavior Tree subtree refe
 
 Explicitly rebuild a Behavior Tree runtime asset from its editor graph.
 
-_Generated from commit `b939b51256dd` at 2026-06-13T22:48:19Z._
+_Generated from commit `72ed403a48ac` at 2026-06-14T00:31:07Z._

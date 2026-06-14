@@ -213,4 +213,4 @@ Remove a transient StateTree breakpoint.
 
 Set a transient StateTree editor-data breakpoint.
 
-_Generated from commit `b939b51256dd` at 2026-06-13T22:48:19Z._
+_Generated from commit `72ed403a48ac` at 2026-06-14T00:31:07Z._
