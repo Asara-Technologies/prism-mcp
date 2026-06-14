@@ -8,6 +8,10 @@ PrismMCP is available in two tiers. Both install as a standard Unreal Engine plu
 - Windows, macOS, or Linux
 - An MCP-compatible client (Claude Code, Cursor, Claude Desktop, or any MCP client)
 
+## Project compatibility
+
+PrismMCP ships as precompiled binaries and works with both Blueprint-only and C++ projects on all supported engine versions. No source compilation or project conversion is required. The plugin is Editor-only and does not affect your game's runtime code or packaging.
+
 ## Lite (via Fab)
 
 1. Open the [Fab marketplace](https://www.fab.com/) and search for **PrismMCP**.

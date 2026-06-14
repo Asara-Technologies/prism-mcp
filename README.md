@@ -12,6 +12,8 @@
 
 Add PrismMCP to your MCP client config:
 
+PrismMCP ships as precompiled binaries and works with both Blueprint-only and C++ projects. No source compilation or project conversion is required.
+
 ```json
 {
   "mcpServers": {
