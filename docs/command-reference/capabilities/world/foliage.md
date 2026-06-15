@@ -121,4 +121,4 @@ Replace the UFoliageType source mesh (ISM) or actor class (Actor).
 
 Write a reflected property on a UProceduralFoliageSpawner asset.
 
-_Generated from commit `c4a795595b18` at 2026-06-14T06:38:55Z._
+_Generated from commit `d55b227d7cc8` at 2026-06-15T04:11:43Z._

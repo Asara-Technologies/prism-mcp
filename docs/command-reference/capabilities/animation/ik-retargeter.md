@@ -45,4 +45,4 @@ Map one target retarget chain to a source chain, or clear it with null/empty sou
 
 Set named retarget-pose bone rotation deltas in degrees.
 
-_Generated from commit `c4a795595b18` at 2026-06-14T06:38:55Z._
+_Generated from commit `d55b227d7cc8` at 2026-06-15T04:11:43Z._

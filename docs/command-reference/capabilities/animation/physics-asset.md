@@ -105,4 +105,4 @@ Set or clear the preview USkeletalMesh on a UPhysicsAsset. Pass an empty (or omi
 
 Add or replace a named sphere primitive on a body in a UPhysicsAsset. If a sphere/capsule/box with the same name already exists on the body, it is replaced with the new sphere (cross-type replacement).
 
-_Generated from commit `c4a795595b18` at 2026-06-14T06:38:55Z._
+_Generated from commit `d55b227d7cc8` at 2026-06-15T04:11:43Z._

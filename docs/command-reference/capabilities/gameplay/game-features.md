@@ -65,4 +65,4 @@ Remove one action by index from a plugin's GameFeatureData asset.
 
 Update descriptor metadata and Game Feature dependency declarations in a plugin's .uplugin file.
 
-_Generated from commit `c4a795595b18` at 2026-06-14T06:38:55Z._
+_Generated from commit `d55b227d7cc8` at 2026-06-15T04:11:43Z._

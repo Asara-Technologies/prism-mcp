@@ -109,4 +109,4 @@ Remove a section from a scene asset by index or name.
 
 Assign the RolesAsset reference on a scene asset, with an optional PrimaryRole.
 
-_Generated from commit `c4a795595b18` at 2026-06-14T06:38:55Z._
+_Generated from commit `d55b227d7cc8` at 2026-06-15T04:11:43Z._

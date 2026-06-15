@@ -157,4 +157,4 @@ Set properties on an existing state or conduit. Supports entry state wiring and 
 
 Set properties on an existing transition in an animation state machine.
 
-_Generated from commit `c4a795595b18` at 2026-06-14T06:38:55Z._
+_Generated from commit `d55b227d7cc8` at 2026-06-15T04:11:43Z._
