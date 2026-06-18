@@ -179,4 +179,4 @@ Return aggregate PrismMCP verification state from the build-time manifest.
 }
 ```
 
-_Generated from commit `d55b227d7cc8` at 2026-06-15T04:11:43Z._
+_Generated from commit `a150b373ce7a` at 2026-06-18T09:17:23Z._

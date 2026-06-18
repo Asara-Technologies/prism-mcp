@@ -179,4 +179,4 @@ Duplicate an asset to a new content-browser path. The source asset is preserved;
 
 Rename and/or move an asset by specifying source and destination content-browser paths. The source is removed; the destination is created.
 
-_Generated from commit `d55b227d7cc8` at 2026-06-15T04:11:43Z._
+_Generated from commit `a150b373ce7a` at 2026-06-18T09:17:23Z._
