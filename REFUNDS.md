@@ -27,23 +27,11 @@ fault, email support@asaratechnologies.com and we'll work with you.
 ## Professional — Personal · Professional — Developer · Studio (purchased Direct from Asara)
 
 **30-day, no-questions-asked refund.** If PrismMCP isn't working for
-you in your first 30 days, email support@asaratechnologies.com and
-we'll refund you. No quiz, no friction. We want PrismMCP to be a tool
-people are happy to keep paying for.
+you within 30 days of purchase, email support@asaratechnologies.com
+and we'll refund you. No quiz, no friction. This applies to all
+Direct tiers.
 
-The fine print:
-
-- 30-day window starts from your **first license activation** (not
-  date of purchase), so the clock doesn't run while your license is
-  sitting unused.
-- 60-day hard cap from purchase. Beyond 60 days, refunds are at
-  Asara's discretion.
-- Bulk Professional — Developer purchases (5+ users): same 30-day
-  no-questions terms. If only some user licenses end up unused you
-  can request a partial refund for the unused ones.
-- Studio tier: refunds are defined in your contract. If your contract
-  is silent on refunds, requests are case-by-case at Asara's
-  discretion.
+- The 30-day refund window starts from the date of purchase.
 - After a refund, your license is deactivated and removed from the
   licensing database.
 

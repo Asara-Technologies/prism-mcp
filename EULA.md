@@ -78,7 +78,7 @@ Data transmitted during activation:
 - License key and email address (your identifier)
 - Machine fingerprint hash (one-way; no plaintext hardware IDs)
 - Plugin version and activation timestamp
-- IP address (transient, not stored)
+- IP address (retained in fraud-detection audit records for up to 3 years)
 
 Data **never** transmitted: project paths, file contents, editor
 logs, asset names, or hardware specifics beyond the fingerprint hash.
@@ -89,8 +89,7 @@ See the [Privacy Policy](PRIVACY.md) for full details.
 
 ## Refunds
 
-30-day no-questions refund for all Direct purchases. The clock starts
-at license key activation, not purchase date. 60-day hard cap from
+30-day no-questions refund for all Direct purchases from date of
 purchase. See the full [Refund Policy](REFUNDS.md).
 
 ---
