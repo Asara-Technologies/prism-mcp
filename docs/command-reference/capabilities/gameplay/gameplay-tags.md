@@ -57,4 +57,4 @@ Remove an explicit leaf Gameplay Tag from a writable config-backed source, or pr
 
 Leaf-rename an explicit Gameplay Tag, creating a redirect by default, or preview with dry_run.
 
-_Generated from commit `e781acb47330` at 2026-06-19T07:41:40Z._
+_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._

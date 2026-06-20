@@ -53,4 +53,4 @@ Delete a named CVar preset from PrismMCP settings.
 
 Set a writable console variable using ECVF_SetByConsole.
 
-_Generated from commit `e781acb47330` at 2026-06-19T07:41:40Z._
+_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._

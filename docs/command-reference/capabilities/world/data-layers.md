@@ -33,4 +33,4 @@ Set a DataLayer instance's editor viewport visibility by asset path or instance 
 
 Set a runtime DataLayer instance state to Unloaded, Loaded, or Activated.
 
-_Generated from commit `e781acb47330` at 2026-06-19T07:41:40Z._
+_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._

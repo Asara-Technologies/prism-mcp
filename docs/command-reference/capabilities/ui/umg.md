@@ -133,4 +133,4 @@ Assign or replace content in a named slot on a host widget.
 
 Set or clear the bIsVariable flag on a widget, controlling whether it is exposed as a Blueprint variable.
 
-_Generated from commit `e781acb47330` at 2026-06-19T07:41:40Z._
+_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._

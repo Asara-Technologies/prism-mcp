@@ -70,4 +70,4 @@ Pro commands show command names and descriptions. Full Pro reference ships with 
 | [verification](discovery/verification.md) | Documentation and discovery | 3 | 3 | 0 |
 | [world](world/world.md) | World and level authoring | 65 | 0 | 65 |
 
-_Generated from commit `e781acb47330` at 2026-06-19T07:41:40Z._
+_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._

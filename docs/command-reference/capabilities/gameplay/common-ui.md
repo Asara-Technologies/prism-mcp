@@ -73,4 +73,4 @@ Remove matching CommonUI input-action row handles from a Widget Blueprint widget
 
 Set the current CommonInput type for a PIE LocalPlayer. This is snapshot-style; CommonInput may recalculate the type on the next real input event.
 
-_Generated from commit `e781acb47330` at 2026-06-19T07:41:40Z._
+_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._

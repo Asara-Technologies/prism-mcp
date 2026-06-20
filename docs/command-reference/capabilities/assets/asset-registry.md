@@ -93,4 +93,4 @@ Move an asset to a new location in the content browser, optionally fixing up ref
 
 Rename a folder in the content browser by moving all assets to a new folder with the given name. Creates redirectors for moved assets.
 
-_Generated from commit `e781acb47330` at 2026-06-19T07:41:40Z._
+_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
