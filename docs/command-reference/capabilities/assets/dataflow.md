@@ -7,7 +7,7 @@ Inspect and author Dataflow graphs used by Geometry Collection and Chaos destruc
 
 ## graph_authoring
 
-[description pending]
+Add, connect, and layout Dataflow graph nodes, comments, and variables. Evaluate node outputs and build graphs batch-style.
 
 ### `add_dataflow_comment`
 
@@ -117,4 +117,4 @@ Set reflected Dataflow node properties.
 
 Dry-run a Dataflow pin connection.
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

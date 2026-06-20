@@ -7,7 +7,7 @@ Author and inspect Landscape actors. Commands cover heightmap editing (flatten, 
 
 ## edit_layers
 
-[description pending]
+Create, delete, collapse, reorder, and inspect landscape edit layers for non-destructive terrain authoring with per-layer heightmap and weightmap isolation.
 
 ### `clear_edit_layer`
 
@@ -3044,4 +3044,4 @@ Modify Nanite settings and auto-trigger mesh rebuild.
 }
 ```
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

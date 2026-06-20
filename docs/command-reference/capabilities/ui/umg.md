@@ -19,7 +19,7 @@ Explicitly compile a Widget Blueprint and return structured error/warning diagno
 
 ## manage
 
-[description pending]
+Bind and unbind UMG widget events and property bindings using native component-bound delegates.
 
 ### `bind_widget_event`
 
@@ -133,4 +133,4 @@ Assign or replace content in a named slot on a host widget.
 
 Set or clear the bIsVariable flag on a widget, controlling whether it is exposed as a Blueprint variable.
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

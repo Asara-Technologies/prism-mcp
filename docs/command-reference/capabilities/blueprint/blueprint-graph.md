@@ -15,7 +15,7 @@ Automatically arrange nodes in a graph for clean visual presentation. Uses a DAG
 
 ## lifecycle
 
-[description pending]
+Batch-create nodes and wire them in a single call for efficient graph construction.
 
 ### `build_graph`
 
@@ -23,7 +23,7 @@ Batch-create nodes and wire them in a single call. Each node has a caller-assign
 
 ## manage
 
-[description pending]
+Resize comment boxes to enclose specified nodes for graph organization.
 
 ### `resize_comment_to_fit`
 
@@ -79,7 +79,7 @@ Search within a Blueprint's graphs by node name, pin name, pin default value, or
 
 ## validate
 
-[description pending]
+Rebuild node pins from current definitions to fix stale or broken pin configurations.
 
 ### `reconstruct_node`
 
@@ -302,4 +302,4 @@ Remove a node from a graph and clean up all its connections. Reports what was re
 
 Set the default (literal) value of a pin on an existing node. Pin defaults are always stored as strings in UE. Rejects exec pins.
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

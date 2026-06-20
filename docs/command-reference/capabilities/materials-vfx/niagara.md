@@ -7,7 +7,7 @@ Inspect and author Niagara particle systems and emitters. Read module inputs, dy
 
 ## graph_authoring
 
-[description pending]
+Apply deterministic grid layout to Niagara graph nodes for readability.
 
 ### `auto_layout_niagara_graph`
 
@@ -39,7 +39,7 @@ Request a Niagara system compile.
 
 ## manage
 
-[description pending]
+Apply stack fixes from validation, configure sim-cache capture parameters, and activate or deactivate Niagara components.
 
 ### `apply_niagara_stack_fix`
 
@@ -159,7 +159,7 @@ Search node titles, names, comments, and pin names in a Niagara script graph.
 
 ## validate
 
-[description pending]
+Validate Niagara system compile and runtime readiness, and reconstruct node pins from current definitions.
 
 ### `reconstruct_niagara_node`
 
@@ -329,4 +329,4 @@ Set a single editable property on a Niagara renderer.
 
 Set a Niagara system user parameter design-time default.
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

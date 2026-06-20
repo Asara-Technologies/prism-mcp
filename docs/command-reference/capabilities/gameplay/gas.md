@@ -27,7 +27,7 @@ Cancel active abilities by class.
 
 ## manage
 
-[description pending]
+Runtime GAS operations: apply gameplay effects to actor ASCs, execute gameplay cues, and grant abilities during PIE.
 
 ### `apply_gameplay_effect_to_actor`
 
@@ -281,4 +281,4 @@ Set an actor ASC replication mode.
 
 Patch a GameplayEffect modifier by property payload.
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

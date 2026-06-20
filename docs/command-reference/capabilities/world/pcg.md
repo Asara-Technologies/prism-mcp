@@ -7,7 +7,7 @@ Inspect and author Procedural Content Generation (PCG) graphs. Read node schemas
 
 ## component_binding
 
-[description pending]
+Bind PCG graph assets to actors via UPCGComponent, trigger generation, clean up output, and list active bindings.
 
 ### `pcg_bind_component`
 
@@ -31,7 +31,7 @@ Remove a PCG graph binding from an actor.
 
 ## graph_authoring
 
-[description pending]
+Add, remove, connect, and layout PCG graph nodes, comments, and parameters. Includes batch graph construction from manifests and auto-layout.
 
 ### `add_pcg_comment`
 
@@ -149,4 +149,4 @@ Dry-run validate a PCG pin connection.
 
 Validate PCG graph topology and compile diagnostics.
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

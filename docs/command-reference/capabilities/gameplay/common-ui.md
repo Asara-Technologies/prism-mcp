@@ -35,7 +35,7 @@ List rows from a UCommonGenericInputActionDataTable.
 
 ## validate
 
-[description pending]
+Run project-wide CommonUI setup diagnostics scanning Widget Blueprints for binding and configuration issues.
 
 ### `validate_common_ui_setup`
 
@@ -73,4 +73,4 @@ Remove matching CommonUI input-action row handles from a Widget Blueprint widget
 
 Set the current CommonInput type for a PIE LocalPlayer. This is snapshot-style; CommonInput may recalculate the type on the next real input event.
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

@@ -25,4 +25,4 @@ Clear the editor actor selection and primary Content Browser asset selection.
 
 Replace the editor actor and Content Browser asset selection. Omitted actor/assets arrays are treated as empty.
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

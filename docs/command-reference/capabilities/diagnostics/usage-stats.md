@@ -3,11 +3,11 @@
 **Feature area:** Diagnostics
 **Commands:** 2
 
-[description pending]
+Track and reset session-level usage statistics. Commands report aggregate call counts and approximate token estimates for the current editing session, and clear accumulated counters to start a fresh measurement window.
 
 ## read
 
-[description pending]
+Read aggregate session usage statistics with approximate token estimates.
 
 ### `get_usage_stats`
 
@@ -82,7 +82,7 @@ Get aggregate session usage statistics with approximate token estimates. Estimat
 
 ## write
 
-[description pending]
+Clear session-local aggregate usage statistics and start a fresh measurement window.
 
 ### `clear_usage_stats`
 
@@ -133,4 +133,4 @@ Clear session-local aggregate usage statistics and start a fresh usage window.
 }
 ```
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

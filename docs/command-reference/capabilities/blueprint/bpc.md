@@ -137,4 +137,4 @@ Mode B: scan in-project references to a Blueprint-generated class.
 
 Dry-run or remove a Prism-managed C++ module from disk and the .uproject file.
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

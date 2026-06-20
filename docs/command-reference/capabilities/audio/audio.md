@@ -7,7 +7,7 @@ Author and preview audio assets including MetaSounds, Sound Cues, Sound Classes,
 
 ## graph_authoring
 
-[description pending]
+Auto-layout MetaSound and Sound Cue graph nodes using layered positioning algorithms.
 
 ### `auto_layout_metasound_graph`
 
@@ -293,4 +293,4 @@ Mute or unmute a USoundSubmix in the active editor/PIE audio device.
 
 Solo or unsolo a USoundSubmix in the active editor/PIE audio device.
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._

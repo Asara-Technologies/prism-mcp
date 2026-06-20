@@ -7,7 +7,7 @@ Inspect and author Material and Material Instance assets. Read expression graphs
 
 ## graph_authoring
 
-[description pending]
+Arrange material expressions into a readable grid layout.
 
 ### `auto_layout_material`
 
@@ -15,7 +15,7 @@ Arrange material expressions into a readable grid.
 
 ## lifecycle
 
-[description pending]
+Force material shader recompilation and report compile status.
 
 ### `compile_material`
 
@@ -137,4 +137,4 @@ Set a scalar/vector/texture parameter override by name.
 
 Set a static switch parameter value (triggers shader permutation recompile).
 
-_Generated from commit `e20f9f14378e` at 2026-06-20T06:40:01Z._
+_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._
