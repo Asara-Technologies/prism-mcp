@@ -4,7 +4,7 @@ PrismMCP is available in two tiers. Both install as a standard Unreal Engine plu
 
 ## System requirements
 
-- Unreal Engine 5.3, 5.4, 5.5, 5.6, or 5.7
+- Unreal Engine 5.3, 5.4, 5.5, 5.6, 5.7, or 5.8
 - Windows, macOS, or Linux
 - An MCP-compatible client (Claude Code, Cursor, Claude Desktop, or any MCP client)
 

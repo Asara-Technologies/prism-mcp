@@ -4,7 +4,7 @@
 
 > **Beta** -- [contact us](mailto:sales@asaratechnologies.com) for access or a trial.
 
-1,678 commands across 58 editor systems — authoring, world building, gameplay, debugging, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3--5.7. Windows, Mac, Linux.
+1,678 commands across 58 editor systems — authoring, world building, gameplay, debugging, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3--5.8. Windows, Mac, Linux.
 
 ---
 
@@ -53,7 +53,7 @@ Browse commands: **[asaratechnologies.com/products/prism-mcp/commands](https://w
 | | |
 |:---|:---|
 | [Getting started](docs/getting-started/) | Installation, client connection, configuration |
-| [Command Reference](docs/command-reference/) | 1,678 commands by module ([browse on website](https://www.asaratechnologies.com/products/prism-mcp/commands/)) |
+| [Command Reference](docs/command-reference/) | 1,686 commands by module ([browse on website](https://www.asaratechnologies.com/products/prism-mcp/commands/)) |
 | [Guides](docs/guides/) | Security, HTTP transport, cluster loading, settings reference |
 | [Examples](docs/examples/) | C++, Blueprint, and Python workflows |
 
