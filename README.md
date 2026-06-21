@@ -42,7 +42,7 @@ and available.
 
 ## Two tiers
 
-One tool, two tiers. Core authoring ships as **Lite** through [Epic Fab](https://www.fab.com/). The full editor surface unlocks with **Pro**, direct from Asara.
+One tool, two tiers. The full UE authoring surface ships as **Lite** through [Epic Fab](https://www.fab.com/). **Pro** adds the production toolkit -- diagnostics, profiling, source control, build pipeline, and debugger integration -- direct from Asara.
 
 See the full feature breakdown: **[asaratechnologies.com/products/prism-mcp/features](https://www.asaratechnologies.com/products/prism-mcp/features)**
 
