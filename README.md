@@ -6,6 +6,8 @@
 
 1,678 commands across 58 editor systems — authoring, world building, gameplay, debugging, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3--5.8. Windows, Mac, Linux.
 
+Fab listings cover UE 5.6--5.8. Need an older engine version? PrismMCP Pro supports UE 5.3 through 5.8.
+
 ---
 
 ## Quick start
