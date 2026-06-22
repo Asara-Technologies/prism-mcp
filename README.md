@@ -42,7 +42,11 @@ and available.
 
 ## Two tiers
 
-One tool, two tiers. Core authoring ships as **Lite** through [Epic Fab](https://www.fab.com/). The full editor surface unlocks with **Pro**, direct from Asara.
+One tool, two tiers. **Lite** is free -- the full UE authoring surface,
+available on [Epic Fab](https://www.fab.com/) and as a direct download.
+**Pro** adds the production toolkit for $49/yr -- source control, build
+pipeline, profiling, Blueprint-to-C++ conversion, and more -- direct
+from Asara.
 
 See the full feature breakdown: **[asaratechnologies.com/products/prism-mcp/features](https://www.asaratechnologies.com/products/prism-mcp/features)**
 
@@ -64,7 +68,7 @@ Browse commands: **[asaratechnologies.com/products/prism-mcp/commands](https://w
 ## Support
 
 - **Issues:** [github.com/Asara-Technologies/prism-mcp/issues](https://github.com/Asara-Technologies/prism-mcp/issues)
-- **Pro and Studio:** [support@asaratechnologies.com](mailto:support@asaratechnologies.com)
+- **Pro:** [support@asaratechnologies.com](mailto:support@asaratechnologies.com)
 
 ---
 

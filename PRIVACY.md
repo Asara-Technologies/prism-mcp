@@ -16,12 +16,12 @@ This policy covers data Asara collects through:
 - The marketing site at asaratechnologies.com
 - Customer support correspondence
 
-**Lite tier buyers (Fab):** You do not enter Asara's licensing
-database. Asara collects no data from you at install or use. Your
-payment data is handled entirely by Epic Fab under their privacy
+**Lite users (free):** You do not enter Asara's licensing database.
+Asara collects no data from you at install or use. If you downloaded
+through Fab, your data is handled by Epic under their privacy
 practices. Direct data-subject requests to Epic Games.
 
-**Direct buyers (Professional, Studio):** This policy applies to you.
+**Pro buyers:** This policy applies to you.
 
 ---
 
@@ -37,7 +37,7 @@ practices. Direct data-subject requests to Epic Games.
 | Plugin version | Yes | Compatibility checks and update delivery |
 | Activation timestamp | Yes | Annual Term calculation |
 | Lease refresh timestamp | Yes | Operational re-verification during your term |
-| IP address | **No** — transient | Fraud detection at request time. Not stored after the request. |
+| IP address | Yes | Fraud detection. Retained in audit records for up to 3 years. |
 
 ### Never collected
 
@@ -46,15 +46,12 @@ practices. Direct data-subject requests to Epic Games.
 - Unreal Engine editor logs or console output
 - Hardware specifics beyond the fingerprint hash
 
-### Optional (opt-in only, default OFF)
-
-- Crash reports
-- Anonymous usage analytics
-
 ### Marketing site
 
-Aggregate page-view counts via GoatCounter. No cookies, no
-individual-user tracking, no advertising trackers or pixels.
+No cookies, no individual-user tracking, no advertising trackers or
+pixels. We use self-hosted, cookieless analytics that collect
+aggregate page-view counts only — no personal data is collected or
+shared with third parties.
 
 ### Payment processing
 
@@ -74,11 +71,9 @@ Email address and message content of any support correspondence.
   activation timestamp (lawful basis: legitimate interest)
 - **Compatibility and updates:** plugin version
   (lawful basis: contract performance)
-- **Fraud detection:** IP address, transient only
+- **Fraud detection:** IP address, retained in audit records
   (lawful basis: legitimate interest)
-- **Improving the product:** crash reports and telemetry, opt-in only
-  (lawful basis: consent)
-- **Site analytics:** aggregate visitor counts
+- **Site analytics:** aggregate visitor counts, self-hosted
   (lawful basis: legitimate interest)
 - **Support:** responding to your requests
   (lawful basis: contract performance)
@@ -92,8 +87,8 @@ with a clear unsubscribe.
 ## Who We Share With
 
 - **Paddle** — payment processing for Direct purchases
-- **Hosting provider** — runs the licensing server infrastructure
-- **GoatCounter** — aggregate web analytics, no personal data shared
+- **Cloudflare** — reverse proxy and DDoS protection for the license server
+- **Google Workspace** — transactional email delivery (license keys, term reminders)
 
 We do **not** sell, rent, or share your data with marketing or
 advertising third parties. We may disclose data to comply with law
@@ -105,7 +100,8 @@ or court order.
 
 - **Active license data:** life of the license
 - **Cancelled or refunded license data:** 90 days, then deleted
-- **Crash reports / telemetry:** 1 year (default)
+- **Audit records (including IP addresses):** 3 years from event date;
+  anonymized records (post-erasure) may be retained longer
 - **Support correspondence:** 2 years
 - **Web analytics:** aggregate only, no personal data retained
 
@@ -122,7 +118,6 @@ Depending on your jurisdiction, you may have the right to:
 - **Delete** your data (subject to legal retention requirements)
 - **Export** your data in a machine-readable format
 - **Correct** inaccurate data
-- **Object** to optional telemetry or analytics
 - **Complain** to your local data protection authority
 
 **California residents (CCPA):** You have the right to know, delete,
@@ -135,7 +130,7 @@ We respond within 30 days.
 
 ## Cookies
 
-None. The marketing site uses GoatCounter, which is cookieless.
+None. The marketing site uses self-hosted, cookieless analytics.
 The plugin does not use cookies. No tracking pixels, no advertising
 cookies, no third-party analytics cookies.
 
