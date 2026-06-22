@@ -1,42 +1,33 @@
 # PrismMCP Refund Policy
 
-PrismMCP refunds work differently depending on where you bought.
-Both paths are intentionally generous. We want you happy with the
-tool, not stuck with a license you regret.
+PrismMCP refunds depend on how you got the plugin. Both paths are
+intentionally generous. We want you happy with the tool, not stuck
+with a license you regret.
 
 ---
 
-## Lite — Personal · Lite — Developer (purchased on Fab)
+## Lite (free)
 
-Lite buyers go through Epic Fab's standard refund process at fab.com.
-
-- 14-day refund window from purchase
-- The product must not have been downloaded
-- Refunds processed by Epic, not Asara
-- Initiate the refund from your Fab purchase history
-
-If your Fab refund request is declined for a reason that wasn't your
-fault, email support@asaratechnologies.com and we'll work with you.
-
-> The full Fab refund policy is at fab.com/help/refund-policy. Fab's
-> policy may change unilaterally; the link above is always
-> authoritative.
+Lite is free, so there is nothing to refund. If you downloaded Lite
+through Fab, the Fab Standard License governs your use.
 
 ---
 
-## Professional — Personal · Professional — Developer · Studio (purchased Direct from Asara)
+## Pro ($49/yr)
 
-**30-day, no-questions-asked refund.** If PrismMCP isn't working for
-you within 30 days of purchase, email support@asaratechnologies.com
-and we'll refund you. No quiz, no friction. This applies to all
-Direct tiers.
+**30-day, no-questions-asked refund.** If PrismMCP Pro isn't working
+for you within 30 days of purchase, email
+support@asaratechnologies.com and we'll refund you. No quiz, no
+friction.
 
 - The 30-day refund window starts from the date of purchase.
+- 60-day hard cap -- no refunds after 60 days from purchase under
+  any circumstances.
 - After a refund, your license is deactivated and removed from the
   licensing database.
 
 > The binding refund terms are in the Asara End User License
-> Agreement § 14. This page is the plain-English summary.
+> Agreement. This page is the plain-English summary.
 
 ---
 

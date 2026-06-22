@@ -5,27 +5,20 @@
 > general availability. Pre-launch testers can email
 > support@asaratechnologies.com for current terms.
 
-This Agreement governs **Direct purchases only** (Professional and
-Studio tiers bought from Asara). Lite tier buyers acquire PrismMCP
-Lite via Epic Fab under the [Fab Standard License](https://www.fab.com/eula)
-and are not covered by this Agreement.
+This Agreement governs **Pro purchases** (bought direct from Asara).
+Lite users acquire PrismMCP Lite via Epic Fab or direct download under
+the [Fab Standard License](https://www.fab.com/eula) and are not
+covered by this Agreement.
 
 ---
 
 ## Who This Covers
 
-| Tier | Price | Users | Machines per User |
-|---|---|---|---|
-| Professional — Personal | $99/user/year | 1 named individual | 2 |
-| Professional — Developer | $199/user/year | 1 named individual per seat | 5 |
-| Studio | Contact Asara | Custom | Custom |
-
-Professional — Personal is for individuals or companies with annual
-gross revenue under $100,000 USD (self-attested at each purchase).
-Professional — Developer is for $100,000+ revenue.
-
-Bulk discounts on Professional — Developer: 5+ users $149/user/year,
-25+ users $99/user/year, 50+ users contact Asara.
+| Tier | Price | Channel | Machine Limit | Term |
+|---|---|---|---|---|
+| Lite | Free | Fab + direct download | No limit | Perpetual |
+| Pro | $49/yr per user | Asara Direct (Paddle) | 3 | 12 months, no auto-renewal |
+| Beta / Comp | Free | Asara Direct | Per grant | Per grant |
 
 ---
 
@@ -63,7 +56,7 @@ The license grants you the right to use it, not to redistribute it.
 - Use PrismMCP to build a competing AI-editor product that exposes
   the Unreal Engine editor to AI agents via MCP or a similar protocol.
   Your games and applications are unrestricted.
-- Exceed the machine or user limits of your tier.
+- Exceed the machine limit of your tier (3 machines for Pro).
 
 ---
 
