@@ -23,7 +23,7 @@ For security posture and deployment hardening, see
 
 ## Prerequisites
 
-- PrismMCP installed and enabled in an Unreal Engine 5.7+ project
+- PrismMCP installed and enabled in an Unreal Engine 5.8+ project
 - Editor running (the HTTP server starts with the editor, not at project load)
 - For LAN setup: a machine accessible on your studio network
 
@@ -541,7 +541,7 @@ All resources are subject to these constraints:
     {
       "uri": "unreal://project/info",
       "mimeType": "application/json",
-      "text": "{ \"projectName\": \"MyGame\", \"engineVersion\": \"5.7.0\" }"
+      "text": "{ \"projectName\": \"MyGame\", \"engineVersion\": \"5.8.0\" }"
     }
   ]
 }
