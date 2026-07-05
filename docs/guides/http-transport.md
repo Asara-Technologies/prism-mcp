@@ -23,7 +23,7 @@ For security posture and deployment hardening, see
 
 ## Prerequisites
 
-- PrismMCP installed and enabled in an Unreal Engine 5.8+ project
+- PrismMCP installed and enabled in a supported Unreal Engine project
 - Editor running (the HTTP server starts with the editor, not at project load)
 - For LAN setup: a machine accessible on your studio network
 
