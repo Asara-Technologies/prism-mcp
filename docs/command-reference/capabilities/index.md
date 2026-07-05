@@ -1,6 +1,6 @@
 # PrismMCP Capabilities
 
-**1678 commands** across **59 modules.** Gameplay authoring, production workflows,
+**1702 commands** across **61 modules.** Gameplay authoring, production workflows,
 debugging, and specialist systems -- all agent-controllable through one MCP connection.
 
 Lite commands include full parameter and return schemas.
@@ -45,6 +45,7 @@ Pro commands show command names and descriptions. Full Pro reference ships with 
 | [input](gameplay/input.md) | Gameplay systems | 18 | 0 | 18 |
 | [landscape](world/landscape.md) | World and level authoring | 66 | 66 | 0 |
 | [level-management](world/level-management.md) | World and level authoring | 9 | 0 | 9 |
+| [level-viewport-nav](editor/level-viewport-nav.md) | Editor tooling | 16 | 16 | 0 |
 | [localization](assets/localization.md) | Assets and content | 25 | 0 | 25 |
 | [logs](diagnostics/logs.md) | Diagnostics | 5 | 5 | 0 |
 | [materials](materials-vfx/materials.md) | Materials and VFX | 29 | 0 | 29 |
@@ -67,6 +68,7 @@ Pro commands show command names and descriptions. Full Pro reference ships with 
 | [texture-tools](assets/texture-tools.md) | Assets and content | 35 | 1 | 34 |
 | [umg](ui/umg.md) | UI | 28 | 0 | 28 |
 | [usage-stats](diagnostics/usage-stats.md) | Diagnostics | 2 | 2 | 0 |
+| [validation](assets/validation.md) | Assets and content | 8 | 8 | 0 |
 | [verification](discovery/verification.md) | Documentation and discovery | 3 | 3 | 0 |
 | [world](world/world.md) | World and level authoring | 65 | 0 | 65 |
 
