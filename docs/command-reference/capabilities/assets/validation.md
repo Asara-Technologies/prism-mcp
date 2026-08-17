@@ -1,7 +1,6 @@
 # validation
 
 **Feature area:** Assets and content
-**Tier:** Lite
 **Commands:** 8
 
 Discover, create, run, and manage Unreal Data Validation validators. Commands enumerate registered validators, create Blueprint validators, configure properties, run validation passes with flexible scoping, and manage project-level validation settings. Epic ships zero validation tools in their MCP plugin.
