@@ -6,8 +6,6 @@
 
 1,710 commands across 60 editor systems — authoring, world building, gameplay, debugging, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3--5.8. Windows, Mac, Linux.
 
-PrismMCP Lite covers UE 5.6--5.8. Need an older engine version? PrismMCP Pro supports UE 5.3 through 5.8.
-
 ---
 
 ## Quick start
@@ -31,22 +29,30 @@ Works with Claude Code, Cursor, Claude Desktop, and any MCP-compatible agent.
 
 Full setup: [docs/getting-started/](docs/getting-started/)
 
-**Download or redeem your license:** [asaratechnologies.com/products/prism-mcp/downloads](https://www.asaratechnologies.com/products/prism-mcp/downloads)
+**Builds:** there is one PrismMCP artifact, and every plan installs it. Builds will be
+published to this repository's
+[Releases page](https://github.com/Asara-Technologies/prism-mcp/releases/latest). During the
+beta, [contact us](mailto:sales@asaratechnologies.com) for a build. Pro is unlocked by
+entering a license key inside the Unreal Editor after install, never on the website and never
+over MCP.
 
-Source-built engine note: Pro declares Epic's experimental `ContextualAnimation` plugin as
+Source-built engine note: PrismMCP declares Epic's experimental `ContextualAnimation` plugin as
 an enabled optional dependency. If your custom engine omits that plugin, PrismMCP still
 loads; ContextualAnimation commands report `plugin_unavailable` until the plugin is compiled
 and available.
 
 ---
 
-## Two tiers
+## Plans
 
-One tool, two tiers. **Lite** is free -- the full UE authoring surface,
-available as a direct download from Asara.
-**Pro** adds the production toolkit for $49/yr -- source control, build
-pipeline, profiling, Blueprint-to-C++ conversion, and more -- direct
-from Asara.
+One product, one download, two plans. The **Free** plan gives you the full
+UE authoring surface. **Pro** adds the production toolkit: source control,
+build pipeline, profiling, Blueprint-to-C++ conversion, and more.
+
+Pro is $49/yr per user, covers 3 machines, runs for 12 months, and does not
+auto-renew. Refunds are available for 30 days from the date of purchase.
+Upgrading does not mean downloading a different build; you activate a
+license key in the Unreal Editor.
 
 See the full feature breakdown: **[asaratechnologies.com/products/prism-mcp/features](https://www.asaratechnologies.com/products/prism-mcp/features)**
 
@@ -68,13 +74,13 @@ Browse commands: **[asaratechnologies.com/products/prism-mcp/commands](https://w
 ## Support
 
 - **Issues:** [github.com/Asara-Technologies/prism-mcp/issues](https://github.com/Asara-Technologies/prism-mcp/issues)
-- **Pro:** [support@asaratechnologies.com](mailto:support@asaratechnologies.com)
+- **Email:** [support@asaratechnologies.com](mailto:support@asaratechnologies.com)
 
 ---
 
 ## Legal
 
-- [EULA](EULA.md) | [Privacy](PRIVACY.md) | [Refunds](REFUNDS.md)
+- [EULA](https://www.asaratechnologies.com/legal/eula/) | [Privacy](https://www.asaratechnologies.com/legal/privacy/) | [Refunds](https://www.asaratechnologies.com/legal/refunds/)
 
 ---
 
