@@ -379,6 +379,12 @@ tools. PrismMCP's localhost mode requires no setup at all.
 
 ## License Credential Handling (Phase 3)
 
+### Free plan
+
+Nothing in this section applies until a Pro key is activated. On the Free plan PrismMCP
+performs no activation, makes zero network calls to Asara, writes no lease file, creates no
+entry in the licensing database, and leaves Asara holding no personal data about you at all.
+
 ### What is stored
 
 - **Lease file** (`Saved/Config/<platform>/PrismMCP/license-lease.json`): the server-signed
