@@ -4,7 +4,7 @@ Set up PrismMCP and connect your first AI agent.
 
 | Guide | What it covers |
 |---|---|
-| [Installation](installation.md) | Where to get Lite (Fab) vs Pro (direct), plugin setup, license activation |
+| [Installation](installation.md) | Where to get Lite and Pro, plugin setup, license activation |
 | [Connecting Your Client](connecting-your-client.md) | MCP config for Claude Code, Cursor, Claude Desktop, and other clients |
 | [Configuration](configuration.md) | Editor settings, shim CLI arguments, security, logging |
 | [First Commands](first-commands.md) | 5-minute walkthrough: ping, project info, list actors, spawn, undo |

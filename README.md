@@ -6,7 +6,7 @@
 
 1,710 commands across 60 editor systems — authoring, world building, gameplay, debugging, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3--5.8. Windows, Mac, Linux.
 
-Fab listings cover UE 5.6--5.8. Need an older engine version? PrismMCP Pro supports UE 5.3 through 5.8.
+PrismMCP Lite covers UE 5.6--5.8. Need an older engine version? PrismMCP Pro supports UE 5.3 through 5.8.
 
 ---
 
@@ -43,7 +43,7 @@ and available.
 ## Two tiers
 
 One tool, two tiers. **Lite** is free -- the full UE authoring surface,
-available on [Epic Fab](https://www.fab.com/) and as a direct download.
+available as a direct download from Asara.
 **Pro** adds the production toolkit for $49/yr -- source control, build
 pipeline, profiling, Blueprint-to-C++ conversion, and more -- direct
 from Asara.
@@ -75,7 +75,6 @@ Browse commands: **[asaratechnologies.com/products/prism-mcp/commands](https://w
 ## Legal
 
 - [EULA](EULA.md) | [Privacy](PRIVACY.md) | [Refunds](REFUNDS.md)
-- Fab buyers: governed by [Fab Standard License](https://www.fab.com/eula)
 
 ---
 

@@ -14,12 +14,11 @@ PrismMCP ships as precompiled binaries and works with both Blueprint-only and C+
 
 ## Lite (free)
 
-1. Open the [Fab marketplace](https://www.fab.com/) and search for **PrismMCP**, or download directly from [asaratechnologies.com](https://www.asaratechnologies.com/products/prism-mcp/downloads).
-2. Download PrismMCP Lite (free).
-3. If using Fab, open your Library, find PrismMCP Lite, and click **Install to Engine** or **Add to Project**. If downloading directly, extract the plugin into your project's `Plugins/` folder.
-4. Open your project in the Unreal Editor.
-5. Go to **Edit > Plugins**, search for **PrismMCP**, and confirm it is enabled.
-6. Restart the editor when prompted.
+1. Download PrismMCP Lite (free) from [asaratechnologies.com](https://www.asaratechnologies.com/products/prism-mcp/downloads).
+2. Extract the plugin into your project's `Plugins/` folder.
+3. Open your project in the Unreal Editor.
+4. Go to **Edit > Plugins**, search for **PrismMCP**, and confirm it is enabled.
+5. Restart the editor when prompted.
 
 After restart, the editor log should contain a line confirming the plugin loaded:
 

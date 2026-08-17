@@ -29,7 +29,7 @@ This repository is `Asara-Technologies/prism-mcp`, the public PrismMCP marketing
 
 - Keep README capability counts, legal pages, and generated command reference synchronized with shipped PrismMCP behavior.
 - Do not invent feature availability from memory. Check `D:\Dev\Plugins\PrismMCP\docs\FEATURE_ROADMAP.md`, the current command catalog, and generated Atlas output.
-- Use the current product names from this repo: Lite through Fab, Pro direct from Asara.
+- Use the current product names from this repo: Lite and Pro both direct from Asara.
 - Avoid em dashes in new Asara copy. Use commas, colons, semicolons, parentheses, or sentence breaks.
 - Preserve customer-facing precision. Legal, pricing, privacy, and entitlement language must be verified against the current source before edits.
 
