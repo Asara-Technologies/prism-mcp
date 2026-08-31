@@ -1,3 +1,58 @@
+<!-- release: v0.3.0 -->
+## [0.3.0]
+
+Real-time debug draw in PIE, deeper Blueprint authoring, improved Blueprint-to-C++ conversion, and fixes across audio, landscape, and source control.
+
+### Added
+- 12 debug draw commands: draw shapes, lines, and text in the PIE viewport with live value bindings
+- `variable_get` and `variable_set` accept `owner_class` for external object variables
+- Hidden enum entry authoring in `create_enum` and `modify_enum`
+- Enum-indexed Select nodes
+- Native DoOnce with multiple inputs
+- Pro license validation at editor startup
+
+### Changed
+- `SetFieldsInStruct` routes through correct exec pin flow
+- Widget Blueprint selector validates against correct schema
+- Catalog entries respect engine minimum versions
+- UE 5.8 is the primary development engine; UE 5.3–5.7 remain supported
+
+### Fixed
+- Local variable get/set node authoring
+- Nested branch reconvergence in complex if/else chains
+- FormatText nodes materialize named pin defaults
+- Async action re-entry now refused instead of producing broken output
+- Blueprint-to-C++ conversion: out-parameter lowering, wrapped declarations, write root containment
+- Landscape spline ownership preserved on deletion
+- Audio hierarchy reads no longer load endpoint submixes
+- Profiling trace destinations resolve correctly under the profiling root
+- Source control disabled providers no longer emit diagnostic warnings
+- UE 5.3 package bootstrap
+
+<!-- release: v0.2.0 -->
+## [0.2.0]
+
+65 MVVM commands, headless server mode, visual capture, PIE runtime depth, crash recovery foundations, and UE 5.8 support.
+
+### Added
+- 65 MVVM commands for ViewModel, Binding, Event, Condition, Conversion, and Pin operations
+- Headless server mode for CI/batch workflows without a display
+- 6 visual capture commands for AI-driven visual iteration
+- PIE runtime commands: frame stepping, time queries, AI state snapshots, ability checks
+- Editor health monitoring (5 commands)
+- Modal dialog suppression for automated workflows
+- QA automation evaluation commands
+
+### Changed
+- UE 5.8 engine compatibility (MVVM API, sensor config, test fixtures)
+
+### Fixed
+- Shim port resolution from `UNREALMCP_PORT` env var
+- Bootstrap ticker retry for deferred module registration
+- `get_blueprint_parent` edge cases
+- PIE frame stepping accuracy
+- Accessibility float precision tolerance
+
 <!-- release: v0.1.13 -->
 ## [0.1.13]
 

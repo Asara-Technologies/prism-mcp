@@ -1,10 +1,8 @@
 # PrismMCP
 
-**Your AI agent, inside the Unreal Editor.** [Product page](https://www.asaratechnologies.com/products/prism-mcp)
+**Your AI agent, inside the Unreal Editor.** [Product page](https://www.asaratechnologies.com/products/prism-mcp) · [Latest release (v0.3.0)](https://github.com/Asara-Technologies/prism-mcp/releases/tag/v0.3.0)
 
-> **Beta** -- [contact us](mailto:sales@asaratechnologies.com) for access or a trial.
-
-1,710 commands across 60 editor systems — authoring, world building, gameplay, debugging, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3--5.8. Windows, Mac, Linux.
+2,130 commands across 70+ editor systems — authoring, world building, gameplay, debugging, real-time debug draw, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3–5.8. Windows.
 
 ---
 
@@ -29,12 +27,10 @@ Works with Claude Code, Cursor, Claude Desktop, and any MCP-compatible agent.
 
 Full setup: [docs/getting-started/](docs/getting-started/)
 
-**Builds:** there is one PrismMCP artifact, and every plan installs it. Builds will be
-published to this repository's
-[Releases page](https://github.com/Asara-Technologies/prism-mcp/releases/latest). During the
-beta, [contact us](mailto:sales@asaratechnologies.com) for a build. Pro is unlocked by
-entering a license key inside the Unreal Editor after install, never on the website and never
-over MCP.
+**Download:** grab the latest build from this repository's
+[Releases page](https://github.com/Asara-Technologies/prism-mcp/releases/latest), or visit
+[prismmcp.com](https://prismmcp.com) for installation instructions. Pro is unlocked by
+entering a license key inside the Unreal Editor after install.
 
 Source-built engine note: PrismMCP declares Epic's experimental `ContextualAnimation` plugin as
 an enabled optional dependency. If your custom engine omits that plugin, PrismMCP still
@@ -65,7 +61,7 @@ Browse commands: **[asaratechnologies.com/products/prism-mcp/commands](https://w
 | | |
 |:---|:---|
 | [Getting started](docs/getting-started/) | Installation, client connection, configuration |
-| [Command Reference](docs/command-reference/) | 1,686 commands by module ([browse on website](https://www.asaratechnologies.com/products/prism-mcp/commands/)) |
+| [Command Reference](docs/command-reference/) | 2,130 commands by module ([browse on website](https://www.asaratechnologies.com/products/prism-mcp/commands/)) |
 | [Guides](docs/guides/) | Security, HTTP transport, cluster loading, settings reference |
 | [Examples](docs/examples/) | C++, Blueprint, and Python workflows |
 

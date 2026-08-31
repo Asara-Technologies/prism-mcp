@@ -1,14 +1,14 @@
 # PrismMCP Capabilities
 
-**1702 commands** across **61 modules.** Gameplay authoring, production workflows,
-debugging, and specialist systems -- all agent-controllable through one MCP connection.
+**2,130 commands** across **70+ modules.** Gameplay authoring, production workflows,
+debugging, and specialist systems — all agent-controllable through one MCP connection.
 
-Lite commands include full parameter and return schemas.
+Free commands include full parameter and return schemas.
 Pro commands show command names and descriptions. Full Pro reference ships with the plugin.
 
 ## Modules
 
-| Module | Feature Area | Commands | Lite | Pro |
+| Module | Feature Area | Commands | Free | Pro |
 |---|---|---|---|---|
 | [animation](animation/animation.md) | Animation | 36 | 0 | 36 |
 | [asset-registry](assets/asset-registry.md) | Assets and content | 18 | 0 | 18 |
@@ -30,6 +30,7 @@ Pro commands show command names and descriptions. Full Pro reference ships with 
 | [contextual-anim](animation/contextual-anim.md) | Animation | 24 | 0 | 24 |
 | [control-rig](animation/control-rig.md) | Animation | 40 | 0 | 40 |
 | [data-assets](assets/data-assets.md) | Assets and content | 17 | 0 | 17 |
+| [debug-draw](editor-runtime/debug-draw.md) | Editor runtime | 12 | 12 | 0 |
 | [data-layers](world/data-layers.md) | World and level authoring | 5 | 0 | 5 |
 | [dataflow](assets/dataflow.md) | Assets and content | 27 | 0 | 27 |
 | [editor-state](editor/editor-state.md) | Editor tooling | 11 | 11 | 0 |
@@ -72,4 +73,4 @@ Pro commands show command names and descriptions. Full Pro reference ships with 
 | [verification](discovery/verification.md) | Documentation and discovery | 3 | 3 | 0 |
 | [world](world/world.md) | World and level authoring | 65 | 0 | 65 |
 
-_Generated from commit `3456f5dc1efb` at 2026-06-20T19:52:28Z._
+_Generated from commit `0fdcbdb23473` at 2026-08-30. Updated for v0.3.0._
