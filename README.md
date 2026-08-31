@@ -4,6 +4,12 @@
 
 2,130 commands across 70+ editor systems — authoring, world building, gameplay, debugging, real-time debug draw, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3–5.8. Windows.
 
+<a href="https://www.youtube.com/watch?v=ywMrpLSbjZs">
+  <img src="https://i.ytimg.com/vi/ywMrpLSbjZs/maxresdefault.jpg" alt="PrismMCP demo — one session, no cuts" width="100%">
+</a>
+
+<p align="center"><em>One session. No cuts. <a href="https://www.youtube.com/watch?v=ywMrpLSbjZs">Watch it work →</a></em></p>
+
 ---
 
 ## Quick start
