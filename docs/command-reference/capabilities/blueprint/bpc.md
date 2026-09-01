@@ -95,7 +95,7 @@ Mode D: generate and stage a native parent class for selected Blueprint function
 
 ### `dev_bpc_convert_level_blueprint_mode_d`
 
-Mode D: stage a native ALevelScriptActor parent for selected Level Blueprint ActorBoundEvent bodies while preserving Unreal's exact binding node.
+Mode D: stage a native ALevelScriptActor parent for selected Level Blueprint ActorBoundEvent bodies while preserving Unreal's exact binding node. Spatial or Data Layer World Partition actors are refused before staging because Unreal rejects their direct EventOwner hard reference in PIE.
 
 ### `dev_bpc_convert_function`
 
