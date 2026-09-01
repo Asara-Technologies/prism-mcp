@@ -1,9 +1,9 @@
 # bpc
 
 **Feature area:** Blueprint authoring
-**Commands:** 31
+**Commands:** 34
 
-Blueprint-to-C++ conversion tooling. Analyze Blueprint functions for native convertibility, emit C++ helpers via Mode A surgical or Mode B/D batch workflows, register and run parity tests between BP and generated code, and produce project-wide conversion coverage reports.
+Blueprint-to-C++ conversion tooling. Analyze Blueprint functions for native convertibility, emit C++ helpers via Mode A surgical or Mode B/D batch workflows, migrate supported Level Blueprint ActorBoundEvent bodies while preserving their engine-owned bindings, register and run parity tests between BP and generated code, and produce project-wide conversion coverage reports.
 
 ## read
 
@@ -93,6 +93,10 @@ Mode B: generate and stage a native replacement class for selected Blueprint fun
 
 Mode D: generate and stage a native parent class for selected Blueprint functions/events.
 
+### `dev_bpc_convert_level_blueprint_mode_d`
+
+Mode D: stage a native ALevelScriptActor parent for selected Level Blueprint ActorBoundEvent bodies while preserving Unreal's exact binding node.
+
 ### `dev_bpc_convert_function`
 
 Stage generated C++ for one Blueprint function and return the next Path A phase.
@@ -117,6 +121,10 @@ Mode B: patch eligible Blueprint references to a compiled native replacement cla
 
 Mode D: validate and preview reparenting a Blueprint to a compiled native parent.
 
+### `dev_bpc_preview_reparent_level_blueprint`
+
+Preview Level Blueprint ActorBoundEvent reparenting, including exact actor identity and forwarder-topology validation.
+
 ### `dev_bpc_remove_converted_class`
 
 Remove one Prism-generated converted class file set from a BPC module.
@@ -128,6 +136,10 @@ Preview or apply a safe post-emit rename across generated BPC C++ and sidecars.
 ### `dev_bpc_reparent_blueprint`
 
 Mode D: reparent a Blueprint to a compiled native parent after generation/build review.
+
+### `dev_bpc_reparent_level_blueprint`
+
+Reparent a Level Blueprint to a compiled native ALevelScriptActor parent while preserving engine-owned ActorBoundEvent bindings.
 
 ### `dev_bpc_scan_replacement_references`
 

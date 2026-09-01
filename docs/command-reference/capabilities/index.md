@@ -1,6 +1,6 @@
 # PrismMCP Capabilities
 
-**2,130 commands** across **70+ modules.** Gameplay authoring, production workflows,
+**2,133 commands** across **70+ modules.** Gameplay authoring, production workflows,
 debugging, and specialist systems — all agent-controllable through one MCP connection.
 
 Free commands include full parameter and return schemas.
@@ -20,7 +20,7 @@ Pro commands show command names and descriptions. Full Pro reference ships with 
 | [blueprint](blueprint/blueprint.md) | Blueprint authoring | 27 | 0 | 27 |
 | [blueprint-debug](blueprint/blueprint-debug.md) | Blueprint authoring | 31 | 0 | 31 |
 | [blueprint-graph](blueprint/blueprint-graph.md) | Blueprint authoring | 39 | 2 | 37 |
-| [bpc](blueprint/bpc.md) | Blueprint authoring | 31 | 0 | 31 |
+| [bpc](blueprint/bpc.md) | Blueprint authoring | 34 | 0 | 34 |
 | [build](build/build.md) | Build and deployment | 12 | 0 | 12 |
 | [cache](diagnostics/cache.md) | Diagnostics | 2 | 2 | 0 |
 | [clipboard](editor/clipboard.md) | Editor tooling | 2 | 2 | 0 |

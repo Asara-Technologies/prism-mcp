@@ -2,7 +2,7 @@
 
 **Your AI agent, inside the Unreal Editor.** [Product page](https://www.asaratechnologies.com/products/prism-mcp) · [Latest release (v0.3.0)](https://github.com/Asara-Technologies/prism-mcp/releases/tag/v0.3.0)
 
-2,130 commands across 70+ editor systems — authoring, world building, gameplay, debugging, real-time debug draw, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3–5.8. Windows.
+2,133 commands across 70+ editor systems — authoring, world building, gameplay, debugging, real-time debug draw, Blueprint-to-C++. All agent-controllable through one MCP connection. UE 5.3–5.8. Windows.
 
 <a href="https://www.youtube.com/watch?v=ywMrpLSbjZs">
   <img src="https://i.ytimg.com/vi/ywMrpLSbjZs/maxresdefault.jpg" alt="PrismMCP demo — one session, no cuts" width="100%">
@@ -67,7 +67,7 @@ Browse commands: **[asaratechnologies.com/products/prism-mcp/commands](https://w
 | | |
 |:---|:---|
 | [Getting started](docs/getting-started/) | Installation, client connection, configuration |
-| [Command Reference](docs/command-reference/) | 2,130 commands by module ([browse on website](https://www.asaratechnologies.com/products/prism-mcp/commands/)) |
+| [Command Reference](docs/command-reference/) | 2,133 commands by module ([browse on website](https://www.asaratechnologies.com/products/prism-mcp/commands/)) |
 | [Guides](docs/guides/) | Security, HTTP transport, cluster loading, settings reference |
 | [Examples](docs/examples/) | C++, Blueprint, and Python workflows |
 
