@@ -33,10 +33,10 @@ Works with Claude Code, Cursor, Claude Desktop, and any MCP-compatible agent.
 
 Full setup: [docs/getting-started/](docs/getting-started/)
 
-**Download:** grab the latest build from this repository's
-[Releases page](https://github.com/Asara-Technologies/prism-mcp/releases/latest), or visit
-[prismmcp.com](https://prismmcp.com) for installation instructions. Pro is unlocked by
-entering a license key inside the Unreal Editor after install.
+**Download:** install from this repository's
+[Releases page](https://github.com/Asara-Technologies/prism-mcp/releases/latest) —
+each release includes step-by-step instructions. Pro is unlocked by entering a license key
+inside the Unreal Editor after install.
 
 Source-built engine note: PrismMCP declares Epic's experimental `ContextualAnimation` plugin as
 an enabled optional dependency. If your custom engine omits that plugin, PrismMCP still
