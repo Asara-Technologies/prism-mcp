@@ -3,15 +3,15 @@
 **Feature area:** Blueprint authoring
 **Commands:** 31
 
-Blueprint-to-C++ conversion tooling. Analyze Blueprint functions for native convertibility, emit C++ helpers via Mode A surgical or Mode B/D batch workflows, register and run parity tests between BP and generated code, and produce project-wide conversion coverage reports.
+Blueprint-to-C++ conversion tooling. Analyze Blueprint functions for native convertibility, emit C++ helpers via Mode A surgical or Mode B/D batch workflows, register and run parity tests between BP and generated code, and generate project-wide conversion coverage reports in which unsupported graphs are expected and reported.
 
 ## read
 
-Analyze Blueprint convertibility, preview emitted C++ code, dump ASTs, backmap compiler errors, run parity tests, and generate conversion coverage reports.
+Analyze Blueprint convertibility, preview emitted C++ code, dump ASTs, backmap compiler errors, run parity tests, and generate conversion coverage reports in which unsupported graphs are expected and reported.
 
 ### `dev_bpc_analyze_blueprint_convertibility`
 
-Analyze a Blueprint asset for BPC convertibility, producing per-function verdicts and Mode A eligibility.
+Analyze a Blueprint asset for BPC convertibility, producing per-target verdicts and Mode A eligibility. Covers function graphs AND ubergraph events, and names bound/input events as a deferred category rather than omitting them.
 
 ### `dev_bpc_backmap_errors`
 
@@ -19,11 +19,11 @@ Annotate raw generated C++ compiler diagnostics with Blueprint source-pin data.
 
 ### `dev_bpc_convert_function_surgical`
 
-Mode A: surgically convert a single Blueprint function to a C++ helper and optionally patch the BP graph.
+Mode A: surgically convert a single Blueprint function to a C++ helper and optionally patch the BP graph. Returns success:false, writes zero files, and leaves the Blueprint graph unpatched when any construct is refused; data.worst_fidelity and data.diagnostic_channel report why.
 
 ### `dev_bpc_dump_ast`
 
-Lift a Blueprint function into the BPC AST and return diagnostics.
+Lift a Blueprint function into the BPC AST and return diagnostics. Returns success:false when any construct is refused; worst_fidelity and diagnostic_channel are still returned.
 
 ### `dev_bpc_generate_guided_conversion_workflow`
 
@@ -43,11 +43,11 @@ List Prism-generated converted classes for one BPC module.
 
 ### `dev_bpc_preview_emit`
 
-Lift a Blueprint function and preview generated C++ text without writing files.
+Lift a Blueprint function and preview generated C++ text without writing files. Returns success:false and NO generated C++ when any construct is refused; worst_fidelity and diagnostic_channel are still returned.
 
 ### `dev_bpc_project_conversion_coverage_report`
 
-Generate a project-wide BPC conversion coverage report aggregating per-Blueprint verdicts.
+Generate a project-wide BPC conversion coverage report aggregating per-Blueprint verdicts. An unsupported or refused graph is a reported verdict: the report succeeds where a conversion is refused.
 
 ### `dev_bpc_register_parity_test`
 
@@ -75,7 +75,7 @@ Execute Mode A surgical conversions, batch Mode B/D conversions, compile generat
 
 ### `dev_bpc_batch_convert`
 
-Batch-plan or stage Blueprint-to-C++ Mode B/Mode D conversions with dependency ordering.
+Batch-plan or stage Blueprint-to-C++ (Mode B/Mode D) conversions with dependency ordering. Returns success:false whenever any item is refused, under both continue_on_failure values; data.committed_items lists what was staged before the batch stopped.
 
 ### `dev_bpc_compile_and_diagnose_conversion`
 
@@ -87,19 +87,19 @@ Mode B: verify unresolved references before manually deleting the source Bluepri
 
 ### `dev_bpc_convert_class_mode_b`
 
-Mode B: generate and stage a native replacement class for selected Blueprint functions/events.
+Mode B: generate and stage a native replacement class for selected Blueprint functions/events. Returns success:false and writes zero files when any selected function is refused; data.worst_fidelity and data.diagnostic_channel report why.
 
 ### `dev_bpc_convert_class_mode_d`
 
-Mode D: generate and stage a native parent class for selected Blueprint functions/events.
+Mode D: generate and stage a native parent class for selected Blueprint functions/events. Returns success:false and writes zero files when any selected function is refused; data.worst_fidelity and data.diagnostic_channel report why.
 
 ### `dev_bpc_convert_function`
 
-Stage generated C++ for one Blueprint function and return the next Path A phase.
+Stage the generated C++ for one Blueprint function and return the next Path A phase. Returns success:false and writes zero files when any construct is refused; data.worst_fidelity and data.diagnostic_channel report why.
 
 ### `dev_bpc_convert_type_assets`
 
-Preview or stage native USTRUCT/UENUM code for Blueprint user-defined struct and enum assets.
+Preview or stage native USTRUCT and UENUM code for Blueprint user-defined struct and enum assets. Returns success:false and writes zero files when a type asset is refused; data.worst_fidelity and data.diagnostic_channel report why.
 
 ### `dev_bpc_external_rebuild`
 
