@@ -33,6 +33,15 @@ Works with Claude Code, Cursor, Claude Desktop, and any MCP-compatible agent.
 
 Full setup: [docs/getting-started/](docs/getting-started/)
 
+**Upcoming release:** the permanent Free `invoke_command` tool makes specialist
+commands reachable even when a client cannot refresh its tool list. Find a
+command with `atlas_search`, read its schema with `atlas_describe_command`, then
+pass `{command, arguments}` to `invoke_command`. No capability-group load is
+required; target validation, entitlement and dispatch guards still apply.
+Allowlisting `invoke_command` allowlists every callable command, including
+destructive commands. Discovery/subscription tools and `execute_script` are
+called directly. This is not included in the v0.3.0 download linked above.
+
 **Download:** install from this repository's
 [Releases page](https://github.com/Asara-Technologies/prism-mcp/releases/latest) —
 each release includes step-by-step instructions. Pro is unlocked by entering a license key

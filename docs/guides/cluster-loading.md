@@ -1,20 +1,23 @@
-# Cluster-Gated Tool Loading
+# Capability-Group Tool Loading
 
-PrismMCP registers 1,678 MCP tools. Loading all of them into an LLM's context
-window on every request wastes tokens and crowds out the user's actual task.
-Clusters let clients load only the tools they need.
+The `invoke_command` workflow below describes the upcoming release; it is not
+included in the currently downloadable v0.3.0 build.
 
-## What Clusters Are
+PrismMCP starts with a compact, useful editor surface instead of placing the
+entire command catalog in an agent's context. `core-editor` is the default:
+Blueprint authoring and graph editing, ordinary world editing, essential editor
+control, editor context, and read-only health/error visibility are available
+immediately. Load specialist capability groups only when the task needs them.
 
-A cluster is a named group of semantically related commands -- for example,
-`sequencer-keyframes` contains all keyframe add/remove/modify commands, and
-`audio-cue` contains Sound Cue graph authoring commands. Each cluster holds
-5-40 commands. Cluster IDs are stable, lowercase-kebab-case identifiers that
-become part of the client configuration contract.
+Capability groups are user-facing, domain-oriented loading units such as
+`blueprint-authoring`, `performance-profiling`, `sequencer`, or
+`project-settings`. They are not implementation modules and they are not the
+historical `read`/`write`/`manage` registration lanes.
 
-## How to Opt In
+## Startup surface
 
-Include `prismClusters` in the `clientInfo` of your `initialize` handshake:
+PrismMCP accepts an optional `clientInfo.prismMcp.startup` extension during the
+MCP `initialize` handshake:
 
 ```json
 {
@@ -23,179 +26,199 @@ Include `prismClusters` in the `clientInfo` of your `initialize` handshake:
     "clientInfo": {
       "name": "my-client",
       "version": "1.0.0",
-      "prismClusters": ["blueprint-graph", "world-actors"]
+      "prismMcp": {
+        "startup": {
+          "mode": "groups",
+          "groups": ["blueprint-authoring", "editor-observability"]
+        }
+      }
     },
     "capabilities": {}
   }
 }
 ```
 
-The server responds with a `prismClusterSupport` block in `serverInfo`:
+| Mode | Behavior |
+|---|---|
+| Omitted or `core-editor` | Permanent discovery plus the protected `core-editor` allowlist. This is the normal default. |
+| `groups` | Permanent discovery plus exactly the non-empty, unique canonical IDs in `groups`. |
+| `all` | Permanent discovery plus every capability group eligible for this build, edition, and engine. |
+
+`groups` is valid only with `mode: "groups"`. Invalid mode values, empty or
+duplicate group arrays, unknown IDs, and groups supplied to another mode are
+initialize validation errors. PrismMCP never silently widens the visible tool
+surface.
+
+`core-editor` is a protected profile, not a capability group. It cannot be
+unloaded and does not change a command's canonical capability-group owner.
+
+## Permanent discovery and invocation tools
+
+These tools are always available:
+
+- `atlas_search`
+- `atlas_list_groups`
+- `atlas_describe_group`
+- `atlas_describe_command`
+- `load_capability_groups`
+- `unload_capability_groups`
+- `get_loaded_capability_groups`
+- `invoke_command`
+
+"Always available" means two things, and a client can rely on either one:
+
+- **They are always callable by name.** `tools/call` reaches them whether or not
+  they appeared in the client's copy of `tools/list`.
+- **They are always on the first page of `tools/list`.** `tools/list` is
+  paginated, and the discovery tools are pinned ahead of every capability group
+  so they cannot be pushed onto a later page. This holds no matter how many
+  commands are registered — a project contributing several hundred AICallable
+  commands of its own does not displace them.
+
+The second guarantee is what makes the first one discoverable. A client that
+fetches `tools/list` once, without following `nextCursor`, still sees the tools
+it needs in order to find everything else.
+
+`atlas_search` is the normal starting point when an agent knows the task but
+not the command. It searches command names, curated intent terms, aliases,
+use-when text, descriptions, examples, and group names using deterministic,
+offline ranking. Results say why they matched, whether their canonical group is
+loaded, and include a ready-to-use next action.
+
+For example, searching for a hitch starts with the current frame summary that
+is already in `core-editor`, then points to the unloaded
+`performance-profiling` group for trace-based diagnosis:
 
 ```json
 {
-  "serverInfo": {
-    "name": "PrismMCP",
-    "version": "1.5.0",
-    "prismClusterSupport": {
-      "enabled": true,
-      "total_clusters": 72,
-      "loaded_clusters": ["blueprint-graph", "world-actors"],
-      "not_found": [],
-      "bootstrap_tool_count": 15,
-      "active_tool_count": 83
-    }
+  "name": "atlas_search",
+  "arguments": {
+    "query": "why is the editor hitching",
+    "limit": 8
   }
 }
 ```
 
-Passing an empty array (`"prismClusters": []`) is valid -- it enables
-cluster-gated mode with only the bootstrap set loaded.
+Use `atlas_describe_command` for full schemas, examples, failure modes, and
+related commands. Use `atlas_describe_group` for a paginated command summary,
+group purpose, safety mix, and related groups.
 
-## Bootstrap Tools
+## Loading and unloading
 
-Bootstrap tools are always available regardless of which clusters are loaded.
-They include:
-
-- Atlas discovery commands (`atlas_list_clusters`, `atlas_describe_cluster`,
-  `atlas_list_modules`, `atlas_describe_command`, `atlas_search`)
-- Cluster management commands (`load_clusters`, `unload_clusters`)
-- Usage stats commands (`get_usage_stats`, `clear_usage_stats`)
-
-Bootstrap clusters cannot be unloaded.
-
-## Loading and Unloading at Runtime
-
-Use the `load_clusters` and `unload_clusters` meta-tools to change your active
-set during a session:
+Loading groups curates the visible tool list. To call a registered command
+without loading its group, use `atlas_search`, inspect its schema with
+`atlas_describe_command`, then call the permanent Free `invoke_command` tool:
 
 ```json
-// Load clusters
+{"name":"invoke_command","arguments":{"command":"capture_viewport","arguments":{"output_path":"Saved/capture.png"}}}
+```
+
+This returns the same `content`, `isError` and `structuredContent` as a direct
+target call. Target validation, entitlement, dispatch guards and development
+build restrictions remain in force. It does not modify loaded groups. Recursion,
+discovery/subscription meta-tools (including aliases), and `execute_script` are
+refused with `invoke_target_not_allowed`; call them directly. Allowlisting
+`invoke_command` allowlists every callable command, including destructive ones.
+Direct unloaded-call errors retain `next_action` and add an `alternatives` entry
+containing the equivalent invocation. Usage stays under the target name, with
+`get_usage_stats.commands[].via_counts.invoke_command` counting this route.
+
+Load one or more capability groups with `load_capability_groups`:
+
+```json
 {
   "method": "tools/call",
   "params": {
-    "name": "load_clusters",
+    "name": "load_capability_groups",
     "arguments": {
-      "clusters": ["sequencer-keyframes", "audio-cue"]
+      "groups": ["performance-profiling"]
     }
   }
 }
 ```
 
-Response:
+The request is transactional. PrismMCP validates every requested group and the
+projected tool/schema budget before changing the session. If one group is
+unknown, ineligible, or over budget, no group is loaded. Already-loaded groups
+are reported as no-ops.
+
+Successful changes send one `notifications/tools/list_changed` notification.
+The response reports added or removed command/schema bytes and the new session
+totals. Clients that do not consume the notification should refresh
+`tools/list` after the response.
+
+Use `unload_capability_groups` with the same `groups` argument to remove a
+specialist group. Permanent discovery and `core-editor` cannot be unloaded.
+
+The unload response reports `unloaded` (groups removed by this call),
+`not_loaded` (requested IDs the session was not carrying, including unknown
+ones), and `active_tool_count`. There is no unload-refusal list: `core-editor`
+is a profile of individual commands rather than a group, so no group is ever
+refused on protection grounds. An earlier response shape carried a `protected`
+array for that case; it never held anything and has been removed.
+
+## Calling an unloaded command
+
+Direct `tools/call` does not auto-load or execute a command that is known but unavailable
+in the active session. It refuses before handler dispatch and gives the exact
+retry action:
 
 ```json
 {
-  "loaded": ["sequencer-keyframes", "audio-cue"],
-  "already_loaded": [],
-  "not_found": [],
-  "active_tool_count": 87
-}
-```
-
-```json
-// Unload clusters
-{
-  "method": "tools/call",
-  "params": {
-    "name": "unload_clusters",
+  "isError": true,
+  "error_code": "capability_group_not_loaded",
+  "command": "add_blueprint_variable",
+  "capability_group": "blueprint-authoring",
+  "next_action": {
+    "tool": "load_capability_groups",
     "arguments": {
-      "clusters": ["audio-cue"]
+      "groups": ["blueprint-authoring"]
     }
-  }
+  },
+  "alternatives": [{
+    "tool": "invoke_command",
+    "arguments": {
+      "command": "add_blueprint_variable",
+      "arguments": {}
+    }
+  }]
 }
 ```
 
-Response:
+Unknown commands receive normal not-found guidance. Commands unavailable for
+the current edition, engine, build, or development-only policy receive a
+generic unavailable result; they are not exposed through search, group
+listing, descriptions, or `mode: "all"`.
 
-```json
-{
-  "unloaded": ["audio-cue"],
-  "not_loaded": [],
-  "protected": [],
-  "active_tool_count": 69
-}
+## Session and reconnect behavior
+
+Capability state belongs to one client session. Loading a group in one session
+does not affect another HTTP or TCP client. On a reconnect, the shim restores
+the original startup intent, then applies only successful group-state changes
+that differ from that startup surface. It does not send unload requests for
+groups absent from the original startup mode; a direct unload of a known but
+not-loaded group still returns `capability_group_not_loaded`. The shim never
+replays ordinary command calls or work mutations. If restoration fails, the
+session remains safely on `core-editor` and reports the failure.
+
+## Discover, load, execute
+
+Invoke a specialist command without changing the visible tool list:
+
+```text
+atlas_search -> atlas_describe_command -> invoke_command
 ```
 
-After any load or unload that changes the active set, the server fires a
-`notifications/tools/list_changed` notification. Re-fetch `tools/list` to get
-the updated tool schemas.
+To expose its tools directly, use:
 
-## Discovery Workflow
-
-If you are not sure which cluster you need:
-
-1. **Browse clusters** -- call `atlas_list_clusters` to see all available
-   clusters with command counts, estimated schema sizes, and loaded status.
-
-2. **Preview a cluster** -- call `atlas_describe_cluster` with a cluster ID
-   to see command names, descriptions, and parameter counts before loading.
-
-3. **Search by keyword** -- call `atlas_search` with `include_cluster: true`
-   to find commands matching a keyword and see which cluster owns each result.
-
-4. **Load the cluster** -- call `load_clusters` with the cluster ID to add
-   its tools to your active set.
-
-## Legacy Compatibility
-
-Clients that omit `prismClusters` from the `initialize` handshake receive the
-full tool set on every `tools/list` call -- the same behavior as before
-cluster-gated loading was introduced. No client changes are required for
-existing integrations.
-
-## Pagination
-
-`tools/list` supports cursor-based pagination. Each page returns up to 100
-tools. Use the `nextCursor` field in the response to fetch the next page:
-
-```json
-// First page
-{ "method": "tools/list", "params": {} }
-
-// Subsequent pages
-{ "method": "tools/list", "params": { "cursor": "<opaque-cursor-string>" } }
+```text
+atlas_search
+  -> atlas_describe_command or atlas_describe_group
+  -> load_capability_groups
+  -> tools/list refresh
+  -> execute
 ```
 
-When `nextCursor` is absent from the response, you have reached the last page.
-
-Tools are returned in a deterministic order: bootstrap tools first, then loaded
-cluster tools sorted alphabetically by cluster ID, then alphabetically by
-command name within each cluster.
-
-## Stale Cursors
-
-Cursors become stale after any of these events:
-
-- Loading or unloading clusters in the current session
-- A server-side manifest rebuild (hot-reload, extension registration)
-
-A stale cursor returns an error asking you to re-fetch from the beginning.
-This is by design -- the tool set changed, so page offsets are no longer valid.
-
-## Unloaded Tool Execution
-
-Calling a tool from an unloaded cluster still works. Deferred loading gates
-discovery, not execution. The response includes a `_meta` advisory suggesting
-which cluster to load:
-
-```json
-{
-  "content": [{ "type": "text", "text": "..." }],
-  "_meta": {
-    "prism_cluster": "audio-metasound",
-    "prism_cluster_loaded": false,
-    "prism_hint": "Call load_clusters with 'audio-metasound' to add this cluster's tools to your active set."
-  }
-}
-```
-
-The `_meta` field uses the MCP-spec extension point. Compliant clients can
-safely ignore it. The advisory appears only on success responses -- error
-responses use their own diagnostic path.
-
-## Multi-Session Isolation
-
-Each client session maintains its own independent active set. Loading a cluster
-in one session does not affect any other session. This applies to both HTTP
-multi-client sessions and TCP connections.
+For generated command detail, use the Atlas rather than copying tool schemas
+into client configuration. See `docs/COMMAND_CATALOG.md` for the human-facing
+catalog and the extension guides for adding project-specific commands.
