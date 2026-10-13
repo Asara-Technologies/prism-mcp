@@ -133,7 +133,7 @@ Save an asset to disk by content-browser path. Pass only_if_dirty=false to force
 
 ### `shutdown_editor`
 
-Save dirty assets and shut down the editor cleanly. The response is sent before shutdown begins. The MCP connection will drop immediately after. Use Scripts/compile.bat and Scripts/launch.bat to recompile and relaunch.
+Shut down the editor without saving dirty assets by default. Pass `save_first: true` to save dirty assets and levels before shutdown. The response is sent before shutdown begins; the MCP connection drops immediately after. If a play session is active, starting, or stopping, the command refuses to save or exit. Call `stop_play_session` and wait until `get_play_session_status` reports `stopped` before retrying. Use Scripts/compile.bat and Scripts/launch.bat to recompile and relaunch.
 
 ### `take_screenshot`
 
