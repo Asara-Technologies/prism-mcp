@@ -16,7 +16,7 @@
 
 Add PrismMCP to your MCP client config:
 
-PrismMCP ships as precompiled binaries and works with both Blueprint-only and C++ projects. No source compilation or project conversion is required.
+PrismMCP ships precompiled binaries and works with Blueprint-only and C++ projects, with no project conversion required. On first launch, Unreal compiles a small loader module, so a C++ toolchain is required; see the [installation guide](docs/getting-started/installation.md).
 
 ```json
 {

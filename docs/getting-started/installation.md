@@ -7,16 +7,17 @@ PrismMCP installs as a standard Unreal Engine plugin. There is one build: the Fr
 - Unreal Engine 5.3, 5.4, 5.5, 5.6, 5.7, or 5.8
 - Windows, macOS, or Linux
 - An MCP-compatible client (Claude Code, Cursor, Claude Desktop, or any MCP client)
+- A C++ toolchain for the first-launch module rebuild, even for Blueprint-only projects. On Windows, install Visual Studio 2022 with the **Desktop development with C++** workload and a Windows SDK.
 
 ## Project compatibility
 
-PrismMCP ships as precompiled binaries and works with both Blueprint-only and C++ projects on all supported engine versions. No source compilation or project conversion is required. The plugin is Editor-only and does not affect your game's runtime code or packaging.
+PrismMCP ships precompiled binaries for the supported engine versions and works with both Blueprint-only and C++ projects. On first launch, Unreal compiles a small loader module against your engine build, so a C++ toolchain is required. No project conversion is required. The plugin is Editor-only and does not affect your game's runtime code or packaging.
 
 ## Install
 
 1. Get the plugin package. Builds will be published to this repository's [Releases page](https://github.com/Asara-Technologies/prism-mcp/releases/latest). During the beta, email [sales@asaratechnologies.com](mailto:sales@asaratechnologies.com) for a build.
 2. Extract the package into your project's `Plugins/` folder (or the engine's `Plugins/Marketplace/` folder for engine-wide use).
-3. Open your project in the Unreal Editor.
+3. Open your project in the Unreal Editor. On first launch, accept the prompt to rebuild PrismMCP's loader module (see [First launch: the rebuild prompt](#first-launch-the-rebuild-prompt)).
 4. Go to **Edit > Plugins**, search for **PrismMCP**, and confirm it is enabled.
 5. Restart the editor when prompted.
 
@@ -27,6 +28,20 @@ LogPrismMCP: PrismMCP initialized
 ```
 
 That is the complete install. Everything on the Free plan works from here: no license key, no account, and no network call to Asara.
+
+## First launch: the rebuild prompt
+
+The small loader module, `PrismMCPBootstrap` (and, in some releases, `PrismMCPProtocol`), ships as source and must be compiled against your exact engine build. The first time you open a project after installing, Unreal shows a dialog like this:
+
+> Missing `<YourProject>` Modules
+>
+> The following modules are missing or built with a different engine version: PrismMCPBootstrap [, PrismMCPProtocol]
+>
+> Would you like to rebuild them now?
+
+Click **Yes**. Unreal compiles the loader module and continues to start. **A C++ toolchain is required even for Blueprint-only projects.** On Windows, install Visual Studio 2022 with the **Desktop development with C++** workload and a Windows SDK. This does not convert your Blueprint project to C++.
+
+If you click **No**, PrismMCP does not start. Reopen the project and click **Yes**, or compile the project from your IDE. If no compiler is installed, install the toolchain above and relaunch. For unattended launches, open the project interactively once so you can accept the prompt.
 
 ## Activating Pro (optional)
 
