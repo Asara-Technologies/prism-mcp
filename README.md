@@ -29,9 +29,18 @@ PrismMCP ships as precompiled binaries and works with both Blueprint-only and C+
 }
 ```
 
-Works with Claude Code, Cursor, Claude Desktop, and any MCP-compatible agent.
+Works with Claude Code, Codex, Cursor, Claude Desktop, and any MCP-compatible agent.
 
 Full setup: [docs/getting-started/](docs/getting-started/)
+
+**Agent guidance (upcoming):** a Free operating skill and five starter guides
+help Claude Code, Codex and Cursor work in an existing Unreal project: build,
+diagnose, visual iteration, performance investigation and Pro single-player PIE
+testing. The pack uses local Atlas navigation and live command schemas. The
+Connections & Transports panel offers a preview and install, with a manual alternative. Updates
+preserve customer edits. Guidance is Free; the tools retain their existing plan
+requirements. Cursor validation is pending. This pack is not included in the
+v0.3.0 download linked above.
 
 **Upcoming release:** the permanent Free `invoke_command` tool makes specialist
 commands reachable even when a client cannot refresh its tool list. Find a
